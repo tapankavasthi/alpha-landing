@@ -52,23 +52,17 @@
         Learning on CodeCrafters is quite different from other programming
         websites. Here's how it works.
       </div>
-      {% assign headings = "1, 2, 3" | split: ',' %}
-      {% for heading in headings %}
+      {% for section in site.data.how-it-works %}
       <div class="hiw-section">
         <div class="image">
-          <img alt="Man with code" src="/images/hero.svg"/>
+          <img alt="Man with code" src="{{ section.image }}"/>
         </div>
         <div class="text">
           <div class="heading">
-            Learn by building
+            {{ section.heading }}
           </div>
           <div class="description">
-            In our courses, you'll learn about everyday programming tools by
-            building them from scratch.
-
-            <br/><br/>
-
-            Knowing how something works under the hood is a very effective way to learn!
+            {{ section.description }}
           </div>
         </div>
       </div>
