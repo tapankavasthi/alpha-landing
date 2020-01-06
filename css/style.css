@@ -114,6 +114,12 @@ a {
 }
 
 /* On screens, add huge padding, left text and show hero image */
+@media only screen and (min-width: 600px) {
+    .hero .image {
+        display: inline-block;
+    }
+}
+
 @media only screen and (min-width: 900px) {
     .hero .text {
         text-align: left;
