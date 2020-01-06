@@ -99,7 +99,8 @@ a {
     align-items: center;
 }
 
-.hero {
+.hero
+{
     padding-top: 40px;
     padding-bottom: 60px;
     justify-content: center;
@@ -113,13 +114,14 @@ a {
     display: none;
 }
 
-/* On screens, add huge padding, left text and show hero image */
+/* On medium screens, show hero image */
 @media only screen and (min-width: 600px) {
     .hero .image {
         display: inline-block;
     }
 }
 
+/* On large screens, add huge padding, left text */
 @media only screen and (min-width: 900px) {
     .hero .text {
         text-align: left;
@@ -129,10 +131,6 @@ a {
         padding-top: 100px;
         padding-bottom: 200px;
         justify-content: space-between;
-    }
-
-    .hero .image {
-        display: inline-block;
     }
 }
 
