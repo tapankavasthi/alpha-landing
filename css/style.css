@@ -21,7 +21,7 @@ a {
     color: #fff;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .secondary-button {
@@ -32,7 +32,7 @@ a {
     color: #27AB83;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 /* On mobile, make buttons full-width */
@@ -41,7 +41,7 @@ a {
         display: inline-block;
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 }
 
@@ -49,7 +49,7 @@ a {
 
 /* Common Layout */
 
-.header, .how-it-works {
+.header, .how-it-works, .footer {
     width: 100%;
     max-width: 960px;
     padding-left: 40px;
@@ -57,6 +57,13 @@ a {
     margin-left: auto;
     margin-right: auto;
     color: #3E4C59;
+}
+
+@media only screen and (max-width: 400px) {
+    .header, .how-it-works, .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 /*  */
 
@@ -99,16 +106,36 @@ a {
     align-items: center;
 }
 
+.hero .text .primary-button {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
 .hero
 {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     justify-content: center;
 }
 
 .hero .text {
     text-align: center;
 }
+
+/* On large screens, add huge padding, left text */
+@media only screen and (min-width: 900px) {
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        justify-content: space-between;
+    }
+
+    .hero .text {
+        text-align: left;
+    }
+
+}
+
 
 .hero .image {
     display: none;
@@ -120,20 +147,6 @@ a {
         display: inline-block;
     }
 }
-
-/* On large screens, add huge padding, left text */
-@media only screen and (min-width: 900px) {
-    .hero .text {
-        text-align: left;
-    }
-
-    .hero {
-        padding-top: 100px;
-        padding-bottom: 200px;
-        justify-content: space-between;
-    }
-}
-
 .hero .text, .hero .image {
     flex-grow: 1;
 }
@@ -203,6 +216,7 @@ a {
 .how-it-works {
     font-family: "Montserrat", sans-serif;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .how-it-works h2 {
@@ -270,8 +284,72 @@ a {
 .how-it-works .hiw-section .text .heading {
     font-size: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .how-it-works .hiw-section .text .description {
+    font-size: 14px;
+}
+
+.how-it-works .cta {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
+                0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works .cta .text {
+    line-height: 1.5;
+}
+
+.how-it-works .cta .primary-button {
+    flex-shrink: 0;
+}
+
+.how-it-works .cta {
+    margin-top: 40px;
+    padding: 20px 40px 20px 40px;
+    font-size: 24px;
+    flex-wrap: no-wrap;
+}
+
+@media only screen and (max-width: 900px) {
+    .how-it-works .cta {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .how-it-works .cta {
+        padding: 40px 40px 40px 40px;
+        flex-wrap: wrap;
+    }
+
+    .how-it-works .primary-button {
+        margin-top: 20px;
+    }
+}
+
+.footer-container {
+    background-color: #3F3D56;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Montserrat", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 10px; */
+}
+
+.footer .link {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 10px 10px 10px 0px;
     font-size: 14px;
 }
