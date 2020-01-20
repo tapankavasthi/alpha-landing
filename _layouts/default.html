@@ -5,7 +5,6 @@
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
   <div class="wip-banner" id="wip-banner">
@@ -19,7 +18,7 @@
           <h1 class="link"><a href="/">codecrafters.io</a></h1>
         </div>
         <div class="right">
-          <span class="link"><a href="/faq">FAQ</a></span>
+          <span class="link"><a href="/">FAQ</a></span>
         </div>
       </div>
       <div class="hero">
@@ -30,8 +29,8 @@
             challenges.
           </div>
           <div class="buttons">
-            <a href="/" class="primary-button">Sign Up</a>
-            <a href="/" class="secondary-button">Explore Courses</a>
+            <a href="{% app_url github.auth %}" class="primary-button">Sign Up</a>
+            <a href="{% app_url github.auth %}" class="secondary-button">Explore Courses</a>
           </div>
         </div>
         <div class="image">
@@ -79,7 +78,7 @@
           Sounds interesting? Signup to get started!
         </span>
 
-        <a href="/" class="primary-button">Sign Up</a>
+        <a href="{% app_url github.auth %}" class="primary-button">Sign Up</a>
       </div>
     </div>
   </div>
