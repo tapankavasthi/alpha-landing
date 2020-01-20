@@ -67,6 +67,19 @@ a {
 }
 /*  */
 
+.wip-banner {
+    height: 40px;
+    text-align: center;
+    background-color: yellow;
+    font-family: "Montserrat", sans-serif;
+    line-height: 40px;
+    display: none; /* Default */
+}
+
+.wip-banner a {
+    text-decoration: underline;
+}
+
 .header-container {
     background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
 }

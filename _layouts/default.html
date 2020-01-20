@@ -5,8 +5,13 @@
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
+  <div class="wip-banner" id="wip-banner">
+    Work in progress. Visit <a href="https://staging.codecrafters.io">the staging
+    site</a> instead.
+  </div>
   <div class="header-container">
     <div class="header">
       <div class="nav">
@@ -90,5 +95,10 @@
       </div>
     </div>
   </div>
+  <script>
+    if (document.location.hostname == "codecrafters.io") {
+        document.getElementById("wip-banner").style.display = "inherit";
+    }
+  </script>
 </body>
 </html>
