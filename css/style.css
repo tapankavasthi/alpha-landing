@@ -187,6 +187,10 @@ a {
     margin-bottom: 20px;
 }
 
+.hero .text .subtext p {
+    margin-bottom: 20px;
+}
+
 .hero .image {
     max-width: 460px;
 }
