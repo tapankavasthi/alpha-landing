@@ -199,6 +199,50 @@ a {
     width: 100%;
 }
 
+.hero .early-access-form .email-input {
+    background: #FFFFFF;
+    border: 2px solid #47AB90;
+    border-radius: 5px;
+    display: flex;
+    height: 45px; // Avoid?
+    transition-property: border;
+}
+
+.hero .early-access-form .email-input input {
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    flex-grow: 2;
+    padding-left: 1em;
+    color: #3E4C59;
+}
+
+.hero .early-access-form .email-input input::placeholder {
+    color: rgba(63, 61, 86, 0.5);
+}
+
+.hero .early-access-form .email-input button {
+    border: none;
+    background-color: #47ab90;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 1em;
+    padding-right: 1em;
+    cursor: pointer;
+    transition-property: background;
+}
+
+.hero .early-access-form .email-input button:hover {
+    background-color: #1f8566;
+}
+
+.hero .early-access-form .email-input:hover {
+    border: 2px solid #148566;
+}
+
+.hero .early-access-form .email-input button,
+.hero .early-access-form .email-input {
+    transition-duration: 0.1s;
+}
+
 .quote-container {
     background-color: #3F3D56;
 }

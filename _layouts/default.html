@@ -29,9 +29,18 @@
           <div class="subtext">
               {{ site.data.copy.subheading_md | markdownify }}
           </div>
-          <div class="buttons">
-            <a href="{% app_url github.auth %}" class="primary-button">Sign Up</a>
-            <a href="{% app_url github.auth %}" class="secondary-button">Explore Courses</a>
+          <!-- <div class="buttons">
+               <a href="{% app_url github.auth %}" class="primary-button">Sign Up</a>
+               <a href="{% app_url github.auth %}" class="secondary-button">Explore Courses</a>
+               </div> -->
+          <div class="early-access-form">
+            <div class="email-input">
+              <input type="email" placeholder="youremail@example.com">
+              </input>
+              <button>
+                Get Early Access
+              </button>
+            </div>
           </div>
         </div>
         <div class="image">
