@@ -35,11 +35,14 @@
                </div> -->
           <div class="early-access-form">
             <div class="email-input">
-              <input type="email" placeholder="youremail@example.com">
+              <input type="email" placeholder="youremail@example.com" id="early-access-input">
               </input>
-              <button>
+              <button id="early-access-button">
                 Get Early Access
               </button>
+            </div>
+            <div class="feedback" id="early-access-feedback">
+                <!-- Here's where feedback from the API is rendered -->
             </div>
           </div>
         </div>
@@ -108,6 +111,28 @@
     if (document.location.hostname == "codecrafters.io") {
         document.getElementById("wip-banner").style.display = "inherit";
     }
+
+   document.getElementById("early-access-button").addEventListener("click", function() {
+       let email = document.getElementById("early-access-input").value;
+       document.getElementById("early-access-feedback").textContent = "Registering..."
+       // Spaghetti!!
+       fetch(
+           "https://codecrafters-registry.herokuapp.com/users/create",
+           {
+               'method': 'POST',
+               'body': JSON.stringify({"email_address": email}),
+               'headers': { 'Content-type': 'application/json' }
+           }
+       )
+        .then((resp) => resp.text())
+        .then(function (text) {
+            document.getElementById("early-access-feedback").textContent = text
+        })
+        .catch(function (error) {
+           console.error(error)
+           alert(error);
+        })
+   })
   </script>
 </body>
 </html>

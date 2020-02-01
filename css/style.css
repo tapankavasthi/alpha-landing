@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+
 }
 
 a {
@@ -206,6 +207,11 @@ a {
     display: flex;
     height: 45px; // Avoid?
     transition-property: border;
+    margin-bottom: 10px;
+}
+
+.hero .early-access-form .feedback {
+    font-size: 14px;
 }
 
 .hero .early-access-form .email-input input {
