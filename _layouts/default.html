@@ -24,10 +24,10 @@
       <div class="hero">
         <div class="text">
             <h2>
-                {{ site.data.copy.heading_md  }}
+                {{ site.data.copy.heading_md | markdownify }}
             </h2>
           <div class="subtext">
-              {{ site.data.copy.subheading_md  }}
+              {{ site.data.copy.subheading_md | markdownify }}
           </div>
           <div class="buttons">
             <a href="{% app_url github.auth %}" class="primary-button">Sign Up</a>
