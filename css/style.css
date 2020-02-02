@@ -236,6 +236,7 @@ a {
     border: none;
     color: #3E4C59;
     min-width: 0; // Browser sets a default width for inputs
+    flex-grow: 2;
 }
 
 .hero .early-access-form .email-input input {
