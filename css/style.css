@@ -70,10 +70,12 @@ a {
 
 .wip-banner {
     text-align: center;
-    background-color: #f7c948;
+    background: linear-gradient(#f7c948, #f0b429);
     color: #3f3d56;
     font-family: "Montserrat", sans-serif;
+    font-size: 14px;
     padding: 1em 2em;
+    line-height: 1.4;
 }
 @media only screen and (min-width: 600px) {
     .wip-banner {
