@@ -316,7 +316,8 @@ a {
 
 .how-it-works-container {
     min-height: 800px;
-    background: linear-gradient(180deg, #EEF1F7, #E4E7EB);
+    /* background: linear-gradient(180deg, #EEF1F7, #E4E7EB); */
+    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
 }
 
 .how-it-works {
