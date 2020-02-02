@@ -8,8 +8,7 @@
 </head>
 <body>
   <div class="wip-banner" id="wip-banner">
-    Work in progress. Visit <a href="https://staging.codecrafters.io">the staging
-    site</a> instead.
+    CodeCrafters is under development. Signup below for early access.
   </div>
   <div class="header-container">
     <div class="header">
@@ -108,10 +107,6 @@
     </div>
   </div>
   <script>
-    if (document.location.hostname == "codecrafters.io") {
-        document.getElementById("wip-banner").style.display = "inherit";
-    }
-
    document.getElementById("early-access-button").addEventListener("click", function() {
        let email = document.getElementById("early-access-input").value;
        document.getElementById("early-access-feedback").textContent = "Registering..."

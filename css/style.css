@@ -69,12 +69,16 @@ a {
 /*  */
 
 .wip-banner {
-    height: 40px;
     text-align: center;
-    background-color: yellow;
+    background-color: #f7c948;
+    color: #3f3d56;
     font-family: "Montserrat", sans-serif;
-    line-height: 40px;
-    display: none; /* Default */
+    padding: 1em 2em;
+}
+@media only screen and (min-width: 600px) {
+    .wip-banner {
+        padding: 0.5em;
+    }
 }
 
 .wip-banner a {
@@ -185,7 +189,7 @@ a {
 .hero .text .subtext {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hero .text .subtext p {
@@ -200,14 +204,27 @@ a {
     width: 100%;
 }
 
+.hero .early-access-form {
+    margin-bottom: 20px;
+}
+
 .hero .early-access-form .email-input {
     background: #FFFFFF;
     border: 2px solid #47AB90;
     border-radius: 5px;
     display: flex;
-    height: 45px; // Avoid?
     transition-property: border;
-    margin-bottom: 10px;
+    margin-bottom:10px;
+}
+
+.hero .early-access-form .email-input {
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .hero .early-access-form .email-input {
+        flex-direction: row;
+    }
 }
 
 .hero .early-access-form .feedback {
@@ -216,10 +233,20 @@ a {
 
 .hero .early-access-form .email-input input {
     border: none;
-    border-radius: 5px 0px 0px 5px;
-    flex-grow: 2;
-    padding-left: 1em;
     color: #3E4C59;
+    min-width: 0; // Browser sets a default width for inputs
+}
+
+.hero .early-access-form .email-input input {
+    border-radius: 5px 5px 0px 0px;
+    padding: 1em 1em;
+}
+
+@media only screen and (min-width: 600px) {
+    .hero .early-access-form .email-input input {
+        padding: 0.8em 1em;
+        border-radius: 5px 0px 0px 5px;
+    }
 }
 
 .hero .early-access-form .email-input input::placeholder {
@@ -227,13 +254,24 @@ a {
 }
 
 .hero .early-access-form .email-input button {
+    flex-shrink: 0;
+    font-size: 14px;
     border: none;
     background-color: #47ab90;
     color: rgba(255, 255, 255, 0.8);
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.5em 1em;
     cursor: pointer;
     transition-property: background;
+}
+
+.hero .early-access-form .email-input button {
+    padding: 1em 1em;
+}
+
+@media only screen and (min-width: 600px) {
+    .hero .early-access-form .email-input button {
+        padding: 0.5em 1em;
+    }
 }
 
 .hero .early-access-form .email-input button:hover {
