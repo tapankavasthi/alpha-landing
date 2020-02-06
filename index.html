@@ -27,18 +27,7 @@ CodeCrafters is under development. Signup below for early access.
             <a href="{% app_url github.auth %}" class="primary-button">Sign Up</a>
             <a href="{% app_url github.auth %}" class="secondary-button">Explore Courses</a>
             </div> -->
-          <div class="early-access-form">
-            <div class="email-input">
-              <input type="email" placeholder="youremail@example.com" id="early-access-input">
-              </input>
-              <button id="early-access-button" class="primary-button">
-                Get Early Access
-              </button>
-            </div>
-            <div class="feedback" id="early-access-feedback">
-                <!-- Here's where feedback from the API is rendered -->
-            </div>
-          </div>
+        {% include early_access_form.html %}
     </div>
     <div class="image">
         <img alt="Man with code" src="/images/hero2.svg"/>
@@ -101,26 +90,3 @@ CodeCrafters is under development. Signup below for early access.
     </div>
     </div>
     </div> -->
-<script>
-document.getElementById("early-access-button").addEventListener("click", function() {
-    let email = document.getElementById("early-access-input").value;
-    document.getElementById("early-access-feedback").textContent = "Registering..."
-    // Spaghetti!!
-    fetch(
-        "https://codecrafters-registry.herokuapp.com/users/create",
-        {
-            'method': 'POST',
-            'body': JSON.stringify({"email_address": email}),
-            'headers': { 'Content-type': 'application/json' }
-        }
-    )
-    .then((resp) => resp.text())
-    .then(function (text) {
-        document.getElementById("early-access-feedback").textContent = text
-    })
-    .catch(function (error) {
-        console.error(error)
-        alert(error);
-    })
-})
-</script>
