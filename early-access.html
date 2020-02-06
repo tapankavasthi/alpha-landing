@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="early-access-container">
+    <div class="wip-banner" id="wip-banner">
+        CodeCrafters is under development. Signup below for early access.
+    </div>
+    <div class="header">
+        <div class="nav">
+        <div class="left">
+            <h1 class="link"><a href="/">codecrafters.io</a></h1>
+        </div>
+    </div>
+    <div class="markdown">
+        {{ site.data.copy.early_access_md | markdownify }}
+
+        <div class="early-access-form">
+        <div class="email-input">
+            <input type="email" placeholder="youremail@example.com" id="early-access-input">
+            </input>
+            <button id="early-access-button">
+            Get Early Access
+            </button>
+        </div>
+        <div class="feedback" id="early-access-feedback">
+            <!-- Here's where feedback from the API is rendered -->
+        </div>
+        </div>
+    </div>
+</div>

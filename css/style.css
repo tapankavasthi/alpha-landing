@@ -468,3 +468,63 @@ input:focus {
     padding: 10px 10px 10px 0px;
     font-size: 14px;
 }
+
+
+/* Early-access */
+
+.early-access-container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 3em;
+}
+
+.early-access-container .header {
+    max-width: 40em;
+}
+.early-access-container .markdown {
+    margin-top: 1em;
+}
+
+.markdown {
+    line-height: 1.6;
+}
+
+.markdown a {
+    text-decoration: underline;
+    color: #27AB83;
+}
+
+.markdown h1 {
+    margin-bottom: 1em;
+}
+
+.markdown p, ul {
+    margin-bottom: 2em;
+}
+
+.markdown h1 {
+    font-size: 28px;
+}
+
+.markdown ul {
+    margin-left: 2em;
+}
+
+.markdown li {
+    margin-bottom: 0.7em;
+    list-style-type: none;
+    position: relative;
+}
+
+.markdown li::before {
+    content: "";
+    position: absolute;
+    left: -2em;
+    width: 1.6em;
+    height: 1.6em;
+    background-image: url('/images/tick.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
