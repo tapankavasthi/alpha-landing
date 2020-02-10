@@ -36,3 +36,16 @@ early_access_md: |
 
   Enter your email below and we'll soon send you an invite to our Discord server
   where you'll receive further instructions!
+
+
+redis_md: |
+  In this challenge, you’ll build an application that can speak the Redis
+  protocol, and is capable of serving basic commands like PING, ECHO, SET and
+  GET. Along the way, you’ll learn about TCP servers, event loops and more.
+
+  This challenge has **8** stages.
+
+redis_footer_md: |
+  Interested in trying out the Redis Challenge? Signup for our [Early
+  Access](https://codecrafters.io/early-access) program!
+

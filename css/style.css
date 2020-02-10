@@ -31,6 +31,10 @@ input:invalid {
 
 /* CSS Resets end */
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 /* Components  */
 .primary-button {
     display: inline-block;
@@ -232,6 +236,10 @@ input:invalid {
     width: 100%;
 }
 
+.early-access-form {
+    max-width: 420px;
+}
+
 .early-access-form .email-input {
     background: #FFFFFF;
     border: 1px solid rgba(63, 61, 86, 0.3);
@@ -314,7 +322,6 @@ input:invalid {
     min-height: 200px;
     color: #E4E7EB;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
 }
 
 .quote .text {
@@ -493,10 +500,6 @@ input:invalid {
     margin-top: 1em;
 }
 
-.early-access-container .early-access-form {
-    max-width: 420px;
-}
-
 .markdown {
     line-height: 1.6;
 }
@@ -512,6 +515,10 @@ input:invalid {
 
 .markdown p {
     margin-bottom: 2em;
+}
+
+.markdown p:last-child {
+    margin-bottom: 0;
 }
 
 .markdown ul {
@@ -543,4 +550,82 @@ input:invalid {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* Challenge Page */
+
+.challenge-page-container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 80px;
+}
+
+.challenge-page-header {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.challenge-page-header {
+    display: flex;
+}
+
+.challenge-page-header .label {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #27AB83, #199473);
+    color: white;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    line-height: 1;
+    margin-left: 0.5em;
+    text-transform: uppercase;
+}
+
+.challenge-stages {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.challenge-stage-box {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px -2px rgba(63, 61, 86, 0.1), 0px 0px 5px 0px rgba(63, 61, 86, 0.05);
+    border-radius: 5px;
+    padding: 1.5em 1.5em;
+    display: flex;
+    margin-bottom: 1em;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .challenge-stage-box {
+        flex-direction: row;
+    }
+}
+
+.challenge-stage-box .stage-number {
+    margin-right: 0.5em;
+    color: rgba(138, 136, 170, 0.8);
+    margin-bottom: 0.5em;
+}
+
+.challenge-stage-box .markdown h2 {
+    color: #3f3d56;
+    font-weight: normal;
+    margin-bottom: 1em;
+    color: rgba(72, 70, 98, 0.9);
+}
+
+.challenge-stage-box .markdown p {
+    color: #3f3d56;
+    /* color: rgba(72, 70, 98, 0.8); */
+
+}
+
+.challenge-stage-box .stage-number, .challenge-stage-box .markdown h2 {
+    display: block;
+    font-size: 1.4em;
+    line-height: 1;
 }
