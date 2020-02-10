@@ -254,8 +254,7 @@ body {
 
 .early-access-form .email-input {
     background: #FFFFFF;
-    border: 1px solid rgba(63, 61, 86, 0.3);
-    box-shadow: 0px 2px 2px rgba(63, 61, 86, 0.2);
+    box-shadow: 0px 4px 4px -2px rgba(63, 61, 86, 0.2);
 
     border-radius: 5px;
     display: flex;
@@ -264,8 +263,7 @@ body {
 }
 
 .early-access-form .email-input:hover {
-    border: 1px solid rgba(63, 61, 86, 0.35);
-    box-shadow: 0px 2px 2px rgba(63, 61, 86, 0.25);
+    box-shadow: 0px 4px 4px -2px rgba(63, 61, 86, 0.3);
 }
 
 .early-access-form .email-input {
