@@ -526,10 +526,6 @@ body {
     
 }
 
-.markdown h1 {
-    font-size: 28px;
-}
-
 .markdown ul {
     margin-left: 2em;
 }
@@ -561,9 +557,19 @@ body {
     padding-bottom: 80px;
 }
 
+.challenge-page-container .header, .challenge-page-container .content {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
 .challenge-page-header {
     margin-bottom: 2em;
     margin-top: 2em;
+    color: #3e4c59;
 }
 
 .challenge-page-header {
@@ -605,9 +611,13 @@ body {
     }
 }
 
+.content .markdown {
+    color: #3f3d56;
+}
+
 .challenge-stage-box .stage-number {
     margin-right: 0.5em;
-    color: rgba(138, 136, 170, 0.8);
+    color: rgba(138, 136, 170, 0.5);
     margin-bottom: 0.5em;
 }
 
@@ -626,6 +636,6 @@ body {
 
 .challenge-stage-box .stage-number, .challenge-stage-box .markdown h2 {
     display: block;
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1;
 }

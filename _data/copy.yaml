@@ -11,8 +11,11 @@ early_access_md: |
   Hi there, I'm [Paul](https://rohitpaulk.com). 
   
   [CodeCrafters](https://codecrafters.io) is currently under active development,
-  but we've got the core course experience ready and are looking for early users
+  but we've got the core challenge experience ready and are looking for early users
   who are brave enough to try it out.
+
+  Here's the first challenge that'll be released: [Build your own
+  Redis](/challenges/redis).
 
   The kind of person we're looking for: 
 
@@ -32,6 +35,7 @@ early_access_md: |
     once we launch
   - A bunch of CodeCrafters swag (T-shirts, stickers and more)
 
+
   Sounds like your cup of tea?
 
   Enter your email below and we'll soon send you an invite to our Discord server
@@ -43,7 +47,7 @@ redis_md: |
   protocol, and is capable of serving basic commands like PING, ECHO, SET and
   GET. Along the way, you’ll learn about TCP servers, event loops and more.
 
-  This challenge has **8** stages.
+  This challenge has **6** stages.
 
 redis_footer_md: |
   Interested in trying out the Redis Challenge? Signup for our [Early
