@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0px;
 
+
     padding: 0px;
 }
 
@@ -64,13 +65,18 @@ body {
     cursor: pointer;
 }
 
+.secondary-button:hover {
+    background: rgba(72, 70, 98, 0.05);
+}
+
 /* On mobile, make buttons full-width */
 @media only screen and (max-width: 400px) {
     .primary-button, .secondary-button {
-        display: inline-block;
+        display: block;
         width: auto;
         text-align: center;
-        /* margin-bottom: 20px; */
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -157,6 +163,12 @@ body {
 .hero .text .buttons .primary-button {
     margin-right: 10px;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    .hero .text .buttons .primary-button {
+        margin-right: 0px;
+    }
 }
 
 .hero
@@ -630,7 +642,6 @@ body {
 
 .challenge-stage-box .markdown p {
     color: #3f3d56;
-    /* color: rgba(72, 70, 98, 0.8); */
 
 }
 
