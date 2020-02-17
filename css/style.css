@@ -1,5 +1,7 @@
 /* CSS Resets */
 * {
+
+
     box-sizing: border-box;
     margin: 0px;
 
@@ -96,7 +98,7 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
-    .header, .how-it-works, .footer {
+    .header, .hero, .how-it-works, .footer, .content {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -175,12 +177,11 @@ body {
     padding: 1em 0.4em;
 }
 
-.nav .link.logo {
+.nav .link.logo a {
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
     color: rgba(63, 61, 86, 0.9);
     padding-left: 0em;
-    
 }
 
 .nav .link:hover {
@@ -629,8 +630,8 @@ body {
     padding-bottom: 80px;
 }
 
-.early-access-container .content .markdown {
-    margin-top: 1em;
+.early-access-container .content {
+    padding-top: 3em;
 }
 
 .markdown {
@@ -690,23 +691,12 @@ body {
 
 .challenge-page-container .content {
     max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 80px;
-}
-
-@media only screen and (min-width: 600px) {
-    .challenge-page-container .header, .challenge-page-container .content {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+    padding-top: 3em;
+    padding-bottom: 6em;
 }
 
 .challenge-page-header {
     padding-bottom: 2em;
-    padding-top: 2em;
     color: #3e4c59;
 }
 
