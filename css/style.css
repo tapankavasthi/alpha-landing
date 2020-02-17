@@ -143,6 +143,8 @@ body {
 .nav {
     display: flex;
     font-family: "Open Sans", sans-serif;
+    min-height: 50px;
+    align-items: center;
 }
 
 .nav .left {
@@ -154,22 +156,18 @@ body {
     text-align: right;
 }
 
-.nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
 .nav .divider {
     width: 1px;
     background-color: rgba(63, 61, 86, 0.2);
     margin-left: 1em;
     margin-right: 1em;
+    height: 1.5em;
     
 }
 
 .nav .link {
     display: inline-block;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: normal;
     margin: 0px 0px 0px 0px;
     padding: 0em 0.4em;
@@ -177,8 +175,10 @@ body {
 }
 
 .nav .link.logo {
+    font-size: 1em;
     font-family: "Montserrat", sans-serif;
     color: rgba(63, 61, 86, 0.9);
+    padding-left: 0em;
 }
 
 .nav .link:hover {
