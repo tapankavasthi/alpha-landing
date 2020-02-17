@@ -1,10 +1,13 @@
 /* CSS Resets */
 * {
+
+
     box-sizing: border-box;
     margin: 0px;
 
 
     padding: 0px;
+
 }
 
 a {
@@ -84,7 +87,7 @@ body {
 
 /* Common Layout */
 
-.header, .how-it-works, .footer {
+.header, .hero, .how-it-works, .footer, .content {
     width: 100%;
     max-width: 960px;
     padding-left: 40px;
@@ -95,12 +98,23 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
-    .header, .how-it-works, .footer {
+    .header, .hero, .how-it-works, .footer, .content {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 /*  */
+
+/* Common Styling */
+
+.bg-grey-linear {
+    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
+}
+
+.bg-grey-solid {
+    background-color: #F5F7FA;
+}
+/* Common Styling end*/
 
 .wip-banner {
     text-align: center;
@@ -121,38 +135,154 @@ body {
     text-decoration: underline;
 }
 
+/* Nav */
+
 .header-container {
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
+    box-shadow: 0px 2px 2px 0px rgba(63, 61, 86, 0.1);
+    position: relative; /* This affects shadows?? */
 }
 
 .nav {
     display: flex;
     font-family: "Open Sans", sans-serif;
+    min-height: 50px;
+    align-items: center;
 }
 
 .nav .left {
-    flex-grow: 1;
-    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .nav .right {
     flex-grow: 8;
-    text-align: right;
 }
 
-.nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.nav .divider {
+    background-color: rgba(63, 61, 86, 0.2);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .nav .link {
     display: inline-block;
-    font-size: 18px;
+    font-size: 0.9em;
     font-weight: normal;
     margin: 0px 0px 0px 0px;
-    padding: 0px;
-    border-bottom: 2px solid #3E4C59;
+    padding: 0em;
+    color: rgba(63, 61, 86, 0.7);
 }
+
+.nav .link a {
+    padding: 1em 0.4em;
+}
+
+.nav .link.logo a {
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(63, 61, 86, 0.9);
+    padding-left: 0em;
+}
+
+.nav .link:hover {
+    color: rgba(63, 61, 86, 1);
+}
+
+.nav .link a {
+    display: inline-block;
+}
+
+.nav .link-container {
+    width: 100%;
+}
+
+.nav {
+    flex-direction: column;
+}
+
+.nav .menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid rgba(63, 61, 86, 0.5);
+  padding: 2px 6px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.nav .menu-toggle.open {
+  border: 1px solid rgba(63, 61, 86, 0.8);
+}
+
+.nav .menu-toggle .bar {
+  width: 35px;
+  height: 2px;
+  background-color: rgba(63, 61, 86, 0.5);
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+.nav .menu-toggle.open .bar {
+  background-color: rgba(63, 61, 86, 0.8);
+}
+
+.nav .visible-if-menu-open {
+    display: none; 
+}
+
+.nav .visible-if-menu-open.menu-open {
+    display: initial; 
+}
+
+.nav .left, .nav .right {
+    text-align: left; 
+}
+
+.nav .divider {
+    width: 100%;
+    height: 1px;
+}
+
+.nav .link {
+    width: 100%;
+}
+
+.nav .link a {
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+    .nav .menu-toggle {
+        display: none;
+    }
+
+    .nav .visible-if-menu-open {
+        display: initial; 
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav .right {
+        text-align: right; 
+    }
+
+    .nav .link-container {
+        width: auto;
+    }
+
+    .nav .divider {
+        width: 1px;
+        height: 1.5em;
+    }
+
+    .nav .link, .nav .link a {
+        width: auto;
+    }
+}
+
+
+/* */
 
 .hero {
     display: flex;
@@ -348,8 +478,6 @@ body {
 
 .how-it-works-container {
     min-height: 800px;
-    /* background: linear-gradient(180deg, #EEF1F7, #E4E7EB); */
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
 }
 
 .how-it-works {
@@ -498,17 +626,12 @@ body {
 
 .early-access-container {
     min-height: 100vh;
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
     font-family: "Montserrat", sans-serif;
     padding-bottom: 80px;
 }
 
-.early-access-container .header {
-    max-width: 40em;
-}
-
-.early-access-container .markdown {
-    margin-top: 1em;
+.early-access-container .content {
+    padding-top: 3em;
 }
 
 .markdown {
@@ -563,30 +686,17 @@ body {
 
 .challenge-page-container {
     min-height: 100vh;
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
     font-family: "Montserrat", sans-serif;
-    padding-bottom: 80px;
 }
 
-.challenge-page-container .header, .challenge-page-container .content {
+.challenge-page-container .content {
     max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-}
-
-@media only screen and (min-width: 600px) {
-    .challenge-page-container .header, .challenge-page-container .content {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+    padding-top: 3em;
+    padding-bottom: 6em;
 }
 
 .challenge-page-header {
-    margin-bottom: 2em;
-    margin-top: 2em;
+    padding-bottom: 2em;
     color: #3e4c59;
 }
 
@@ -652,6 +762,10 @@ body {
     }
 }
 
+.early-access-container .content {
+    max-width: 40em;
+}
+
 .content .markdown {
     color: #3f3d56;
 }
@@ -679,3 +793,38 @@ body {
     font-size: 1.3em;
     line-height: 1;
 }
+
+/* Changelog */
+
+.changelog-container {
+    min-height: 100vh;
+}
+
+.changelog-container .content {
+    padding-top: 3em;
+}
+
+.changelog-container .content h1 {
+    padding-bottom: 1em;
+}
+
+.changelog-entry .date {
+    font-size: 1.4em;
+    opacity: 1;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-family: monospace;
+}
+
+.changelog-entry .title {
+    font-weight: normal;
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+}
+
+.changelog-entry .markdown {
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+

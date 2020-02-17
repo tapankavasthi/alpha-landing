@@ -1,0 +1,30 @@
+<div class="header-container bg-grey-solid">
+    <div class="header">
+        <div class="nav">
+            <div class="left link-container">
+                <h1 class="link logo"><a href="/">CodeCrafters</a></h1>
+                <div class="menu-toggle" onclick="toggleMenu(this)">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="divider visible-if-menu-open"></div>
+            <div class="link-container visible-if-menu-open">
+                <span class="link"><a href="/challenges/redis">Explore</a></span>
+            </div>
+            <div class="right link-container visible-if-menu-open">
+                <span class="link"><a href="/early-access">Early Access</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+ function toggleMenu(x) {
+     x.classList.toggle("open");
+     Array.from(document.querySelectorAll(".visible-if-menu-open")).map(function(el) {
+        el.classList.toggle("menu-open");
+     })
+ }
+</script>
