@@ -864,8 +864,6 @@ body {
     flex-grow: 1;
     font-weight: bold;
     font-size: 20px;
-
-    color: #27AB83;
 }
 
 .changelog-entry .time {
@@ -891,15 +889,51 @@ body {
     height: 10px;
     border-radius: 5px;
 
-    background: #27AB83;
-    box-shadow: 0px 0px 4px #27AB83;
-
     margin-right: 30px;
     margin-left: 10px;
 }
 
+.changelog-entry.changelog-type-new .dot {
+    background: #27AB83;
+    box-shadow: 0px 0px 2px #27AB83;
+}
+
+.changelog-entry.changelog-type-improvement .dot {
+    background: #6C63FF;
+    box-shadow: 0px 0px 2px #6C63FF;
+}
+
+.changelog-entry.changelog-type-announcement .dot {
+    background: #52606D;
+    box-shadow: 0px 0px 2px #52606D;
+}
+
+.changelog-entry.changelog-type-new .title {
+    color: #27AB83;
+}
+
+.changelog-entry.changelog-type-improvement .title {
+    color: #6C63FF;
+}
+
+.changelog-entry.changelog-type-announcement .title {
+    color: #52606D;
+}
+
+.changelog-entry.changelog-type-new .label {
+    background: #27AB83;
+}
+
+.changelog-entry.changelog-type-improvement .label {
+    background: #6C63FF;
+}
+
+.changelog-entry.changelog-type-announcement .label {
+    background: #52606D;
+}
+
 .changelog-entry .text-box {
-    padding-bottom: 4em;
+    padding-bottom: 3em;
 }
 
 .changelog-entry .markdown {
@@ -910,11 +944,15 @@ body {
     line-height: 167.18%;
 
     color: rgba(63, 61, 86, 0.8);
+    max-width: 540px;
+}
+
+.changelog-entry .markdown p {
+    margin-bottom: 1em;
 }
 
 .changelog-entry .text-box .title-box .label {
     color: white;
-    background: #27AB83;
     border-radius: 5px;
     padding: 10px 10px;
     font-weight: bold;
@@ -925,7 +963,6 @@ body {
     font-size: 12px;
     padding: 8px;
 }
-
 
 .changelog-entry .timeline-box {
     display: flex;
