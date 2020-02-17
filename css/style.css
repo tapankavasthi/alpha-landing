@@ -884,6 +884,10 @@ body {
     align-items: center;
 }
 
+.changelog-entry .title-box {
+    min-height: 38px;
+}
+
 .changelog-entry .dot {
     width: 10px;
     height: 10px;
