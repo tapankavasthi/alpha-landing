@@ -145,8 +145,12 @@ body {
 .nav {
     display: flex;
     font-family: "Open Sans", sans-serif;
-    min-height: 50px;
     align-items: center;
+}
+
+.nav, .nav .left {
+    min-height: 50px;
+    
 }
 
 .nav .left {
@@ -165,6 +169,7 @@ body {
 }
 
 .nav .link {
+    line-height: 1;
     display: inline-block;
     font-size: 0.9em;
     font-weight: normal;
@@ -198,6 +203,7 @@ body {
 
 .nav {
     flex-direction: column;
+    justify-content: center;
 }
 
 .nav .menu-toggle {
@@ -261,6 +267,7 @@ body {
 
     .nav {
         flex-direction: row;
+        align-items: center;
     }
 
     .nav .right {
