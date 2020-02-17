@@ -793,3 +793,38 @@ body {
     font-size: 1.3em;
     line-height: 1;
 }
+
+/* Changelog */
+
+.changelog-container {
+    min-height: 100vh;
+}
+
+.changelog-container .content {
+    padding-top: 3em;
+}
+
+.changelog-container .content h1 {
+    padding-bottom: 1em;
+}
+
+.changelog-entry .date {
+    font-size: 1.4em;
+    opacity: 1;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-family: monospace;
+}
+
+.changelog-entry .title {
+    font-weight: normal;
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+}
+
+.changelog-entry .markdown {
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+
