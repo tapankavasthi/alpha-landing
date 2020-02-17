@@ -835,7 +835,7 @@ body {
 
 .changelog-entry .timeline-box-container:before {
     position: absolute;
-    left: 114px;
+    right: 34px;
     height: 2000px;
     content: "";
     width: 2px;
@@ -857,18 +857,7 @@ body {
 
 .changelog-entry .text-box .title-box {
     display: flex;
-    align-items: center;
     margin-bottom: 1em;
-}
-
-.changelog-entry .text-box .title-box .label {
-    color: white;
-    background: #27AB83;
-    border-radius: 5px;
-    padding: 10px 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
 }
 
 .changelog-entry .title {
@@ -880,10 +869,21 @@ body {
 }
 
 .changelog-entry .time {
-    font-size: 14px;
     text-align: right;
 
     color: rgba(63, 61, 86, 0.4);
+}
+
+.changelog-entry .time-box {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.changelog-entry .dot-box {
+    height: 38px;
+    display: flex;
+    align-items: center;
 }
 
 .changelog-entry .dot {
@@ -896,15 +896,6 @@ body {
 
     margin-right: 30px;
     margin-left: 10px;
-}
-
-.changelog-entry .timeline-box {
-    display: flex;
-    height: 38px;
-    align-items: center;
-    justify-content: flex-end;
-    width: 150px;
-    position: relative;
 }
 
 .changelog-entry .text-box {
@@ -921,4 +912,64 @@ body {
     color: rgba(63, 61, 86, 0.8);
 }
 
+.changelog-entry .text-box .title-box .label {
+    color: white;
+    background: #27AB83;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+.changelog-entry .text-box .title-box .label {
+    font-size: 12px;
+    padding: 8px;
+}
+
+
+.changelog-entry .timeline-box {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.changelog-entry .timeline-box {
+    width: 90px;
+}
+
+.changelog-entry .text-box .title-box {
+    flex-direction: column;
+    align-items: start;
+}
+
+.changelog-entry .text-box .title-box .title {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.changelog-entry .time {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 900px) {
+    .changelog-entry .timeline-box {
+        width: 150px;
+    }
+
+    .changelog-entry .text-box .title-box {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .changelog-entry .text-box .title-box .title {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .changelog-entry .time {
+        font-size: 14px;
+    }
+
+    .changelog-entry .text-box .title-box .label {
+        font-size: 14px;
+    }
+}
