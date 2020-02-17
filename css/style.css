@@ -815,23 +815,110 @@ body {
     padding-bottom: 1em;
 }
 
-.changelog-entry .date {
-    font-size: 1.4em;
-    opacity: 1;
+.changelog-entries-box {
+    margin-top: 3em;
+}
+
+.changelog-entry {
+    font-family: Montserrat;
+    font-style: normal;
+    display: flex;
+    position: relative;
+}
+
+.changelog-entry .timeline-box-container {
+    flex-shrink: 0;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.changelog-entry .timeline-box-container:before {
+    position: absolute;
+    left: 114px;
+    height: 2000px;
+    content: "";
+    width: 2px;
+    background-color: rgba(63, 61, 86, 0.1)
+}
+
+.changelog-entries-box .changelog-entry:first-child .timeline-box-container:before {
+    top: 20px;
+}
+
+.changelog-entries-box .changelog-entry:last-child .timeline-box-container:before {
+    height: 15px;
+}
+
+
+.changelog-entry .text-box {
+    flex-grow: 1;
+}
+
+.changelog-entry .text-box .title-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.changelog-entry .text-box .title-box .label {
+    color: white;
+    background: #27AB83;
+    border-radius: 5px;
+    padding: 10px 10px;
     font-weight: bold;
-    margin-bottom: 0.5em;
-    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .changelog-entry .title {
-    font-weight: normal;
-    font-size: 1.4em;
-    padding-bottom: 0.5em;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 20px;
+
+    color: #27AB83;
+}
+
+.changelog-entry .time {
+    font-size: 14px;
+    text-align: right;
+
+    color: rgba(63, 61, 86, 0.4);
+}
+
+.changelog-entry .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+
+    background: #27AB83;
+    box-shadow: 0px 0px 4px #27AB83;
+
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.changelog-entry .timeline-box {
+    display: flex;
+    height: 38px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 150px;
+    position: relative;
+}
+
+.changelog-entry .text-box {
+    padding-bottom: 4em;
 }
 
 .changelog-entry .markdown {
-    opacity: 0.8;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: normal;
+    font-size: 16px;
+    line-height: 167.18%;
+
+    color: rgba(63, 61, 86, 0.8);
 }
 
 

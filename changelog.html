@@ -10,13 +10,39 @@ layout: default
     <div class="content-container">
         <div class="content">
             <h1>Changelog</h1>
-            <div class="changelog-entry">
-                <div class="date">
-                    Aug 19, 2020, 1:13 pm
+            <div class="markdown">
+                A summary of change that happened in CodeCrafters recently.
+            </div>
+            <div class="changelog-entries-box">
+                {% for i in (1..5) %}
+                <div class="changelog-entry">
+                    <div class="timeline-box-container">
+                        <div class="timeline-box">
+                            <div class="time">
+                                3 days ago
+                            </div>
+                            <div class="dot-box">
+                                <div class="dot">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <div class="title-box">
+                            <div class="title">
+                                Redis challenge is now live!
+                            </div>
+                            <div class="label">
+                                New
+                            </div>
+                        </div>
+                        <div class="markdown">
+                            After a long wait, the Redis Challenge is now live. Check it out <a href="/">here</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="markdown">
-                    After a long wait, the Redis Challenge is now live. Check it out <a href="/">here</a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
