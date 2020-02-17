@@ -148,7 +148,8 @@ body {
 }
 
 .nav .left {
-    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .nav .right {
@@ -198,6 +199,39 @@ body {
     flex-direction: column;
 }
 
+.nav .menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid rgba(63, 61, 86, 0.5);
+  padding: 2px 6px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.nav .menu-toggle.open {
+  border: 1px solid rgba(63, 61, 86, 0.8);
+}
+
+.nav .menu-toggle .bar {
+  width: 35px;
+  height: 2px;
+  background-color: rgba(63, 61, 86, 0.5);
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+.nav .menu-toggle.open .bar {
+  background-color: rgba(63, 61, 86, 0.8);
+}
+
+.nav .visible-if-menu-open {
+    display: none; 
+}
+
+.nav .visible-if-menu-open.menu-open {
+    display: initial; 
+}
+
 .nav .left, .nav .right {
     text-align: left; 
 }
@@ -216,6 +250,14 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
+    .nav .menu-toggle {
+        display: none;
+    }
+
+    .nav .visible-if-menu-open {
+        display: initial; 
+    }
+
     .nav {
         flex-direction: row;
     }
