@@ -2,19 +2,18 @@
 layout: default
 ---
 
-<div class="early-access-container">
+<div class="early-access-container bg-grey-linear">
     <div class="wip-banner" id="wip-banner">
         CodeCrafters is under development. Signup below for early access.
     </div>
-    <div class="header">
-        <div class="nav">
-        <div class="left">
-            <h1 class="link"><a href="/">codecrafters.io</a></h1>
-        </div>
-    </div>
-    <div class="markdown">
-        {{ site.data.copy.early_access_md | markdownify }}
+    {% include header.html %}
+    <div class="content-container">
+        <div class="content">
+            <div class="markdown">
+                {{ site.data.copy.early_access_md | markdownify }}
 
-        {% include early_access_form.html %}
+                {% include early_access_form.html %}
+            </div>
+        </div>
     </div>
 </div>

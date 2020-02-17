@@ -5,36 +5,23 @@ layout: default
 <div class="wip-banner" id="wip-banner">
 CodeCrafters is under development. Signup below for early access.
 </div>
-<div class="header-container">
-    <div class="header">
-        <div class="nav">
-        <div class="left">
-            <h1 class="link"><a href="/">codecrafters.io</a></h1>
-        </div>
-        <!-- <div class="right">
-                <span class="link"><a href="/">FAQ</a></span>
-                </div> -->
-        </div>
-        <div class="hero">
-            <div class="text">
-                <h2>
-                    {{ site.data.copy.heading_md | markdownify }}
-                </h2>
-                <div class="subtext">
-                    {{ site.data.copy.subheading_md | markdownify }}
-                </div>
-                <!-- <div class="buttons">
-                    <a href="{% app_url github.auth %}" class="primary-button">Sign Up</a>
-                    <a href="{% app_url github.auth %}" class="secondary-button">Explore Courses</a>
-                    </div> -->
-                <div class="buttons">
-                    <a href="/early-access" class="primary-button">Get Early Access</a>
-                    <a href="/challenges/redis" class="secondary-button">Explore</a>
-                </div>
+{% include header.html %}
+<div class="hero-container bg-grey-linear">
+    <div class="hero">
+        <div class="text">
+            <h2>
+                {{ site.data.copy.heading_md | markdownify }}
+            </h2>
+            <div class="subtext">
+                {{ site.data.copy.subheading_md | markdownify }}
             </div>
-            <div class="image">
-                <img alt="Man with code" src="/images/hero2.svg"/>
+            <div class="buttons">
+                <a href="/early-access" class="primary-button">Get Early Access</a>
+                <a href="/challenges/redis" class="secondary-button">Explore</a>
             </div>
+        </div>
+        <div class="image">
+            <img alt="Man with code" src="/images/hero2.svg"/>
         </div>
     </div>
 </div>
@@ -48,7 +35,7 @@ CodeCrafters is under development. Signup below for early access.
         </div>
     </div>
 </div>
-<div class="how-it-works-container">
+<div class="how-it-works-container bg-grey-linear">
     <div class="how-it-works">
         <h2>How CodeCrafters works</h2>
         <div class="subtitle">

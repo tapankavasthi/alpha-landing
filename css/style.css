@@ -5,6 +5,7 @@
 
 
     padding: 0px;
+
 }
 
 a {
@@ -84,7 +85,7 @@ body {
 
 /* Common Layout */
 
-.header, .how-it-works, .footer {
+.header, .hero, .how-it-works, .footer, .content {
     width: 100%;
     max-width: 960px;
     padding-left: 40px;
@@ -101,6 +102,17 @@ body {
     }
 }
 /*  */
+
+/* Common Styling */
+
+.bg-grey-linear {
+    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
+}
+
+.bg-grey-solid {
+    background-color: #F5F7FA;
+}
+/* Common Styling end*/
 
 .wip-banner {
     text-align: center;
@@ -119,10 +131,6 @@ body {
 
 .wip-banner a {
     text-decoration: underline;
-}
-
-.header-container {
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
 }
 
 .nav {
@@ -348,8 +356,6 @@ body {
 
 .how-it-works-container {
     min-height: 800px;
-    /* background: linear-gradient(180deg, #EEF1F7, #E4E7EB); */
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
 }
 
 .how-it-works {
@@ -498,16 +504,11 @@ body {
 
 .early-access-container {
     min-height: 100vh;
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
     font-family: "Montserrat", sans-serif;
     padding-bottom: 80px;
 }
 
-.early-access-container .header {
-    max-width: 40em;
-}
-
-.early-access-container .markdown {
+.early-access-container .content .markdown {
     margin-top: 1em;
 }
 
@@ -563,18 +564,16 @@ body {
 
 .challenge-page-container {
     min-height: 100vh;
-    background: linear-gradient(180deg, #F5F7FA 0%, #F5F7FA 80.73%, #E4E7EB 100%);
     font-family: "Montserrat", sans-serif;
-    padding-bottom: 80px;
 }
 
-.challenge-page-container .header, .challenge-page-container .content {
+.challenge-page-container .content {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
-    
+    padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -585,8 +584,8 @@ body {
 }
 
 .challenge-page-header {
-    margin-bottom: 2em;
-    margin-top: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
     color: #3e4c59;
 }
 
@@ -650,6 +649,10 @@ body {
     .challenge-stage-box {
         flex-direction: row;
     }
+}
+
+.early-access-container .content {
+    max-width: 40em;
 }
 
 .content .markdown {
