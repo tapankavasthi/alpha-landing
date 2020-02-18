@@ -14,8 +14,9 @@ early_access_md: |
   but we've got the core challenge experience ready and are looking for early users
   who are brave enough to try it out.
 
-  Here's the first challenge that'll be released: [Build your own
-  Redis](/challenges/redis).
+  Here're the challenges we have lined up for testing:
+    - [Build your own Redis](/challenges/redis).
+    - [Build your own Docker](/challenges/docker).
 
   The kind of person we're looking for: 
 

@@ -71,8 +71,8 @@ stages:
       ```
 
     marketing_md: |
-      In this stage, you'll implement filesystem isolation by using
-      [chroot](https://en.wikipedia.org/wiki/Chroot).
+      In this stage, you'll restrict a program's access to the host filesystem
+      by using [chroot](https://en.wikipedia.org/wiki/Chroot).
 
   - slug: "process_isolation"
     name: "Process isolation"
@@ -96,8 +96,9 @@ stages:
       ```
 
     marketing_md: |
-      In this stage, you'll implement process tree isolation by using
-      [PID namespaces](http://man7.org/linux/man-pages/man7/pid_namespaces.7.html).
+      In this stage, you'll restrict a program's access to the host's process
+      tree by using [PID
+      namespaces](http://man7.org/linux/man-pages/man7/pid_namespaces.7.html).
 
   - slug: "fetch_from_registry"
     name: "Fetch an image from the Docker Registry"
