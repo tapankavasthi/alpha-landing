@@ -57,23 +57,48 @@ redis_footer_md: |
   Access](https://codecrafters.io/early-access) program!
 
 changelogs:
-  - date: "4th February 2020"
-    title: "Redis challenge is now live"
-    type: "new"
+  - date: "18th February 2020"
+    title: "Challenge #2: Build your own Docker"
+    type: "announcement"
     description_md: |
-      After a long wait, the Redis Challenge is now live. Check it out
-      [here](/challenges/redis).
+      Our second challenge on offer will be [Build your own
+      Docker](/challenges/docker).
 
-      Join our [early access](/early-access) program to try it out!
+      In this challenge, you'll build a toy Docker implementation that can pull
+      an image from [Docker Hub](https://hub.docker.com/) and execute commands
+      in it. Along the way, you'll learn about
+      [chroot](https://en.wikipedia.org/wiki/Chroot), [kernel
+      namespaces](https://en.wikipedia.org/wiki/Linux_namespaces), the [docker
+      registry API](https://docs.docker.com/registry/spec/api/) and more.
 
-  - date: "2nd February 2020"
-    title: "Better signal handling"
+      [Early access](/early-access) trials will start for this challenge will start soon. 
+
+  - date: "14th February 2020"
+    title: "Redis: Better signal handling"
     type: "improvement"
     description_md: |
-      The signal handling aspect in the Redis challenge has been fixed, we now
-      send a SIGTERM + SIGKILL before terminating the process.
+      In the [Redis challenge](/challenges/redis), we weren't properly
+      forwarding signals to the child process when it was being terminated. This
+      resulted in multiple versions of the same program running, which caused
+      failures to bind to a port for subsequent runs of the program.
 
-      Thanks to [@Gufran](https://github.com/Gufran) for pointing this out!
+      This has now been fixed. Thanks to [@Gufran](https://github.com/Gufran)
+      for pointing this out!
+
+  - date: "13th February 2020"
+    title: "Early Access #1: Redis"
+    type: "announcement"
+    description_md: |
+      The first early access trial for [Build your own Redis](/challenges/redis)
+      has started.
+
+      Players:
+
+      - [@kshamashuttl](https://github.com/kshamashuttl)
+      - [@sunny-goel](https://github.com/sunny-goel)
+      - [@abhishekmittal](https://github.com/abhishekmittal)
+      - [@Saransh-Sharma](https://github.com/Saransh-Sharma)
+      - [@Gufran](https://github.com/Gufran)
 
   - date: "1st February 2020"
     title: "Early access is now live"
@@ -86,14 +111,16 @@ changelogs:
       Head over to [early access](/early-access) to signup! We'll invite you to
       our Discord server, where we co-ordinate early access trials. 
 
-  - date: "25th January 2020"
-    title: "Our first challenge: Redis"
+  - date: "24th January 2020"
+    title: "Challenge #1: Build your own Docker"
     type: "announcement"
     description_md: |
-      Our first challenge will be "Build your own Redis".
+      Announcing our first challenge: [Build Your Own Redis](/challenges/redis).
 
       In this challenge, you’ll build an application that can speak the Redis
-      protocol, and is capable of serving basic commands like `PING`, `ECHO`, `SET` and
-      `GET`. Along the way, you’ll learn about TCP servers, event loops and more.
+      protocol, and is capable of serving basic commands like `PING`, `ECHO`,
+      `SET` and `GET`. Along the way, you’ll learn about TCP servers, event
+      loops and more.
 
-      You can read more about the stages [here](/challenges/redis)
+      We'll launch an early access program soon so that you can try this out.
+

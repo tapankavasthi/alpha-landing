@@ -673,11 +673,14 @@ body {
 
 .markdown li {
     margin-bottom: 0.7em;
-    list-style-type: none;
     position: relative;
 }
 
-.markdown li::before {
+.early-access-container .markdown li {
+    list-style-type: none;
+}
+
+.early-access-container .markdown li::before {
     content: "";
     position: absolute;
     left: -2em;
@@ -903,13 +906,13 @@ body {
 }
 
 .changelog-entry.changelog-type-improvement .dot {
-    background: #6C63FF;
-    box-shadow: 0px 0px 2px #6C63FF;
+    background: #52606D;
+    box-shadow: 0px 0px 2px #52606D;
 }
 
 .changelog-entry.changelog-type-announcement .dot {
-    background: #52606D;
-    box-shadow: 0px 0px 2px #52606D;
+    background: #6C63FF;
+    box-shadow: 0px 0px 2px #6C63FF;
 }
 
 .changelog-entry.changelog-type-new .title {
@@ -917,11 +920,11 @@ body {
 }
 
 .changelog-entry.changelog-type-improvement .title {
-    color: #6C63FF;
+    color: #52606D;
 }
 
 .changelog-entry.changelog-type-announcement .title {
-    color: #52606D;
+    color: #6C63FF;
 }
 
 .changelog-entry.changelog-type-new .label {
@@ -929,11 +932,11 @@ body {
 }
 
 .changelog-entry.changelog-type-improvement .label {
-    background: #6C63FF;
+    background: #52606D;
 }
 
 .changelog-entry.changelog-type-announcement .label {
-    background: #52606D;
+    background: #6C63FF;
 }
 
 .changelog-entry .text-box {
