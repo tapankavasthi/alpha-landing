@@ -5,6 +5,14 @@ supported_languages: ["python", "swift"]
 starter_repos:
   python: https://github.com/codecrafters-io/redis-starter-py
   swift: https://github.com/codecrafters-io/redis-starter-swift
+marketing_intro_md: |
+  This is the first CodeCrafters challenge. We're currently running [early
+  access](/early-access) trials.
+
+  In this challenge, you’ll build an application that can speak the Redis
+  protocol, and is capable of serving basic commands like PING, ECHO, SET and
+  GET. Along the way, you’ll learn about TCP servers, event loops and more.
+
 stages:
   - slug: "init"
     name: "Bind to a port"

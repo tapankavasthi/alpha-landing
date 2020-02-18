@@ -42,20 +42,6 @@ early_access_md: |
   where you'll receive further instructions!
 
 
-redis_md: |
-  This is the first CodeCrafters challenge. We're currently running [early
-  access](/early-access) trials.
-  
-  In this challenge, you’ll build an application that can speak the Redis
-  protocol, and is capable of serving basic commands like PING, ECHO, SET and
-  GET. Along the way, you’ll learn about TCP servers, event loops and more.
-
-  This challenge has **6** stages.
-
-redis_footer_md: |
-  Interested in trying out the Redis Challenge? Signup for our [Early
-  Access](https://codecrafters.io/early-access) program!
-
 faqs:
   - slug: when-will-i-receive-my-early-access-invite
     question: When will I receive my early access invite?
