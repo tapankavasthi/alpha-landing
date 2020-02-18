@@ -1,10 +1,17 @@
 slug: "redis"
 name: "Redis"
-description: "Redis"
-supported_languages: ["python", "swift"]
+description_md: |
+  In this challenge, you'll build a toy Redis clone
+  that's capable of handling basic commands like PING, GET
+  and SET. Along the way, we'll learn about event loops, the Redis
+  Protocol and more.
+
+supported_languages: ["python", "go"]
 starter_repos:
   python: https://github.com/codecrafters-io/redis-starter-py
   swift: https://github.com/codecrafters-io/redis-starter-swift
+  go: https://github.com/codecrafters-io/redis-starter-golang
+
 marketing_intro_md: |
   This is the first CodeCrafters challenge. We're currently running [early
   access](/early-access) trials.
