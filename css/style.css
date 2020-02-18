@@ -815,23 +815,202 @@ body {
     padding-bottom: 1em;
 }
 
-.changelog-entry .date {
-    font-size: 1.4em;
-    opacity: 1;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    font-family: monospace;
+.changelog-entries-box {
+    margin-top: 3em;
+}
+
+.changelog-entry {
+    font-family: Montserrat;
+    font-style: normal;
+    display: flex;
+    position: relative;
+}
+
+.changelog-entry .timeline-box-container {
+    flex-shrink: 0;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.changelog-entry .timeline-box-container:before {
+    position: absolute;
+    right: 34px;
+    height: 2000px;
+    content: "";
+    width: 2px;
+    background-color: rgba(63, 61, 86, 0.1)
+}
+
+.changelog-entries-box .changelog-entry:first-child .timeline-box-container:before {
+    top: 20px;
+}
+
+.changelog-entries-box .changelog-entry:last-child .timeline-box-container:before {
+    height: 15px;
+}
+
+
+.changelog-entry .text-box {
+    flex-grow: 1;
+}
+
+.changelog-entry .text-box .title-box {
+    display: flex;
+    margin-bottom: 1em;
 }
 
 .changelog-entry .title {
-    font-weight: normal;
-    font-size: 1.4em;
-    padding-bottom: 0.5em;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.changelog-entry .time {
+    text-align: right;
+
+    color: rgba(63, 61, 86, 0.4);
+}
+
+.changelog-entry .time-box {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.changelog-entry .dot-box {
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.changelog-entry .title-box {
+    min-height: 38px;
+}
+
+.changelog-entry .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.changelog-entry.changelog-type-new .dot {
+    background: #27AB83;
+    box-shadow: 0px 0px 2px #27AB83;
+}
+
+.changelog-entry.changelog-type-improvement .dot {
+    background: #6C63FF;
+    box-shadow: 0px 0px 2px #6C63FF;
+}
+
+.changelog-entry.changelog-type-announcement .dot {
+    background: #52606D;
+    box-shadow: 0px 0px 2px #52606D;
+}
+
+.changelog-entry.changelog-type-new .title {
+    color: #27AB83;
+}
+
+.changelog-entry.changelog-type-improvement .title {
+    color: #6C63FF;
+}
+
+.changelog-entry.changelog-type-announcement .title {
+    color: #52606D;
+}
+
+.changelog-entry.changelog-type-new .label {
+    background: #27AB83;
+}
+
+.changelog-entry.changelog-type-improvement .label {
+    background: #6C63FF;
+}
+
+.changelog-entry.changelog-type-announcement .label {
+    background: #52606D;
+}
+
+.changelog-entry .text-box {
+    padding-bottom: 3em;
 }
 
 .changelog-entry .markdown {
-    opacity: 0.8;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: normal;
+    font-size: 16px;
+    line-height: 167.18%;
+
+    color: rgba(63, 61, 86, 0.8);
+    max-width: 540px;
 }
 
+.changelog-entry .markdown p {
+    margin-bottom: 1em;
+}
 
+.changelog-entry .text-box .title-box .label {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.changelog-entry .text-box .title-box .label {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.changelog-entry .timeline-box {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.changelog-entry .timeline-box {
+    width: 90px;
+}
+
+.changelog-entry .text-box .title-box {
+    flex-direction: column;
+    align-items: start;
+}
+
+.changelog-entry .text-box .title-box .title {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.changelog-entry .time {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 900px) {
+    .changelog-entry .timeline-box {
+        width: 150px;
+    }
+
+    .changelog-entry .text-box .title-box {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .changelog-entry .text-box .title-box .title {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .changelog-entry .time {
+        font-size: 14px;
+    }
+
+    .changelog-entry .text-box .title-box .label {
+        font-size: 14px;
+    }
+}

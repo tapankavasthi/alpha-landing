@@ -56,3 +56,44 @@ redis_footer_md: |
   Interested in trying out the Redis Challenge? Signup for our [Early
   Access](https://codecrafters.io/early-access) program!
 
+changelogs:
+  - date: "4th February 2020"
+    title: "Redis challenge is now live"
+    type: "new"
+    description_md: |
+      After a long wait, the Redis Challenge is now live. Check it out
+      [here](/challenges/redis).
+
+      Join our [early access](/early-access) program to try it out!
+
+  - date: "2nd February 2020"
+    title: "Better signal handling"
+    type: "improvement"
+    description_md: |
+      The signal handling aspect in the Redis challenge has been fixed, we now
+      send a SIGTERM + SIGKILL before terminating the process.
+
+      Thanks to [@Gufran](https://github.com/Gufran) for pointing this out!
+
+  - date: "1st February 2020"
+    title: "Early access is now live"
+    type: "new"
+    description_md: |
+      CodeCrafters is under heavy development, but the core course experience is
+      now ready to try out. The first course on offer will be [Build Your Own
+      Redis](/challenges/redis).
+
+      Head over to [early access](/early-access) to signup! We'll invite you to
+      our Discord server, where we co-ordinate early access trials. 
+
+  - date: "25th January 2020"
+    title: "Our first challenge: Redis"
+    type: "announcement"
+    description_md: |
+      Our first challenge will be "Build your own Redis".
+
+      In this challenge, you’ll build an application that can speak the Redis
+      protocol, and is capable of serving basic commands like `PING`, `ECHO`, `SET` and
+      `GET`. Along the way, you’ll learn about TCP servers, event loops and more.
+
+      You can read more about the stages [here](/challenges/redis)
