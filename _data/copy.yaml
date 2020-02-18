@@ -79,7 +79,7 @@ changelogs:
     title: "Challenge #2: Build your own Docker"
     type: "announcement"
     description_md: |
-      Our second challenge on offer will be "Build your own Docker".
+      Our second challenge on offer will be [Build your own Docker](/challenges/docker).
 
       In this challenge, you'll build a toy Docker implementation that can pull
       an image from [Docker Hub](https://hub.docker.com/) and execute commands
