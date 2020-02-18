@@ -61,8 +61,7 @@ changelogs:
     title: "Challenge #2: Build your own Docker"
     type: "announcement"
     description_md: |
-      Our second challenge on offer will be [Build your own
-      Docker](/challenges/docker).
+      Our second challenge on offer will be "Build your own Docker".
 
       In this challenge, you'll build a toy Docker implementation that can pull
       an image from [Docker Hub](https://hub.docker.com/) and execute commands
@@ -112,7 +111,7 @@ changelogs:
       our Discord server, where we co-ordinate early access trials. 
 
   - date: "24th January 2020"
-    title: "Challenge #1: Build your own Docker"
+    title: "Challenge #1: Build your own Redis"
     type: "announcement"
     description_md: |
       Announcing our first challenge: [Build Your Own Redis](/challenges/redis).
