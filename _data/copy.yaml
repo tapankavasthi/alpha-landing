@@ -56,6 +56,37 @@ redis_footer_md: |
   Interested in trying out the Redis Challenge? Signup for our [Early
   Access](https://codecrafters.io/early-access) program!
 
+faqs:
+  - slug: when-will-i-receive-my-early-access-invite
+    question: When will I receive my early access invite?
+    content_md: |
+      We're intentionally sending out invites slowly, so that we can work on
+      feedback early before the next invites hit. The maximum delay we expect
+      here is 1 month, not more.
+
+      If a friend of yours received an invite earlier than you did and you want
+      to take part in early access trials with them, you can [write to
+      us](mailto:hello@codecrafters.io) and we'll fast-track your invite.
+
+  - slug: what-is-an-early-access-trial
+    question: What is an early access trial?
+    content_md: |
+      In early access trials, groups of 4-5 people attempt an upcoming challenge
+      over a period of 2 weeks. We schedule these on our Discord server, which
+      you'll gain access to once you get an early access invite.
+
+      We use these trials to gain early feedback and iterate on challenges.
+
+      When CodeCrafters launches, no participation data from these trials will
+      be retained - we'll start from a clean slate.
+
+  - slug: where-is-my-swag
+    question: Where is my swag? 
+    content_md: |
+      If you’ve participated in an early access trial and completed the
+      challenge, you’ll receive a message on Discord asking for your mailing
+      address and T-shirt size preference. If this hasn’t happened, please [let
+      us know](mailto:hello@codecrafters.io).
 changelogs:
   - date: "18th February 2020"
     title: "Challenge #2: Build your own Docker"

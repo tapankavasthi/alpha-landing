@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="page faq-page bg-grey-linear">
+    <div class="wip-banner" id="wip-banner">
+        CodeCrafters is under development. Signup for <a href="/early-access">early access</a>
+    </div>
+    {% include header.html %}
+    <div class="content-container">
+        <div class="content">
+            <div class="content-header">
+                <h1>FAQ</h1>
+                <div class="markdown page-description">
+                    If you don't find an answer to your question here, please <a
+                    href="mailto:hello@codecrafters.io">let us know</a>
+                </div>
+            </div>
+
+            <div class="faq-entries-box">
+                {% for faq in site.data.copy.faqs %}
+                <div class="faq-entry">
+                    <h3 class="question">
+                        {{ faq.question }}
+                    </h3>
+
+                    <div class="answer markdown">
+                        {{ faq.content_md | markdownify }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
