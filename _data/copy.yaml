@@ -75,6 +75,21 @@ faqs:
       address and T-shirt size preference. If this hasn’t happened, please [let
       us know](mailto:hello@codecrafters.io).
 changelogs:
+  - date: "19th February 2020"
+    title: "Stages now advance automagically"
+    type: "improvement"
+    description_md: |
+      Earlier, users advanced from one stage to the next by manually updating the
+      `current_stage` value in `codecrafters.yml` and pushing a commit.
+
+      This is no longer required, the test runner & UI both automatically figure
+      out which stage you're attempting and act accordingly.
+
+      Thanks to [@HimaniJoshi](https://twitter.com/Himani_Joshi_) for suggesting
+      this flow!
+
+      Time to breeze through 'dem stages! 💨 🚀 
+
   - date: "18th February 2020"
     title: "Challenge #2: Build your own Docker"
     type: "announcement"
