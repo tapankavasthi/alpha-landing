@@ -1068,3 +1068,7 @@ body {
 .faq-entry .markdown p {
     margin-bottom: 1em;
 }
+
+.faq-entry .markdown ul {
+    margin-bottom: 1.5em;
+}

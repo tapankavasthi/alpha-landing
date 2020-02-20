@@ -74,6 +74,21 @@ faqs:
       challenge, you’ll receive a message on Discord asking for your mailing
       address and T-shirt size preference. If this hasn’t happened, please [let
       us know](mailto:hello@codecrafters.io).
+
+  - slug: what-all-languages-can-i-use
+    question: What all languages can I use? 
+    content_md: |
+      As of now:
+        
+      - [Redis challenge](/challenges/redis): Python, Go.
+
+      - [Docker challenge](/challenges/docker): Go.
+
+      We're always looking to add support for more languages. If you're part of
+      [Early Access](/early-access), let us know what language you'd like added
+      on our Discord server - and we'll try our best to support it in the next
+      early access trial!
+
 changelogs:
   - date: "19th February 2020"
     title: "Stages now advance automagically"
