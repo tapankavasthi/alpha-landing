@@ -14,10 +14,10 @@ learn_redis_internals_md: |
 
   - What exactly is this "event loop" that Redis uses? 
 
-  If you really wanted to understand this tangled web of TCP servers, [events
+  If one really wanted to understand this tangled web of TCP servers, [events
   loops](https://en.wikipedia.org/wiki/Event_loop) and the [Redis
-  protocol](https://redis.io/topics/protocol), there are few resources that you
-  could look at:
+  protocol](https://redis.io/topics/protocol), these are some of the resources
+  they'd probably look at:
 
   - [Official Redis Internals docs](https://redis.io/topics/internals) by
     Salvatore Sanfilippo
@@ -55,6 +55,8 @@ learn_redis_internals_md: |
 
   You'll also get to chat & compete with like-minded folks in the process. (We
   run 1-week long sessions, attempt at your own pace)
+
+  <img class="course-preview" src="/images/chat_preview.png" style="max-width: 450px;">
 
   Sounds like your jam? Signup below for early access!
 
