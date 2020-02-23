@@ -1,13 +1,10 @@
 /* CSS Resets */
 * {
-
-
     box-sizing: border-box;
     margin: 0px;
 
 
     padding: 0px;
-
 }
 
 a {
@@ -1071,4 +1068,14 @@ body {
 
 .faq-entry .markdown ul {
     margin-bottom: 1.5em;
+}
+
+
+.learn-internals-container .content {
+    max-width: 40em;
+}
+
+.learn-internals-container img.course-preview {
+    width: 100%;
+    border: 2px solid rgba(63, 61, 86, 0.1);
 }

@@ -5,6 +5,59 @@ subheading_md: |
 
   Tickle your fancy? 
 
+learn_redis_internals_md: |
+  For many of us, how Redis works under the hood is a mystery.
+
+  - How do Redis clients communicate with a Redis server? 
+
+  - How does Redis serve thousands of clients with a _single_ thread?
+
+  - What exactly is this "event loop" that Redis uses? 
+
+  If you really wanted to understand this tangled web of TCP servers, [events
+  loops](https://en.wikipedia.org/wiki/Event_loop) and the [Redis
+  protocol](https://redis.io/topics/protocol), there are few resources that you
+  could look at:
+
+  - [Official Redis Internals docs](https://redis.io/topics/internals) by
+    Salvatore Sanfilippo
+
+  - [Write your own Miniature Redis with
+    Python](https://charlesleifer.com/blog/building-a-simple-redis-server-with-python/)
+    by Charles Leifer
+
+  - [Learn by building Redis with
+    Ruby](https://www.pluralsight.com/courses/learn-by-building-redis-with-ruby)
+    by Xavier Shay
+
+  - [Build your own Redis](https://rohitpaulk.com/articles/redis-0) by Paul
+    Kuruvilla
+
+  As the author of the last item mentioned above and a reader of all other
+  similar resources, I know that these aren't easy to follow. They're
+  often theory-heavy with no code examples, or 2000 word+ series that can get
+  hard to keep up with.
+
+  Here's the part where I offer you a better solution. 
+
+  The CodeCrafters' [Build your own Redis challenge](/challenges/redis) is a
+  hands-on challenge where you'll learn Redis internals by _building_ a toy
+  Redis implementation. The application you'll build will speak the Redis
+  protocol, and will be capable of serving basic commands like PING, ECHO, SET
+  and GET.
+
+  <img class="course-preview" src="/images/redis_challenge_preview.png">
+
+  You'll proceed stage by stage, starting with a basic TCP server and building
+  up to a minimal-featured Redis implementation that can speak the Redis
+  protocol. You'll submit code via a git push, and we'll stream test results
+  directly to your terminal.
+
+  You'll also get to chat & compete with like-minded folks in the process. (We
+  run 1-week long sessions, attempt at your own pace)
+
+  Sounds like your jam? Signup below for early access!
+
 early_access_md: |
   # Early Access Program
 
