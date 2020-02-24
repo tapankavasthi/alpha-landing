@@ -1075,7 +1075,7 @@ body {
     max-width: 40em;
 }
 
-.learn-internals-container img.course-preview {
+img.course-preview {
     width: 100%;
     border: 2px solid rgba(63, 61, 86, 0.1);
 }
