@@ -145,6 +145,18 @@ faqs:
       early access trial!
 
 changelogs:
+  - date: "25th February 2020"
+    title: "Early Access #2: Docker"
+    type: "announcement"
+    description_md: |
+      The first early access trial for [Build your own Docker](/challenges/docker)
+      has started.
+
+      Players:
+
+      - [@garimaarora](https://github.com/garimaarorashuttl)
+      - [@somyakumarsodanisodani](https://github.com/somyakumarsodani)
+
   - date: "19th February 2020"
     title: "Stages now advance automagically"
     type: "improvement"
@@ -201,6 +213,9 @@ changelogs:
       - [@abhishekmittal](https://github.com/abhishekmittal)
       - [@Saransh-Sharma](https://github.com/Saransh-Sharma)
       - [@Gufran](https://github.com/Gufran)
+
+      Update: [@Gufran](https://github.com/Gufran) was the first to complete all
+      stages, and managed to do so in **under 2 hours**!
 
   - date: "1st February 2020"
     title: "Early access is now live"
