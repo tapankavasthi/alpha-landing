@@ -146,7 +146,7 @@ faqs:
 
 changelogs:
   - date: "1st March 2020"
-    title: "Initial empty commit isn't marked as a failure"
+    title: "Initial empty commit is marked as success"
     type: "improvement"
     description_md: |
       The first commit that one pushes in a challenge is an empty commit to
