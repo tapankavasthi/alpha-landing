@@ -146,6 +146,18 @@ faqs:
 
 changelogs:
   - date: "1st March 2020"
+    title: "Links now open in a new tab"
+    type: "improvement"
+    description_md: |
+      On the course page, all links inside instructions for a stage open in a
+      new tab instead of the the same one.
+
+      <img class="changelog-preview" src="/images/changelog_new_tab.png">
+
+      Thanks to [@davidjameshowell](https://github.com/davidjameshowell) for
+      suggesting this change. 
+
+  - date: "1st March 2020"
     title: "Initial empty commit is marked as success"
     type: "improvement"
     description_md: |
