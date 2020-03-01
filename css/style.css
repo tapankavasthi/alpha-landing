@@ -655,6 +655,12 @@ body {
     margin-bottom: 2em;
 }
 
+.markdown code {
+    background-color: rgba(27,31,35,.05);
+    padding: 0.2em 0.4em;
+    font-size: 1.2em;
+}
+
 .markdown p:last-child {
     margin-bottom: 0;
 }
@@ -741,7 +747,7 @@ body {
         margin-bottom: 0px;
     }
     .challenge-page-header .label {
-        margin-left: 0.5em;
+        margin-left: 1em;
         display: flex;
         align-items: center;
     }

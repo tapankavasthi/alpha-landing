@@ -1,0 +1,116 @@
+slug: "git"
+name: "Git"
+description_md: |
+  In this challenge, you'll build a toy Git implementation that can clone a
+  public repository, add commits and push them back to a git server. Along the
+  way, you'll learn about the `.git` directory, Git objects (blobs, commits,
+  trees etc.), Git's transfer protocols and much more.
+
+supported_languages: ["go"]
+starter_repos:
+  go: https://github.com/codecrafters-io/docker-starter-golang
+  
+marketing_intro_md: |
+  This is the third CodeCrafters challenge. We're currently running [early
+  access](/early-access) trials.
+
+  In this challenge, you'll build a toy Git implementation that can clone a
+  public repository, commit changes and push them back to a git server. Along
+  the way, you'll learn about the [`.git`
+  directory](http://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html),
+  a few of Git's ["plumbing"
+  commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain),
+  [Git objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
+  (blobs, commits, trees etc.), Git's [transfer
+  protocols](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols) and
+  more.
+
+stages:
+  - slug: "init"
+    name: "Initialize the .git directory"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      In this stage, you'll implement the `git init` command. You'll initialize
+      a git repository by creating a `.git` directory and some files inside it.
+
+  - slug: "create_blob"
+    name: "Create a blob object"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      In this stage, you'll add a file to your git repository by creating a blob
+      object and persisting it in the `.git/objects` directory.
+
+      You'll do this using the first of multiple ["plumbing" commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain) we'll
+      encounter in thie challenge: [`git hash-object`](https://git-scm.com/docs/git-hash-object).
+
+
+  - slug: "read_blob"
+    name: "Read a blob object"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      In the previous stage, we learnt how to persist a blob. In this stage,
+      we'll read a blob that already exists in storage by implementing the `git
+      cat-file` command.
+
+
+  - slug: "read_tree"
+    name: "Read a tree object"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      Now that we've learnt how to read/write blobs, let's move onto our next
+      Git object: [the tree](https://developer.github.com/v3/git/trees/). In
+      this stage, you'll read a tree object from storage by implementing the
+      `git ls-tree` command.
+
+  - slug: "write_tree"
+    name: "Write a tree object"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      In this stage, you'll write a tree to git storage by implementing the [`git
+      write-tree`](https://git-scm.com/docs/git-write-tree) command.
+
+      To keep things simple, we won't implement an `index`, we'll just assume
+      that all changes in the worktree are staged.
+
+  - slug: "create_commit"
+    name: "Create a commit"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      Let's move on to the last git object we'll be dealing with in this
+      challenge: the commit. In this stage, you'll create a commit with all the
+      changes in the worktree by implementing [`git commit
+      --all`](https://git-scm.com/docs/git-commit).
+
+  - slug: "clone_repository"
+    name: "Clone a repository"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      Time to interact with the real world! In this stage, you'll clone a public
+      repository from GitHub. To do this, you'll use the [Dumb
+      HTTP](https://git-scm.com/book/en/v2/Git-Internals-Transfer-Protocols)
+      transfer protocol.
+
+  - slug: "push_repository"
+    name: "Push changes to a repository"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      This is the last stage of the challenge, and probably the hardest. You'll
+      implement the equivalent of `git push`, using the [Smart
+      HTTP](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols)
+      transfer protocol.
