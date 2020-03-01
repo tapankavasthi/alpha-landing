@@ -71,16 +71,17 @@ early_access_md: |
 
   Here're the challenges we have lined up for testing:
 
-    - [Build your own Redis](/challenges/redis).
-    - [Build your own Docker](/challenges/docker).
+    - [Build your own Redis](/challenges/redis)
+    - [Build your own Docker](/challenges/docker)
+    - [Build your own Git](/challenges/git) (coming soon)
 
   The kind of person we're looking for: 
 
-  - Despises traditional algorithmic coding questions
-  - Is an experienced programmer, familiar with either Python, Ruby or Go (or
-    would like to use one of them)
   - Is interested in [Build Your Own
     X](https://github.com/danistefanovic/build-your-own-x) tutorials
+  - Is an experienced programmer, familiar with either Python, Ruby or Go (or
+    would like to use one of them)
+  - Despises traditional algorithmic coding questions
   - Can spend 1-2 hours a week trying out challenges
 
   What you'll get:
