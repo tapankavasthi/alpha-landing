@@ -146,6 +146,25 @@ faqs:
 
 changelogs:
   - date: "1st March 2020"
+    title: "Challenge #3: Build your own Git"
+    type: "announcement"
+    description_md: |
+      Our third challenge will be [Build your own Git](/challenges/git).
+
+      In this challenge, you'll build a toy Git implementation that can clone a
+      public repository, commit changes and push them back to a git server. Along
+      the way, you'll learn about the [.git
+      directory](http://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html),
+      a few of Git's ["plumbing"
+      commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain),
+      [Git objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
+      (blobs, commits, trees etc.), [Git transfer
+      protocols](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols) and
+      more.
+
+      [Early access](/early-access) trials will start for this challenge will start soon. 
+
+  - date: "1st March 2020"
     title: "Links now open in a new tab"
     type: "improvement"
     description_md: |
