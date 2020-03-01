@@ -70,6 +70,7 @@ early_access_md: |
   who are brave enough to try it out.
 
   Here're the challenges we have lined up for testing:
+
     - [Build your own Redis](/challenges/redis).
     - [Build your own Docker](/challenges/docker).
 
