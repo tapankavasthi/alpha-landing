@@ -147,7 +147,7 @@ faqs:
 changelogs:
   - date: "1st March 2020"
     title: "Challenge #3: Build your own Git"
-    type: "announcement"
+    type: "new"
     description_md: |
       Our third challenge will be [Build your own Git](/challenges/git).
 
@@ -250,7 +250,7 @@ changelogs:
 
   - date: "18th February 2020"
     title: "Challenge #2: Build your own Docker"
-    type: "announcement"
+    type: "new"
     description_md: |
       Our second challenge on offer will be [Build your own Docker](/challenges/docker).
 
@@ -306,7 +306,7 @@ changelogs:
 
   - date: "24th January 2020"
     title: "Challenge #1: Build your own Redis"
-    type: "announcement"
+    type: "new"
     description_md: |
       Announcing our first challenge: [Build Your Own Redis](/challenges/redis).
 
