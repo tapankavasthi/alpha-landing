@@ -135,7 +135,7 @@ faqs:
     content_md: |
       As of now:
         
-      - [Redis challenge](/challenges/redis): Python, Go.
+      - [Redis challenge](/challenges/redis): Python, Go, PHP.
 
       - [Docker challenge](/challenges/docker): Go.
 
