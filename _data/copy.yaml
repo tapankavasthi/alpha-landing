@@ -145,6 +145,35 @@ faqs:
       early access trial!
 
 changelogs:
+  - date: "1st March 2020"
+    title: "Initial empty commit isn't marked as a failure"
+    type: "improvement"
+    description_md: |
+      The first commit that one pushes in a challenge is an empty commit to
+      activate the first stage. The discord bot no longer harshly advertises
+      this commit as "☠ attempt failed ☠".
+
+      Thanks for [@davidjameshowell](https://github.com/davidjameshowell) &
+      [@PurHur](https://github.com/PurHur) for pointing this out!
+
+  - date: "29th February 2020"
+    title: "Early Access #4: Redis"
+    type: "announcement"
+    description_md: |
+      The second early access trial for [Build your own Redis](/challenges/redis)
+      has started.
+
+      Players:
+
+      - [@abhijat](https://github.com/abhijat)
+      - [@PurHur](https://github.com/PurHur)
+      - [@rohitpaulk](https://github.com/rohitpaulk)
+      - [@duaraghav8](https://github.com/duaraghav8)
+      - [@davidjameshowell](https://github.com/davidjameshowell)
+      - [@CodeMangler](https://github.com/CodeMangler)
+      - [@hariscodes](https://github.com/hariscodes)
+      - [@jaballes](https://github.com/jaballes)
+
   - date: "27th February 2020"
     title: "Early Access #3: Docker"
     type: "announcement"
