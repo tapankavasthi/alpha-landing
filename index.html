@@ -60,10 +60,10 @@ layout: default_tailwind
         <div class="flex items-center
                     flex-col-reverse md:flex-row
                     py-16 md:py-20 md:px-10">
-            <div class="image max-w-xs mt-16 md:mt-0">
-                <img alt="Man with code" src="{{ section.image }}"/>
+            <div class="image max-w-xs mt-16 md:mt-0 flex-grow">
+                <img src="{{ section.image }}"/>
             </div>
-            <div class="text md:ml-16">
+            <div class="text md:max-w-md md:ml-16">
                 <div class="font-bold text-xl md:text-2xl mb-8">
                     {{ section.heading }}
                 </div>
