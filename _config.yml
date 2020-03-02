@@ -34,6 +34,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-timeago
+  - jekyll-postcss
+  - jekyll-purgecss
 
 jekyll_timeago:
   depth: 1

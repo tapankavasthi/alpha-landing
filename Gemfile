@@ -4,8 +4,8 @@ source "https://rubygems.org"
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
 #
 #     bundle exec jekyll serve
-#
 # This will help ensure the proper Jekyll version is running.
+#
 # Happy Jekylling!
 gem "jekyll", "~> 4.0.0"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
@@ -17,6 +17,8 @@ gem "minima", "~> 2.5"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-timeago"
+  gem "jekyll-postcss"
+  gem "jekyll-purgecss"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
