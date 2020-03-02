@@ -1,4 +1,4 @@
-<div class="shadow bg-gray-100">
+<div class="shadow bg-gray-100" style="border-top: 2px solid #2c7a7b;">
     <div class="container lg:max-w-screen-lg mx-auto flex items-stretch flex-col md:flex-row">
         <div class="flex items-center justify-between">
             <div class="text-gray-700 pr-5 text-sm px-6 py-4 flex-grow">
@@ -11,6 +11,7 @@
                 height="24"><path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
             </button>
         </div>
+        <!-- Desktop -->
         <div class="hidden md:flex items-center flex-grow">
             <div class="bg-gray-400 w-px h-5">
             </div>
@@ -24,11 +25,14 @@
             </a>
             <div class="flex justify-end flex-grow">
                 <a href="/changelog"
-                class="header-link text-sm px-6 py-3">
+                class="bg-indigo-500 hover:bg-indigo-600
+                       text-white text-xs uppercase font-bold
+                       px-3 mx-3 py-2 rounded-lg">
                     Early Access
                 </a>
             </div>
         </div>
+        <!-- Mobile -->
         <div class="hidden md:hidden flex-col items-center flex-grow px-4" id="expanded-nav-content">
             <div class="bg-gray-400 h-px w-full">
             </div>

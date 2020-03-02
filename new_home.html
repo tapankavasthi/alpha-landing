@@ -2,7 +2,7 @@
 layout: default_tailwind
 ---
 
-<div class="bg-gray-200 min-h-screen pb-40">
+<div class="bg-gray-200 min-h-screen">
     {% include tw_header.html %}
 
     <div class="container lg:max-w-screen-lg mx-auto px-6 text-gray-700">
@@ -52,17 +52,19 @@ layout: default_tailwind
             How CodeCrafters Works
         </h2>
         <p class="text-lg max-w-lg mb-16">
-            Learning on CodeCrafters is quite different from learning
-            from other programming websites. Here's how it works.
+            Learning on CodeCrafters is quite different from other programming
+            websites. Here's how it works.
         </p>
         {% for section in site.data.tw-how-it-works %}
         <div class="h-px bg-gray-400"></div>
-        <div class="flex items-center py-20 px-10">
-            <div class="image max-w-xs">
+        <div class="flex items-center
+                    flex-col-reverse md:flex-row
+                    py-16 md:py-20 md:px-10">
+            <div class="image max-w-xs mt-16 md:mt-0">
                 <img alt="Man with code" src="{{ section.image }}"/>
             </div>
-            <div class="text ml-16">
-                <div class="font-bold text-xl mb-6">
+            <div class="text md:ml-16">
+                <div class="font-bold text-xl md:text-2xl mb-8">
                     {{ section.heading }}
                 </div>
                 <div class="text-lg">
@@ -71,5 +73,17 @@ layout: default_tailwind
             </div>
         </div>
         {% endfor %}
+    </div>
+    <div class="bg-teal-700">
+        <div class="container lg:max-w-screen-lg mx-auto px-6 text-gray-700 py-32">
+            <p class="text-3xl text-gray-200 font-bold mb-6">
+                Sounds interesting, doesn't it?
+            </p>
+            <p class="text-lg text-gray-200 max-w-3xl">
+                We thought so. <br/><br/>
+
+                Care to join our <a href="/early-access" class="font-bold underline">early access</a> program?
+            </p>
+        </div>
     </div>
 </div>
