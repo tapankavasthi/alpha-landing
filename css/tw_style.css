@@ -7,9 +7,17 @@
 @tailwind utilities;
 
 .header-link {
-    @apply block text-gray-600;
+    @apply block text-gray-700;
 }
 
 .header-link:hover {
-    @apply text-gray-700;
+    @apply text-gray-800;
+}
+
+.button {
+    @apply rounded-md px-4 py-3 shadow cursor-pointer;
+}
+
+.button:hover {
+    @apply shadow-md;
 }

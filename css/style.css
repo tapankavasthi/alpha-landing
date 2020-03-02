@@ -137,6 +137,7 @@ body {
 .header-container {
     box-shadow: 0px 2px 2px 0px rgba(63, 61, 86, 0.1);
     position: relative; /* This affects shadows?? */
+    border-top: 2px solid #2c7a7b;
 }
 
 .nav {

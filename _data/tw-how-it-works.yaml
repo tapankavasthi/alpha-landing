@@ -1,0 +1,30 @@
+- heading: "Learn by building"
+  description: |
+    In our challenges, you'll learn about everyday programming tools by
+    building them from scratch.
+
+    <br/><br/>
+
+    Knowing how something works under the hood is a very effective way to learn!
+  image: "/images/tw_hiw1.svg"
+
+- heading: "Interactive feedback"
+  description: |
+    Our courses are broken down into byte-sized lessons, each with its own
+    comprehensive test suite.
+
+    <br/><br/>
+
+    Receive helpful feedback as you progress through lessons.
+  image: "/images/tw_hiw2.svg"
+    
+- heading: "Work on your machine"
+  description: |
+    Not a fan of online code editors? We've got you covered!
+
+    <br/><br/>
+
+    Download code and work in the comfort of your own editor. Submit with a Git
+    push when you're ready. Test results are streamed directly to your terminal.
+  image: "/images/tw_hiw3.svg"
+    

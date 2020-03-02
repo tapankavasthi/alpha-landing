@@ -1,80 +1,90 @@
 ---
-layout: default
+layout: default_tailwind
 ---
 
-{% include wip_banner.html %}
-{% include header.html %}
-<div class="hero-container bg-grey-linear">
-    <div class="hero">
-        <div class="text">
-            <h2>
-                {{ site.data.copy.heading_md | markdownify }}
-            </h2>
-            <div class="subtext">
-                {{ site.data.copy.subheading_md | markdownify }}
-            </div>
-            <div class="buttons">
-                <a href="/early-access" class="primary-button">Get Early Access</a>
-                <a href="/challenges/redis" class="secondary-button">Explore</a>
-            </div>
-        </div>
-        <div class="image">
-            <img alt="Man with code" src="/images/hero2.svg"/>
-        </div>
-    </div>
-</div>
-<div class="quote-container">
-    <div class="quote">
-        <div class="text">
-        "What I cannot create, <br /> I do not understand"
-        </div>
-        <div class="author">
-        - Richard Feynman
-        </div>
-    </div>
-</div>
-<div class="how-it-works-container bg-grey-linear">
-    <div class="how-it-works">
-        <h2>How CodeCrafters works</h2>
-        <div class="subtitle">
-        Learning on CodeCrafters is quite different from other programming
-        websites. Here's how it works.
-        </div>
+<div class="bg-gray-200 min-h-screen">
+    {% include tw_header.html %}
 
-        {% for section in site.data.how-it-works %}
-        <div class="hiw-section">
-        <div class="image">
-            <img alt="Man with code" src="{{ section.image }}"/>
-        </div>
-        <div class="text">
-            <div class="heading">
-            {{ section.heading }}
+    <div class="container lg:max-w-screen-lg mx-auto px-6 text-gray-700">
+        <div class="md:flex items-center py-10 md:py-20 lg:py-40 justify-between">
+            <div class="max-w-sm mx-auto md:mx-0 md:mr-8 md:max-w-lg text-center md:text-left">
+                <h1 class="text-4xl uppercase font-black mb-6 leading-tight">
+                    Software Construction <span class="text-teal-500">Demystified</span>
+                </h1>
+                <p class="text-xl mb-4 leading-relaxed">
+                    CodeCrafters is a set of <span class="font-bold text-teal-500">advanced</span> programming challenges
+                    where you build programming tools like Git, Redis and Docker from scratch.
+                </p>
+                <p class="text-xl mb-6">
+                    Tickle your fancy?
+                </p>
+                <a href="/early-access"
+                class="button block sm:inline-block
+                       mb-4
+                       text-white bg-teal-600 hover:bg-teal-700">
+                    Get Early Access
+                </a>
+                <a href="/challenges/git"
+                class="button block sm:inline-block
+                       mb-4 sm:ml-2
+                       bg-white text-gray-600 hover:text-gray-700">
+                    Explore
+                </a>
             </div>
-            <div class="description">
-            {{ section.description }}
+            <div class="hidden sm:block max-w-lg py-8">
+                <img
+                    alt="Programmer" src="/images/hero3.svg"/>
             </div>
         </div>
+    </div>
+    <div class="bg-teal-700 py-40 text-center">
+        <p class="pb-2 text-gray-100 text-2xl sm:text-3xl">
+            "What I cannot create, <br/>
+            I do not understand"
+        </p>
+        <p class="text-sm text-gray-400">
+            - Richard Feynman
+        </p>
+    </div>
+
+    <div class="container lg:max-w-screen-lg mx-auto px-6 text-gray-700 py-20">
+        <h2 class="text-xl md:text-3xl font-bold mb-6">
+            How CodeCrafters Works
+        </h2>
+        <p class="text-lg max-w-lg mb-16">
+            Learning on CodeCrafters is quite different from other programming
+            websites. Here's how it works.
+        </p>
+        {% for section in site.data.tw-how-it-works %}
+        <div class="h-px bg-gray-400"></div>
+        <div class="flex items-center
+                    flex-col-reverse md:flex-row
+                    py-16 md:py-20 md:px-10">
+            <div class="image max-w-xs mt-16 md:mt-0 flex-grow">
+                <img src="{{ section.image }}"/>
+            </div>
+            <div class="text md:max-w-md md:ml-16">
+                <div class="font-bold text-xl md:text-2xl mb-8">
+                    {{ section.heading }}
+                </div>
+                <div class="text-lg">
+                    {{ section.description }}
+                </div>
+            </div>
         </div>
         {% endfor %}
-
-        <div class="cta">
-        <span class="text">
-            Sounds interesting? Signup for early access!
-        </span>
-
-        <a href="/early-access" class="primary-button">Sign Up</a>
+    </div>
+    <div class="bg-teal-700">
+        <div class="container lg:max-w-screen-lg mx-auto px-6 text-gray-700 py-32">
+            <p class="text-2xl md:text-3xl text-gray-100 font-bold mb-10">
+                Sounds interesting, doesn't it?
+            </p>
+            <p class="text-lg text-gray-200 max-w-3xl mb-4">
+                We thought so.
+            </p>
+            <p class="text-lg text-gray-200 max-w-3xl">
+                Care to join our <a href="/early-access" class="font-bold underline">early access</a> program?
+            </p>
         </div>
     </div>
 </div>
-<!-- <div class="footer-container">
-    <div class="footer">
-    <div class="left">
-    <a href="/" class="link">faq</a>
-    </div>
-
-    <div class="right">
-    <a href="/" class="link">terms</a>
-    <a href="/" class="link">privacy</a>
-    </div>
-    </div>
-    </div> -->
