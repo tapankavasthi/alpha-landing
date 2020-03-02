@@ -2,40 +2,42 @@
 layout: default_tailwind
 ---
 
-<div class="bg-gray-100 min-h-screen">
+<div class="bg-gray-200 min-h-screen pb-40">
     {% include tw_header.html %}
 
     <div class="container lg:max-w-screen-lg mx-auto px-6 text-gray-700">
-        <div class="md:flex items-center py-10 md:py-20 lg:py-24 justify-between">
-            <div class="max-w-sm mx-auto md:mx-0 md:max-w-lg text-center md:text-left">
+        <div class="md:flex items-center py-10 md:py-20 lg:py-40 justify-between">
+            <div class="max-w-sm mx-auto md:mx-0 md:mr-8 md:max-w-lg text-center md:text-left">
                 <h1 class="text-4xl uppercase font-black mb-4 leading-tight">
                     Software Construction <span class="text-teal-500">Demystified</span>
                 </h1>
-                <p class="text-lg mb-4 leading-relaxed">
+                <p class="text-xl mb-4 leading-relaxed">
                     CodeCrafters is a set of <span class="font-bold text-teal-500">advanced</span> programming challenges
                     where you build programming tools like Git, Redis and Docker from scratch.
                 </p>
-                <p class="text-lg mb-6">
+                <p class="text-xl mb-6">
                     Tickle your fancy?
                 </p>
                 <a href="/early-access"
-                class="block sm:inline-block
-                        text-lg text-white rounded bg-teal-600 p-4 mb-4">
+                class="button block sm:inline-block
+                       mb-4
+                       text-white bg-teal-600 hover:bg-teal-700">
                     Get Early Access
                 </a>
                 <a href="/explore"
-                class="block sm:inline-block sm:ml-2
-                        text-lg rounded text-teal-600 border border-solid border-teal-600 p-4 mb-4">
+                class="button block sm:inline-block
+                       mb-4 sm:ml-2
+                       bg-white text-gray-600 hover:text-gray-700">
                     Explore
                 </a>
             </div>
             <div class="hidden sm:block max-w-lg py-8">
                 <img
-                    alt="Programmer" src="/images/hero2.svg"/>
+                    alt="Programmer" src="/images/hero3.svg"/>
             </div>
         </div>
     </div>
-    <div class="bg-gray-700 py-16 text-center">
+    <div class="bg-teal-700 py-24 text-center">
         <p class="pb-2 text-gray-100 text-xl">
             "What I cannot create, <br/>
             I do not understand"
@@ -43,5 +45,31 @@ layout: default_tailwind
         <p class="text-sm text-gray-400">
             - Richard Feynman
         </p>
+    </div>
+
+    <div class="container lg:max-w-screen-lg mx-auto px-6 text-gray-700 py-20">
+        <h2 class="text-3xl font-bold mb-6">
+            How CodeCrafters Works
+        </h2>
+        <p class="text-lg max-w-lg mb-16">
+            Learning on CodeCrafters is quite different from learning
+            from other programming websites. Here's how it works.
+        </p>
+        {% for section in site.data.tw-how-it-works %}
+        <div class="h-px bg-gray-400"></div>
+        <div class="flex items-center py-20 px-10">
+            <div class="image max-w-xs">
+                <img alt="Man with code" src="{{ section.image }}"/>
+            </div>
+            <div class="text ml-16">
+                <div class="font-bold text-xl mb-6">
+                    {{ section.heading }}
+                </div>
+                <div class="text-lg">
+                    {{ section.description }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>

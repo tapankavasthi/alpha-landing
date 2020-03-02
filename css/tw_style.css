@@ -13,3 +13,11 @@
 .header-link:hover {
     @apply text-gray-800;
 }
+
+.button {
+    @apply rounded-md px-4 py-3 shadow cursor-pointer;
+}
+
+.button:hover {
+    @apply shadow-md;
+}
