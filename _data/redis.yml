@@ -18,6 +18,8 @@ marketing_intro_md: |
   protocol, and is capable of serving basic commands like PING, ECHO, SET and
   GET. Along the way, you’ll learn about TCP servers, event loops and more.
 
+  <img class="course-preview" src="/images/redis_challenge_preview.png">
+
 stages:
   - slug: "init"
     name: "Bind to a port"
