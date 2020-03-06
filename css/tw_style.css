@@ -21,3 +21,15 @@
 .button:hover {
     @apply shadow-md;
 }
+
+.label {
+    @apply whitespace-no-wrap text-xs uppercase font-bold px-3 py-2 rounded-lg;
+}
+
+.label-indigo {
+    @apply bg-indigo-500 text-white;
+}
+
+.label-gray {
+    @apply bg-gray-500 text-white;
+}

@@ -2,4 +2,115 @@
 layout: default_tailwind
 ---
 
-{% include tw_header.html %}
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<div class="bg-gray-200 min-h-screen">
+    {% include tw_header.html %}
+
+    <div class="container lg:max-w-screen-lg mx-auto px-6 pb-20">
+        <div class="mt-12 mb-8 text-gray-700 text-3xl font-bold">
+            Challenges
+        </div>
+        <div class="grid col-gap-8 row-gap-8 grid-cols-1 md:grid-cols-2 mb-12">
+            {% for challenge in site.data.challenges %}
+                <a href="/challenges/{{ challenge.slug }}"
+                   class="
+                         flex flex-col
+                         shadow hover:shadow-md
+                         text-gray-700
+                         ">
+                    <!-- Top Border -->
+                    <div class="
+                                h-1
+                                shadow
+                                {% if challenge.state == "early-access" %}
+                                bg-indigo-500
+                                {% endif %}
+                                {% if challenge.state == "coming-soon" %}
+                                bg-gray-500
+                                {% endif %}
+                                flex-shrink-0">
+                    </div>
+                    <!-- Card Background -->
+                    <div class="flex-grow
+                                flex flex-col
+                                pl-6 pr-0 pt-4 pb-4 bg-white">
+                        <!-- Name, Description, Logo -->
+                        <div class="flex flex-grow pb-2">
+                            <div class="flex-grow pr-4">
+                                <div class="flex flex-wrap items-center mb-3">
+                                    <div class="text-lg font-bold text-gray-700 my-3 mr-3">
+                                        {{ challenge.name }}
+                                    </div>
+
+                                    <div class="flex mr-3">
+                                        <!-- languages -->
+                                        <div class="h-4 flex items-center flex-shrink-0 text-teal-500 text-lg">
+                                            {% for lang in challenge.languages %}
+                                            <div class="mr-2">
+                                                <i class="devicon-{{lang.icon}}-plain"></i>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-md flex-grow text-gray-600">
+                                    {{ challenge.description }}
+                                </div>
+                            </div>
+                            <div class="pt-6 flex flex-shrink-0 items-center w-16 overflow-hidden">
+                                <div class="h-32">
+                                    <div class="w-64">
+                                        <img class="h-24" src="/images/challenge-logo-{{challenge.slug}}.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Meta + Label -->
+                        <div class="flex items-center">
+                            {% if challenge.state == "early-access" %}
+                            <!-- avatars -->
+                            <div class="mr-5 h-5 flex-shrink-0">
+                                {% for avatar in challenge.example_avatars %}
+                                <div class="w-2 inline-block">
+                                    <div class="w-5 block">
+                                        <img src="{{ avatar }}" class="rounded-full border border-gray-400 shadow" />
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <!-- online indicator -->
+                            <div class="w-1 h-1 bg-teal-500 rounded-full mr-1">
+                            </div>
+                            <div class="text-xs text-gray-500 flex-shrink-0">
+                                {{ challenge.player_count }} players
+                            </div>
+                            {% endif %}
+
+                            <!-- Label -->
+                            <div class="flex flex-grow justify-end">
+                                {% if challenge.state == "early-access" %}
+                                    <div class="label label-indigo mx-4 flex-grow-0">
+                                        Early Access
+                                    </div>
+                                {% endif %}
+                                {% if challenge.state == "coming-soon" %}
+                                    <div class="label label-gray mx-4 flex-grow-0">
+                                        Coming Soon
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <p class="text-gray-600 text-lg mb-4">
+            Want to try out these challenges? (and help decide what the next challenges will be!)
+        </p>
+        <p class="text-gray-600 text-lg">
+            Signup for <a href="/early-access" class="text-teal-500 font-bold underline">early access</a>.
+        </p>
+    </div>
+</div>
