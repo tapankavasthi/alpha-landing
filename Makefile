@@ -1,2 +1,15 @@
 serve:
-	be jekyll serve --livereload
+	bundle exec jekyll serve --livereload
+
+copy_course_files:
+	hub api \
+		repos/rohitpaulk/codecrafters-server/contents/codecrafters/store/data/redis.yml \
+		| jq -r .content \
+		| base64 -d \
+		> _data/redis.yml
+
+	hub api \
+		repos/rohitpaulk/codecrafters-server/contents/codecrafters/store/data/docker.yml \
+		| jq -r .content \
+		| base64 -d \
+		> _data/docker.yml

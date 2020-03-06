@@ -11,9 +11,6 @@ starter_repos:
   go: https://github.com/codecrafters-io/docker-starter-golang
   
 marketing_intro_md: |
-  This is the third CodeCrafters challenge. We're currently running [early
-  access](/early-access) trials.
-
   In this challenge, you'll build a toy Git implementation that can clone a
   public repository, commit changes and push them back to a git server. Along
   the way, you'll learn about the [`.git`
