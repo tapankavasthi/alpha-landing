@@ -29,3 +29,7 @@
 .label-indigo {
     @apply bg-indigo-500 text-white;
 }
+
+.label-gray {
+    @apply bg-gray-500 text-white;
+}

@@ -1,5 +1,6 @@
 - slug: "redis"
   name: "Build your own Redis"
+  state: "early-access"
   description: |
     Learn about TCP servers, events loops, the REST protocol and more
   example_avatars:
@@ -17,6 +18,7 @@
 
 - slug: "docker"
   name: "Build your own Docker"
+  state: "early-access"
   description: |
     Learn about chroot, kernel namespaces, the docker registry API and more
   example_avatars:
@@ -26,23 +28,13 @@
   languages:
     - name: Go
       icon: "go"
-  player_count: 12
+  player_count: 4
 
 - slug: "git"
+  state: "coming-soon"
   name: "Build your own Git"
   description: |
     Learn about git objects, plumbing commands, git transfer protocols and more
-  example_avatars:
-    - /images/sample-avatar-1.png
-    - /images/sample-avatar-2.png
-    - /images/sample-avatar-3.png
   example_languages:
     - /images/
-  languages:
-    - name: Python
-      icon: "python"
-    - name: Ruby
-      icon: "ruby"
-    - name: Go
-      icon: "go"
-  player_count: 3
+  coming_soon: true

@@ -8,8 +8,8 @@ layout: default_tailwind
 <div class="bg-gray-200 min-h-screen">
     {% include tw_header.html %}
 
-    <div class="container lg:max-w-screen-lg mx-auto px-6">
-        <div class="my-10 text-gray-700 text-3xl font-bold">
+    <div class="container lg:max-w-screen-lg mx-auto px-6 pb-20">
+        <div class="mt-12 mb-8 text-gray-700 text-3xl font-bold">
             Challenges
         </div>
         <div class="grid col-gap-8 row-gap-8 grid-cols-1 md:grid-cols-2 mb-12">
@@ -21,7 +21,16 @@ layout: default_tailwind
                          text-gray-700
                          ">
                     <!-- Top Border -->
-                    <div class="h-1 shadow bg-indigo-500 flex-shrink-0">
+                    <div class="
+                                h-1
+                                shadow
+                                {% if challenge.state == "early-access" %}
+                                bg-indigo-500
+                                {% endif %}
+                                {% if challenge.state == "coming-soon" %}
+                                bg-gray-500
+                                {% endif %}
+                                flex-shrink-0">
                     </div>
                     <!-- Card Background -->
                     <div class="flex-grow
@@ -46,7 +55,7 @@ layout: default_tailwind
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-sm flex-grow text-gray-600">
+                                <div class="text-md flex-grow text-gray-600">
                                     {{ challenge.description }}
                                 </div>
                             </div>
@@ -60,6 +69,7 @@ layout: default_tailwind
                         </div>
                         <!-- Meta + Label -->
                         <div class="flex items-center">
+                            {% if challenge.state == "early-access" %}
                             <!-- avatars -->
                             <div class="mr-5 h-5 flex-shrink-0">
                                 {% for avatar in challenge.example_avatars %}
@@ -76,23 +86,31 @@ layout: default_tailwind
                             <div class="text-xs text-gray-500 flex-shrink-0">
                                 {{ challenge.player_count }} players
                             </div>
+                            {% endif %}
 
                             <!-- Label -->
                             <div class="flex flex-grow justify-end">
-                                <div class="label label-indigo mx-4 flex-grow-0">
-                                    Early Access
-                                </div>
+                                {% if challenge.state == "early-access" %}
+                                    <div class="label label-indigo mx-4 flex-grow-0">
+                                        Early Access
+                                    </div>
+                                {% endif %}
+                                {% if challenge.state == "coming-soon" %}
+                                    <div class="label label-gray mx-4 flex-grow-0">
+                                        Coming Soon
+                                    </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
                 </a>
             {% endfor %}
         </div>
-        <p class="text-gray-700 text-lg mb-4">
-            Want to try out these challenges, or suggest others?
+        <p class="text-gray-600 text-lg mb-4">
+            Want to try out these challenges? (and help decide what the next challenges will be!)
         </p>
-        <p class="text-gray-700 text-lg">
-            Signup for <a href="/early-access" class="text-indigo-500 font-bold underline">early access</a>.
+        <p class="text-gray-600 text-lg">
+            Signup for <a href="/early-access" class="text-teal-500 font-bold underline">early access</a>.
         </p>
     </div>
 </div>
