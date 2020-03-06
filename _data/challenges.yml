@@ -1,0 +1,29 @@
+- slug: "redis"
+  name: "Build your own Redis"
+  description: |
+    Learn about TCP servers, events loops, the REST protocol and more
+  example_avatars:
+    - https://github.com/rohitpaulk.png
+    - https://github.com/Gufran.png
+    - https://github.com/duaraghav8.png
+  player_count: 16
+
+- slug: "docker"
+  name: "Build your own Docker"
+  description: |
+    Learn about chroot, kernel namespaces, the docker registry API and more
+  example_avatars:
+    - https://github.com/duaraghav8.png
+    - https://github.com/rohitpaulk.png
+    - https://github.com/Gufran.png
+  player_count: 12
+
+- slug: "git"
+  name: "Build your own Git"
+  description: |
+    Learn about git objects, plumbing commands, git transfer protocols and more
+  example_avatars:
+    - https://github.com/Gufran.png
+    - https://github.com/duaraghav8.png
+    - https://github.com/rohitpaulk.png
+  player_count: 3
