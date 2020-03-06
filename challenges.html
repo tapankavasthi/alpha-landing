@@ -2,6 +2,9 @@
 layout: default_tailwind
 ---
 
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 <div class="bg-gray-200 min-h-screen">
     {% include tw_header.html %}
 
@@ -9,7 +12,7 @@ layout: default_tailwind
         <div class="my-10 text-gray-700 text-3xl font-bold">
             Challenges
         </div>
-        <div class="grid col-gap-8 row-gap-8 grid-cols-1 sm:grid-cols-2 mb-12">
+        <div class="grid col-gap-8 row-gap-8 grid-cols-1 md:grid-cols-2 mb-12">
             {% for challenge in site.data.challenges %}
                 <a href="/challenges/{{ challenge.slug }}"
                    class="
@@ -23,12 +26,25 @@ layout: default_tailwind
                     <!-- Card Background -->
                     <div class="flex-grow
                                 flex flex-col
-                                p-6 pr-0 pb-4 bg-white">
+                                pl-6 pr-0 pt-4 pb-4 bg-white">
                         <!-- Name, Description, Logo -->
                         <div class="flex flex-grow pb-2">
                             <div class="flex-grow pr-4">
-                                <div class="text-lg font-bold text-gray-700 mb-3">
-                                    {{ challenge.name }}
+                                <div class="flex flex-wrap items-center mb-3">
+                                    <div class="text-lg font-bold text-gray-700 my-3 mr-3">
+                                        {{ challenge.name }}
+                                    </div>
+
+                                    <div class="flex mr-3">
+                                        <!-- languages -->
+                                        <div class="h-4 flex items-center flex-shrink-0 text-teal-500 text-lg">
+                                            {% for lang in challenge.languages %}
+                                            <div class="mr-2">
+                                                <i class="devicon-{{lang.icon}}-plain"></i>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="text-sm flex-grow text-gray-600">
                                     {{ challenge.description }}
@@ -60,6 +76,8 @@ layout: default_tailwind
                             <div class="text-xs text-gray-500 flex-shrink-0">
                                 {{ challenge.player_count }} players
                             </div>
+
+                            <!-- Label -->
                             <div class="flex flex-grow justify-end">
                                 <div class="label label-indigo mx-4 flex-grow-0">
                                     Early Access

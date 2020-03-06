@@ -3,9 +3,16 @@
   description: |
     Learn about TCP servers, events loops, the REST protocol and more
   example_avatars:
-    - https://github.com/rohitpaulk.png
-    - https://github.com/Gufran.png
-    - https://github.com/duaraghav8.png
+    - /images/sample-avatar-1.png
+    - /images/sample-avatar-2.png
+    - /images/sample-avatar-3.png
+  languages:
+    - name: Python
+      icon: "python"
+    - name: PHP
+      icon: "php"
+    - name: Go
+      icon: "go"
   player_count: 16
 
 - slug: "docker"
@@ -13,9 +20,12 @@
   description: |
     Learn about chroot, kernel namespaces, the docker registry API and more
   example_avatars:
-    - https://github.com/duaraghav8.png
-    - https://github.com/rohitpaulk.png
-    - https://github.com/Gufran.png
+    - /images/sample-avatar-1.png
+    - /images/sample-avatar-2.png
+    - /images/sample-avatar-3.png
+  languages:
+    - name: Go
+      icon: "go"
   player_count: 12
 
 - slug: "git"
@@ -23,7 +33,16 @@
   description: |
     Learn about git objects, plumbing commands, git transfer protocols and more
   example_avatars:
-    - https://github.com/Gufran.png
-    - https://github.com/duaraghav8.png
-    - https://github.com/rohitpaulk.png
+    - /images/sample-avatar-1.png
+    - /images/sample-avatar-2.png
+    - /images/sample-avatar-3.png
+  example_languages:
+    - /images/
+  languages:
+    - name: Python
+      icon: "python"
+    - name: Ruby
+      icon: "ruby"
+    - name: Go
+      icon: "go"
   player_count: 3
