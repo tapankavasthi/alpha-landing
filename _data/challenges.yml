@@ -2,7 +2,7 @@
   name: "Build your own Redis"
   state: "early-access"
   description: |
-    Learn about TCP servers, events loops, the REST protocol and more
+    Learn about TCP servers, events loops, the Redis protocol and more
   example_avatars:
     - /images/sample-avatar-1.png
     - /images/sample-avatar-2.png
