@@ -1,0 +1,14 @@
+# The changelog page uses relative dates, let's update them once a day
+name: Trigger Netlify Build
+
+on:
+  schedule:
+    # Runs daily
+    - cron: '0 0 * * * '
+
+jobs:
+  build:
+    name: Trigger Netlify Build
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -XPOST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
