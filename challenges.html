@@ -49,7 +49,7 @@ layout: default_tailwind
                                         <div class="h-4 flex items-center flex-shrink-0 text-teal-500 text-lg">
                                             {% for lang in challenge.languages %}
                                             <div class="mr-2">
-                                                <i class="devicon-{{lang.icon}}-plain"></i>
+                                                <i class="devicon-{{lang.icon}}-plain" title="{{  lang.name }}"></i>
                                             </div>
                                             {% endfor %}
                                         </div>
