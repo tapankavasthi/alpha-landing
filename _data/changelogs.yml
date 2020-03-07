@@ -7,6 +7,20 @@
 
     <img class="changelog-preview" src="/images/changelog_redis_changes.png">
 
+- date: "3rd March 2020"
+  title: "Early Access #5: Docker"
+  type: "announcement"
+  description_md: |
+    The third early access trial for [Build your own Docker](/challenges/docker)
+    has started.
+
+    Players:
+
+    - [@pratikju](https://github.com/pratikju)
+    - [@himaniJoshi](https://github.com/himaniJoshi)
+    - [@jaskarancodes](https://github.com/jaskarancodes)
+    - [@akshaykmr](https://github.com/akshaykmr)
+
 - date: "1st March 2020"
   title: "Challenge #3: Build your own Git"
   type: "new"
