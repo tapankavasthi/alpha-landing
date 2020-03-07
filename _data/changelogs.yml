@@ -1,3 +1,12 @@
+- date: "6th March 2020"
+  title: "Tweaks to first 3 Redis challenges levels"
+  type: "improvement"
+  description_md: |
+    Based on feedback from early access users, we've tweaked the first 3 Redis
+    challenge levels to be a bit easier and follow a more natural progression.
+
+    <img class="changelog-preview" src="/images/changelog_redis_changes.png">
+
 - date: "1st March 2020"
   title: "Challenge #3: Build your own Git"
   type: "new"
