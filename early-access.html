@@ -4,18 +4,19 @@ layout: default_tailwind
 
 <div class="bg-gray-100 min-h-screen">
     {% include tw_header.html %}
-    <div class="container lg:max-w-screen-lg mx-auto px-6 pb-20 mt-10">
+    <div class="container lg:max-w-screen-lg mx-auto px-6 mt-10">
         <h1 class="text-gray-700 text-3xl font-bold mb-8">
             Early Access Program
         </h1>
-        <div class="flex flex-col lg:flex-row justify-between">
-            <div class="markdown mb-8 max-w-lg">
+        <div class="flex flex-col lg:flex-row justify-between pb-4">
+            <!-- Content -->
+            <div class="markdown max-w-lg">
                 {{ site.data.copy.early_access_md | markdownify }}
-                {% include early_access_form_tw.html %}
             </div>
-            <div class="flex-grow grid grid-cols-2 col-gap-16 row-gap-8 lg:block lg:ml-20">
+            <!-- Testimonials -->
+            <div class="flex-grow grid sm:grid-cols-2 col-gap-16 row-gap-8 lg:block lg:ml-20">
                 {% for testimonial in site.data.testimonials %}
-                <div class="flex max-w-sm py-10">
+                <div class="flex sm:max-w-sm py-4 sm:py-10">
                     <div class="flex flex-col items-center mr-4">
                         <div class="w-px bg-indigo-500 opacity-25 flex-grow my-1">
                         </div>
@@ -38,11 +39,20 @@ layout: default_tailwind
                             </a>
                         </div>
                     </div>
-
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-</div>
+    <div class="bg-gray-700">
+    <div class="container bg-gray-700 lg:max-w-screen-lg mx-auto px-6 py-20">
+        <div class="text-gray-400 mb-6">
+            Enter your email below and we'll send you an invite soon.
+        </div>
+        {% include early_access_form_tw.html %}
+        <div class="text-gray-600 mt-6 text-sm">
+            Want to know more? Checkout our <a href='/faq' class="underline">FAQ</a> and <a
+            href='/changelog' class="underline">Changelog</a>.
+        </div>
+    </div>
 </div>
