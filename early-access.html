@@ -1,16 +1,16 @@
 ---
-layout: default
+layout: default_tailwind
 ---
 
-<div class="early-access-container bg-grey-linear">
-    {% include header.html %}
-    <div class="content-container">
-        <div class="content">
-            <div class="markdown">
+<div class="bg-gray-100 min-h-screen">
+    {% include tw_header.html %}
+    <div class="container lg:max-w-screen-lg mx-auto px-6 pb-20">
+        <div class="max-w-lg mx-auto">
+            <div class="markdown mt-10 mb-8">
                 {{ site.data.copy.early_access_md | markdownify }}
-
-                {% include early_access_form.html %}
             </div>
+            {% include early_access_form_tw.html %}
         </div>
     </div>
+</div>
 </div>

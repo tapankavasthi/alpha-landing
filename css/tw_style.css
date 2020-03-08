@@ -33,3 +33,87 @@
 .label-gray {
     @apply bg-gray-500 text-white;
 }
+
+.markdown {
+    @apply text-gray-700 leading-relaxed;
+}
+
+.markdown h1 {
+    @apply text-gray-700 text-3xl font-bold mb-8;
+}
+
+.markdown p {
+    @apply mb-6;
+}
+
+.markdown a {
+    @apply text-teal-500 underline font-bold;
+}
+
+.markdown ul {
+    @apply mb-10 ml-8;
+}
+
+.markdown li {
+    @apply mb-4;
+}
+
+.markdown li {
+    @apply relative;
+}
+
+.markdown li::before {
+    content: "";
+    position: absolute;
+    left: -2em;
+    width: 1.6em;
+    height: 1.6em;
+    background-image: url('/images/tick.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.early-access-button {
+    box-shadow: 0px 0px 2px #38b2ac61;
+}
+
+/* .markdown code { */
+/*     background-color: rgba(27,31,35,.05); */
+/*     padding: 0.2em 0.4em; */
+/*     font-size: 1.2em; */
+/* } */
+
+/* .markdown p:last-child { */
+/*     margin-bottom: 0; */
+/* } */
+
+/* .markdown ul { */
+/*     margin-bottom: 2.5em; */
+    
+/* } */
+
+/* .markdown ul { */
+/*     margin-left: 2em; */
+/* } */
+
+/* .markdown li { */
+/*     margin-bottom: 0.7em; */
+/*     position: relative; */
+/* } */
+
+/* .early-access-container .markdown li { */
+/*     list-style-type: none; */
+/* } */
+
+/* .early-access-container .markdown li::before { */
+/*     content: ""; */
+/*     position: absolute; */
+/*     left: -2em; */
+/*     width: 1.6em; */
+/*     height: 1.6em; */
+/*     background-image: url('/images/tick.png'); */
+/*     background-size: 70%; */
+/*     background-repeat: no-repeat; */
+/*     background-position: center; */
+/* } */

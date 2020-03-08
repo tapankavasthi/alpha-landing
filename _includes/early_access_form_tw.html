@@ -1,0 +1,55 @@
+<form class="sm:max-w-md block" id="early-access-form">
+    <div class="bg-white shadow rounded flex flex-col sm:flex-row">
+        <input
+            type="email"
+            placeholder="email@example.com"
+            id="early-access-input"
+            class="
+                  flex-grow min-w-0
+                  px-4 py-4 sm:py-3
+                  bg-transparent placeholder-gray-500 text-gray-600
+                  text-center sm:text-left
+                  ">
+        </input>
+        <button
+            id="early-access-button"
+            type="submit"
+            class="
+                early-access-button
+                px-4 py-4 sm:py-3
+                rounded rounded-t-none
+                sm:rounded sm:rounded-l-none
+                bg-teal-500 hover:bg-teal-600 text-white flex-shrink-0">
+            Get Early Access
+        </button>
+    </div>
+    <div class="text-sm my-2 text-teal-500 font-bold" id="early-access-feedback">
+        <!-- Here's where feedback from the API is rendered -->
+    </div>
+</form>
+
+<script>
+document.getElementById("early-access-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let email = document.getElementById("early-access-input").value;
+    document.getElementById("early-access-feedback").textContent = "Registering..."
+    // Spaghetti!!
+    fetch(
+        // Change!
+        "https://codecrafters-registry.herokuapp.com/users/create",
+        {
+            'method': 'POST',
+            'body': JSON.stringify({"email_address": email}),
+            'headers': { 'Content-type': 'application/json' }
+        }
+    )
+    .then((resp) => resp.text())
+    .then(function (text) {
+        document.getElementById("early-access-feedback").textContent = text
+    })
+    .catch(function (error) {
+        console.error(error)
+        alert(error);
+    })
+})
+</script>
