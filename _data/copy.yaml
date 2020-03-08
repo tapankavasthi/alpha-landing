@@ -96,6 +96,16 @@ early_access_md: |
 
   We'd love to have you on-board.
 
+early_access_stats:
+  - number: 500+
+    text: users signed up for early access
+  - number: 3
+    text: challenges announced
+  - number: 50+
+    text: active early access users
+  - number: 8
+    text: early access trials completed
+
 
 faqs:
   - slug: when-will-i-receive-my-early-access-invite

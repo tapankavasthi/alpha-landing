@@ -45,14 +45,28 @@ layout: default_tailwind
         </div>
     </div>
     <div class="bg-gray-700">
-    <div class="container bg-gray-700 lg:max-w-screen-lg mx-auto px-6 py-20">
-        <div class="text-gray-400 mb-6">
-            Enter your email below and we'll send you an invite soon.
+    <div class="container flex bg-gray-700 lg:max-w-screen-lg mx-auto px-6 py-20">
+        <div class="max-w-lg">
+            <div class="text-gray-400 mb-6">
+                Enter your email below and we'll send you an invite soon.
+            </div>
+            {% include early_access_form_tw.html %}
+            <div class="text-gray-600 mt-6 text-sm">
+                Want to know more? Checkout our <a href='/faq' class="underline">FAQ</a> and <a
+                href='/changelog' class="underline">Changelog</a>.
+            </div>
         </div>
-        {% include early_access_form_tw.html %}
-        <div class="text-gray-600 mt-6 text-sm">
-            Want to know more? Checkout our <a href='/faq' class="underline">FAQ</a> and <a
-            href='/changelog' class="underline">Changelog</a>.
+        <div class="grid grid-cols-2 gap-6 flex-grow max-w-sm ml-20">
+            {% for stat in site.data.copy.early_access_stats %}
+            <div>
+                <div class="text-teal-500 font-bold text-3xl leading-none">
+                    {{ stat.number }}
+                </div>
+                <div class="text-sm text-gray-500 w-32">
+                    {{ stat.text }}
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
