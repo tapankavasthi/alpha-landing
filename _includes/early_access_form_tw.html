@@ -5,7 +5,8 @@
             placeholder="email@example.com"
             id="early-access-input"
             class="
-                  px-4 py-3 flex-grow min-w-0
+                  flex-grow min-w-0
+                  px-4 py-4 sm:py-3
                   bg-transparent placeholder-gray-500 text-gray-600">
         </input>
         <button
@@ -13,10 +14,10 @@
             type="submit"
             class="
                 early-access-button
-                px-4 py-3
+                px-4 py-4 sm:py-3
                 rounded-lg rounded-t-none
                 sm:rounded-lg sm:rounded-l-none
-                bg-teal-500 text-white flex-shrink-0">
+                bg-teal-500 hover:bg-teal-600 text-white flex-shrink-0">
             Get Early Access
         </button>
     </div>
@@ -33,7 +34,7 @@ document.getElementById("early-access-form").addEventListener("submit", function
     // Spaghetti!!
     fetch(
         // Change!
-        "https://codecrafters-registry.herokuapp.com/users/creat",
+        "https://codecrafters-registry.herokuapp.com/users/create",
         {
             'method': 'POST',
             'body': JSON.stringify({"email_address": email}),
@@ -42,8 +43,7 @@ document.getElementById("early-access-form").addEventListener("submit", function
     )
     .then((resp) => resp.text())
     .then(function (text) {
-        // document.getElementById("early-access-feedback").textContent = text
-        document.getElementById("early-access-feedback").textContent = "Thanks for signing up."
+        document.getElementById("early-access-feedback").textContent = text
     })
     .catch(function (error) {
         console.error(error)
