@@ -103,7 +103,7 @@ early_access_stats:
     text: challenges announced
   - number: 50+
     text: active early access users
-  - number: 8
+  - number: 6
     text: early access trials completed
 
 
