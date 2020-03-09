@@ -45,8 +45,8 @@ layout: default_tailwind
         </div>
     </div>
     <div class="bg-gray-700">
-    <div class="container flex flex-col md:flex-row bg-gray-700 lg:max-w-screen-lg mx-auto px-6 md:py-10">
-        <div class="max-w-lg py-10">
+    <div class="container flex flex-col md:flex-row bg-gray-700 lg:max-w-screen-lg mx-auto px-6 py-10 md:py-20">
+        <div class="max-w-lg pb-10 md:pb-0">
             <div class="text-gray-400 mb-6">
                 Enter your email below and we'll send you an invite soon.
             </div>
@@ -56,13 +56,13 @@ layout: default_tailwind
                 href='/changelog' class="underline">Changelog</a>.
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-6 flex-grow max-w-sm py-10 md:ml-20">
+        <div class="grid grid-flow-col-dense grid-rows-2 gap-6 flex-grow max-w-md md:max-w-sm md:ml-20">
             {% for stat in site.data.copy.early_access_stats %}
-            <div>
-                <div class="text-teal-500 font-bold text-3xl leading-none">
+            <div class="w-full">
+                <div class="text-gray-600 font-bold text-3xl leading-none">
                     {{ stat.number }}
                 </div>
-                <div class="text-sm text-gray-500 w-32">
+                <div class="text-sm text-gray-600 w-32">
                     {{ stat.text }}
                 </div>
             </div>

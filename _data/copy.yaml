@@ -97,14 +97,14 @@ early_access_md: |
   We'd love to have you on-board.
 
 early_access_stats:
+  - number: 30+
+    text: early access participants
   - number: 500+
-    text: users signed up for early access
-  - number: 3
-    text: challenges announced
-  - number: 50+
-    text: active early access users
+    text: users enrolled for early access
   - number: 6
     text: early access trials completed
+  - number: 500+
+    text: code submissions evaluated
 
 
 faqs:
