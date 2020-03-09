@@ -61,8 +61,6 @@ learn_redis_internals_md: |
   Sounds like your jam? Signup below for early access!
 
 early_access_md: |
-  # Early Access Program
-
   Hi there, I'm [Paul](https://rohitpaulk.com). 
   
   [CodeCrafters](https://codecrafters.io) is currently under active development,
@@ -96,8 +94,17 @@ early_access_md: |
 
   Sounds like your cup of tea?
 
-  Enter your email below and we'll soon send you an invite to our Discord server
-  where you'll receive further instructions!
+  We'd love to have you on-board.
+
+early_access_stats:
+  - number: 30+
+    text: early access participants
+  - number: 500+
+    text: users enrolled for early access
+  - number: 6
+    text: early access trials completed
+  - number: 500+
+    text: code submissions evaluated
 
 
 faqs:

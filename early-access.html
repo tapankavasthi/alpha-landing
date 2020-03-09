@@ -4,13 +4,69 @@ layout: default_tailwind
 
 <div class="bg-gray-100 min-h-screen">
     {% include tw_header.html %}
-    <div class="container lg:max-w-screen-lg mx-auto px-6 pb-20">
-        <div class="max-w-lg mx-auto">
-            <div class="markdown mt-10 mb-8">
+    <div class="container lg:max-w-screen-lg mx-auto px-6 mt-10">
+        <h1 class="text-gray-700 text-3xl font-bold mb-8">
+            Early Access Program
+        </h1>
+        <div class="flex flex-col lg:flex-row justify-between pb-4">
+            <!-- Content -->
+            <div class="markdown max-w-lg">
                 {{ site.data.copy.early_access_md | markdownify }}
             </div>
-            {% include early_access_form_tw.html %}
+            <!-- Testimonials -->
+            <div class="flex-grow grid sm:grid-cols-2 col-gap-16 row-gap-8 lg:block lg:ml-20">
+                {% for testimonial in site.data.testimonials %}
+                <div class="flex sm:max-w-sm py-4 sm:py-10">
+                    <div class="flex flex-col items-center mr-4">
+                        <div class="w-px bg-indigo-500 opacity-25 flex-grow my-1">
+                        </div>
+                        <div class="text-5xl text-indigo-500 leading-none h-5">
+                            &ldquo;
+                        </div>
+                        <div class="w-px bg-indigo-500 opacity-25 flex-grow my-1">
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="text-gray-600 text-sm mb-4">
+                            {{ testimonial.text }}
+                        </div>
+                        <div class="text-right text-sm text-gray-500">
+                            -
+                            <a
+                                href="{{ testimonial.link }}"
+                                class="underline">
+                                {{ testimonial.author }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>
+    <div class="bg-gray-700">
+    <div class="container flex flex-col md:flex-row bg-gray-700 lg:max-w-screen-lg mx-auto px-6 py-10 md:py-20">
+        <div class="max-w-lg pb-10 md:pb-0">
+            <div class="text-gray-400 mb-6">
+                Enter your email below and we'll send you an invite soon.
+            </div>
+            {% include early_access_form_tw.html %}
+            <div class="text-gray-600 mt-6 text-sm">
+                Want to know more? Checkout our <a href='/faq' class="underline">FAQ</a> and <a
+                href='/changelog' class="underline">Changelog</a>.
+            </div>
+        </div>
+        <div class="grid grid-flow-col-dense grid-rows-2 gap-6 flex-grow max-w-md md:max-w-sm md:ml-20">
+            {% for stat in site.data.copy.early_access_stats %}
+            <div class="w-full">
+                <div class="text-gray-600 font-bold text-3xl leading-none">
+                    {{ stat.number }}
+                </div>
+                <div class="text-sm text-gray-600 w-32">
+                    {{ stat.text }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
