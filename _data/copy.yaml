@@ -119,10 +119,20 @@ faqs:
       to take part in early access trials with them, you can [write to
       us](mailto:hello@codecrafters.io) and we'll fast-track your invite.
 
+  - slug: why-does-my-early-access-invite-expire
+    question: Why does my early access invite expire?
+    content_md: |
+      We set an expiry date on early access invites because we'd like to be able
+      to predict how many people will join the community, to plan early access
+      trials accordingly.
+
+      If your invite expired and you'd still like to be part of the early access
+      program, please [write to us](mailto:hello@codecrafters.io).
+
   - slug: what-is-an-early-access-trial
     question: What is an early access trial?
     content_md: |
-      In early access trials, groups of 4-5 people attempt an upcoming challenge
+      In early access trials, groups of 5-10 people attempt an upcoming challenge
       over a period of 2 weeks. We schedule these on our Discord server, which
       you'll gain access to once you get an early access invite.
 
