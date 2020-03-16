@@ -52,7 +52,7 @@
     - type: "completed-challenge"
       challenge: "redis"
       language: "python"
-      timestamp: "02-02-2020"
+      timestamp: "02-03-2020"
 
     - type: "started-challenge"
       challenge: "redis"

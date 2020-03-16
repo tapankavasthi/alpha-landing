@@ -43,52 +43,28 @@
                 {% endfor %}
             </div>
 
-            <div class="flex items-center">
-                <div class="text-sm text-gray-500 font-bold uppercase">
-                    March 2020
+            {% assign timeline = user | profile_timeline %}
+
+            {% for timeline_group in timeline %}
+                <div class="flex items-center">
+                    <div class="text-sm text-gray-500 font-bold uppercase">
+                        {{ timeline_group.month }}
+                    </div>
+                    <div class="ml-2 h-px bg-gray-400 flex-grow">
+                    </div>
                 </div>
-                <div class="ml-2 h-px bg-gray-400 flex-grow">
-                </div>
-            </div>
-            <ul class="py-4">
-                <li class="flex items-center mb-2">
-                    <div class="mx-4 w-2 h-2 bg-teal-600 rounded-full shadow">
-                    </div>
-                    <div class="text-gray-600">
-                        Completed the Redis challenge using Python
-                    </div>
-                </li>
-                <li class="flex items-center mb-2">
-                    <div class="mx-4 w-2 h-2 bg-teal-600 rounded-full shadow">
-                    </div>
-                    <div class="text-gray-600">
-                        Completed the Redis challenge using Nim
-                    </div>
-                </li>
-            </ul>
-            <div class="flex items-center">
-                <div class="text-sm text-gray-500 font-bold uppercase">
-                    February 2020
-                </div>
-                <div class="ml-2 h-px bg-gray-400 flex-grow">
-                </div>
-            </div>
-            <ul class="py-4">
-                <li class="flex items-center mb-2">
-                    <div class="mx-4 w-2 h-2 bg-teal-600 rounded-full shadow">
-                    </div>
-                    <div class="text-gray-600">
-                        Completed the Redis challenge using Python
-                    </div>
-                </li>
-                <li class="flex items-center mb-2">
-                    <div class="mx-4 w-2 h-2 bg-teal-600 rounded-full shadow">
-                    </div>
-                    <div class="text-gray-600">
-                        Completed the Redis challenge using Nim
-                    </div>
-                </li>
-            </ul>
+                <ul class="py-6">
+                    {% for timeline_entry in timeline_group.entries %}
+                        <li class="flex items-center mb-3">
+                            <div class="mx-4 w-2 h-2 bg-{{ timeline_entry.color }}-500 rounded-full shadow">
+                            </div>
+                            <div class="text-gray-600 markdown">
+                                {{ timeline_entry.text }}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
         </div>
     </div>
 </div>
