@@ -5,8 +5,8 @@
 
     <div class="container flex items-start flex-col sm:flex-row lg:max-w-screen-lg mx-auto px-6 pb-20 pt-8">
         <!-- Profile Section -->
-        <div class="flex-shrink-0">
-            <img src="{{ include.user.avatar_url }}" class="border-4 border-gray-400 mb-4 w-full">
+        <div class="flex-shrink-0 sm:w-56">
+            <img src="{{ include.user.avatar_url }}" class="border-2 border-gray-400 mb-4 w-full max-w-xs rounded-md">
             <div class="mb-2 text-gray-700 text-xl font-bold">
                 {{ include.user.name }}
             </div>
@@ -23,12 +23,12 @@
         <div class="mt-6 sm:mt-0 sm:ml-8 flex-grow">
             <!-- Tab Selector -->
             <div class="flex border-b border-gray-400 text-sm mb-6">
-                <div class="border-b-2 border-indigo-500 px-3 py-2 text-gray-600">
+                <a class="border-b-2 border-indigo-500 px-3 py-2 text-gray-600" href="#">
                     Overview
-                </div>
-                <div class="px-3 py-2 text-gray-500">
+                </a>
+                <a class="px-3 py-2 text-gray-500 cursor-pointer" title="Coming soon">
                     Badges
-                </div>
+                </a>
             </div>
 
             <div class="text-lg mb-4 text-gray-600">
@@ -36,59 +36,11 @@
             </div>
 
             <div class="grid col-gap-4 row-gap-4 grid-cols-1 lg:grid-cols-2 mb-12">
-                {% for challenge in site.data.challenges %}
-                    <a href="/challenges/{{ challenge.slug }}"
-                    class="
-                            flex flex-col
-                            shadow hover:shadow-md
-                            text-gray-700
-                            ">
-                        <!-- Card Background -->
-                        <div class="flex-grow
-                                    flex flex-col
-                                    pl-4 pr-0 pt-4 pb-3 bg-white
-                                    rounded-md">
-                            <!-- Name, Description, Logo -->
-                            <div class="flex flex-grow">
-                                <div class="flex-grow pr-4 pb-4">
-                                    <div class="flex-wrap">
-                                        <div class="text-lg font-bold text-gray-600 mb-3 mr-3 flex items-start">
-                                            {{ challenge.name }}
-                                        </div>
-                                    </div>
-                                    <div class="text-sm flex-grow text-gray-500">
-                                        {{ challenge.description }}
-                                    </div>
-                                </div>
-                                <div class="pt-6 flex flex-shrink-0 items-center w-16 overflow-hidden">
-                                    <div class="h-24">
-                                        <div class="w-64">
-                                            <img class="h-20" src="/images/challenge-logo-{{challenge.slug}}.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Meta + Label -->
-                            <div class="flex items-center">
-                                <div class="flex items-center">
-                                    <div class="text-teal-500">
-                                        {% for lang in include.user.languages_used %}
-                                            <i class="devicon-{{lang}}-plain mr-1" title="{{ lang }}"></i>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-
-                                <!-- Label -->
-                                <div class="flex flex-grow justify-end text-xs text-gray-400 pr-4">
-                                    <span>
-                                        <b class="text-gray-500">11%</b> completion rate
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                {% for challenge_status in include.user.challenge_status %}
+                    {% include profile_course_card.html challenge_status=challenge_status %}
                 {% endfor %}
             </div>
+
             <div class="flex items-center">
                 <div class="text-sm text-gray-500 font-bold uppercase">
                     March 2020

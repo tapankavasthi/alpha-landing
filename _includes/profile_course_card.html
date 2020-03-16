@@ -1,0 +1,52 @@
+{% assign challenge = site.data.challenges | where: "slug", include.challenge_status.slug | first %}
+
+<a href="/challenges/{{ challenge.slug }}"
+   class="
+        flex flex-col
+        shadow hover:shadow-md
+        text-gray-700
+        ">
+    <!-- Card Background -->
+    <div class="flex-grow
+                flex flex-col
+                pl-4 pr-0 pt-4 pb-3 bg-white
+                rounded-md">
+        <!-- Name, Description, Logo -->
+        <div class="flex flex-grow">
+            <div class="flex-grow pr-4 pb-4">
+                <div class="flex-wrap">
+                    <div class="text-lg font-bold text-gray-600 mb-3 mr-3 flex items-start">
+                        {{ challenge.name }}
+                    </div>
+                </div>
+                <div class="text-sm flex-grow text-gray-500">
+                    {{ challenge.description }}
+                </div>
+            </div>
+            <div class="pt-6 flex flex-shrink-0 items-center w-16 overflow-hidden">
+                <div class="h-24">
+                    <div class="w-64">
+                        <img class="h-20" src="/images/challenge-logo-{{challenge.slug}}.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Meta + Label -->
+        <div class="flex items-center">
+            <div class="flex items-center">
+                <div class="text-teal-500">
+                    {% for lang in include.challenge_status.languages_used %}
+                        <i class="devicon-{{lang}}-plain mr-1" title="{{ lang }}"></i>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Label -->
+            <div class="flex flex-grow justify-end text-xs text-gray-400 pr-4">
+                <span>
+                    <b class="text-gray-500">11%</b> completion rate
+                </span>
+            </div>
+        </div>
+    </div>
+</a>
