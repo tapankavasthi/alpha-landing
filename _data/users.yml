@@ -1,55 +1,59 @@
 - username: "abhijat"
   name: "Abhijat Malviya"
   avatar_url: https://github.com/abhijat.png
-  languages_used: ["python", "go"]
-
-  challenge_status:
-    - slug: "redis"
-      percentage_completed: 100
-      languages_used: ["python"]
-    - slug: "docker"
-      percentage_completed: 20
-      languages_used: ["go"]
-
-  events:
-    - type: "joined-early-access"
-      timestamp: "02-02-2020"
-
-    - type: "completed-challenge"
-      challenge: "redis"
-      language: "python"
-      timestamp: "02-02-2020"
-
-    - type: "started-challenge"
-      challenge: "redis"
-      language: "python"
-      timestamp: "02-02-2020"
-
-    - type: "started-challenge"
-      challenge: "docker"
-      language: "go"
-      timestamp: "05-03-2020"
+  joined_early_access_at: "03-01-2020 12:00+05:30"
 
 - username: "rohitpaulk"
   name: "Paul Kuruvilla"
   avatar_url: https://github.com/rohitpaulk.png
-  languages_used: ["python", "go"]
+  joined_early_access_at: "03-02-2020 11:00+05:30"
 
-  challenge_status:
-    - slug: "redis"
-      percentage_completed: 100
-      languages_used: ["python"]
+- username: "Saransh-Sharma"
+  name: "Saransh Sharma"
+  avatar_url: https://github.com/Saransh-Sharma.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
 
-  events:
-    - type: "joined-early-access"
-      timestamp: "02-02-2020"
+- username: "kshamashuttl"
+  name: "kshamashuttl"
+  avatar_url: https://github.com/kshamashuttl.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
 
-    - type: "completed-challenge"
-      challenge: "redis"
-      language: "python"
-      timestamp: "02-03-2020"
+- username: "sunny-goel"
+  name: "sunny-goel"
+  avatar_url: https://github.com/sunny-goel.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
 
-    - type: "started-challenge"
-      challenge: "redis"
-      language: "python"
-      timestamp: "02-02-2020"
+- username: "abhishekmittal"
+  name: "abhishekmittal"
+  avatar_url: https://github.com/abhishekmittal.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
+
+- username: "garimaarorashuttl"
+  name: "garimaarorashuttl"
+  avatar_url: https://github.com/garimaarorashuttl.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
+
+- username: "somyakumarsodani"
+  name: "somyakumarsodani"
+  avatar_url: https://github.com/somyakumarsodani.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
+
+- username: "duaraghav8"
+  name: "duaraghav8"
+  avatar_url: https://github.com/duaraghav8.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
+
+- username: "kumarmunish"
+  name: "kumarmunish"
+  avatar_url: https://github.com/kumarmunish.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
+
+- username: "swarnimag"
+  name: "swarnimag"
+  avatar_url: https://github.com/swarnimag.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"
+
+- username: "sherubthakur"
+  name: "sherubthakur"
+  avatar_url: https://github.com/sherubthakur.png
+  joined_early_access_at: "03-02-2020 11:00+05:30"

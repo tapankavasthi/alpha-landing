@@ -60,7 +60,6 @@ module ProfileHelpers
     end
   end
 
-  # Takes a
   module TimelineFilter
     def profile_timeline(user)
       site = Jekyll.sites.first

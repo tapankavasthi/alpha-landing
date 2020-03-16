@@ -1,6 +1,9 @@
 serve:
 	bundle exec jekyll serve --livereload
 
+compile_users:
+	bundle exec ruby scripts/compile_users.rb
+
 copy_course_files:
 	hub api \
 		repos/rohitpaulk/codecrafters-server/contents/codecrafters/store/data/redis.yml \
