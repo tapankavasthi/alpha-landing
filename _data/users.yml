@@ -25,11 +25,6 @@
       language: "python"
       timestamp: "02-02-2020"
 
-    - type: "completed-challenge"
-      challenge: "docker"
-      language: "go"
-      timestamp: "05-03-2020"
-
     - type: "started-challenge"
       challenge: "docker"
       language: "go"

@@ -55,10 +55,12 @@
                 </div>
                 <ul class="py-6">
                     {% for timeline_entry in timeline_group.entries %}
-                        <li class="flex items-center mb-3">
-                            <div class="mx-4 w-2 h-2 bg-{{ timeline_entry.color }}-500 rounded-full shadow">
+                        <li class="flex items-start mb-3">
+                            <div class="flex items-center h-6">
+                                <div class="flex-shrink-0 mx-4 w-2 h-2 bg-{{ timeline_entry.color }}-500 rounded-full shadow">
+                                </div>
                             </div>
-                            <div class="text-gray-600 markdown">
+                            <div class="text-gray-600 leading-normal timeline-entry">
                                 {{ timeline_entry.text }}
                             </div>
                         </li>

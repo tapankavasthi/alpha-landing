@@ -117,3 +117,7 @@
 /*     background-repeat: no-repeat; */
 /*     background-position: center; */
 /* } */
+
+.timeline-entry a {
+    @apply text-teal-500 underline font-bold;
+}

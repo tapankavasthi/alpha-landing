@@ -26,27 +26,45 @@
             <div class="pt-6 flex flex-shrink-0 items-center w-16 overflow-hidden">
                 <div class="h-24">
                     <div class="w-64">
-                        <img class="h-20" src="/images/challenge-logo-{{challenge.slug}}-green.png">
+                        {% if include.challenge_status.percentage_completed == 100  %}
+                            <img class="h-20" src="/images/challenge-logo-{{challenge.slug}}-green.png">
+                        {% else %}
+                            <img class="h-20" src="/images/challenge-logo-{{challenge.slug}}-gray.png">
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Meta + Label -->
-        <div class="flex items-center">
+        {% if include.challenge_status.percentage_completed == 100  %}
+            <!-- Languages Used + Completion Rate -->
             <div class="flex items-center">
-                <div class="text-teal-500">
-                    {% for lang in include.challenge_status.languages_used %}
-                        <i class="devicon-{{lang}}-plain mr-1" title="{{ lang }}"></i>
-                    {% endfor %}
+                <div class="flex items-center">
+                    <div class="text-teal-500">
+                        {% for lang in include.challenge_status.languages_used %}
+                            <i class="devicon-{{lang}}-plain mr-1" title="{{ lang }}"></i>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Label -->
+                <div class="flex flex-grow justify-end text-xs text-gray-400 pr-4">
+                    <span>
+                        <b class="text-gray-500">11%</b> completion rate
+                    </span>
                 </div>
             </div>
-
-            <!-- Label -->
-            <div class="flex flex-grow justify-end text-xs text-gray-400 pr-4">
-                <span>
-                    <b class="text-gray-500">11%</b> completion rate
-                </span>
+        {% else %}
+            <!-- Completion bar -->
+            <div class="flex items-center">
+                <div class="relative bg-gray-300 h-3 w-20 rounded mr-2">
+                    <div class="bg-yellow-500 h-3 rounded-l"
+                         style="width: {{ challenge_status.percentage_completed }}%">
+                    </div>
+                </div>
+                <div class="text-xs text-gray-500">
+                    <b>{{ challenge_status.percentage_completed }}%</b> completed
+                </div>
             </div>
-        </div>
+        {% endif %}
     </div>
 </a>
