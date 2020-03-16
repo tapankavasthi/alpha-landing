@@ -1,5 +1,4 @@
-abhijat:
-  username: "abhijat"
+- username: "abhijat"
   name: "Abhijat Malviya"
   avatar_url: https://github.com/abhijat.png
   languages_used: ["python", "go"]
@@ -35,3 +34,27 @@ abhijat:
       challenge: "docker"
       language: "go"
       timestamp: "05-03-2020"
+
+- username: "rohitpaulk"
+  name: "Paul Kuruvilla"
+  avatar_url: https://github.com/rohitpaulk.png
+  languages_used: ["python", "go"]
+
+  challenge_status:
+    - slug: "redis"
+      percentage_completed: 100
+      languages_used: ["python"]
+
+  events:
+    - type: "joined-early-access"
+      timestamp: "02-02-2020"
+
+    - type: "completed-challenge"
+      challenge: "redis"
+      language: "python"
+      timestamp: "02-02-2020"
+
+    - type: "started-challenge"
+      challenge: "redis"
+      language: "python"
+      timestamp: "02-02-2020"

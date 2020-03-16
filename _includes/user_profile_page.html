@@ -1,3 +1,5 @@
+{% assign user = site.data.users | where: "username", include.username | first %}
+
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 <div class="bg-gray-200 min-h-screen">
@@ -6,12 +8,12 @@
     <div class="container flex items-start flex-col sm:flex-row lg:max-w-screen-lg mx-auto px-6 pb-20 pt-8">
         <!-- Profile Section -->
         <div class="flex-shrink-0 sm:w-56">
-            <img src="{{ include.user.avatar_url }}" class="border-2 border-gray-400 mb-4 w-full max-w-xs rounded-md">
+            <img src="{{ user.avatar_url }}" class="border-2 border-gray-400 mb-4 w-full max-w-xs rounded-md">
             <div class="mb-2 text-gray-700 text-xl font-bold">
-                {{ include.user.name }}
+                {{ user.name }}
             </div>
             <div class="text-teal-500 text-2xl mb-2">
-                {% for lang in include.user.languages_used %}
+                {% for lang in user.languages_used %}
                     <i class="devicon-{{lang}}-plain" title="{{ lang }}"></i>
                 {% endfor %}
             </div>
@@ -36,7 +38,7 @@
             </div>
 
             <div class="grid col-gap-4 row-gap-4 grid-cols-1 lg:grid-cols-2 mb-12">
-                {% for challenge_status in include.user.challenge_status %}
+                {% for challenge_status in user.challenge_status %}
                     {% include profile_course_card.html challenge_status=challenge_status %}
                 {% endfor %}
             </div>
