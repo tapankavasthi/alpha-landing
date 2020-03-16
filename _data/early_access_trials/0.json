@@ -1,0 +1,29 @@
+{
+    "slug": "early-access-0",
+    "challenge_slug": "redis",
+    "started_at": "01-02-2020 14:00+05:30",
+    "ended_at": "07-02-2020 14:00+05:30",
+    "total_stages": 4,
+    "users": [
+        {
+            "username": "sherubthakur",
+            "language": "python",
+            "stage_reached": 4
+        },
+        {
+            "username": "akshaykmr",
+            "language": "python",
+            "stage_reached": 4
+        },
+        {
+            "username": "garimaarorashuttl",
+            "language": "python",
+            "stage_reached": 4
+        },
+        {
+            "username": "somyakumarsodani",
+            "language": "python",
+            "stage_reached": 4
+        }
+    ]
+}

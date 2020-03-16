@@ -192,7 +192,7 @@ class EarlyAccessParticipant
   end
 
   def percentage_completed
-    100 * (@stages_completed / @total_stages)
+    (100 * (@stages_completed * 1.0 / @total_stages)).to_i
   end
 
   def has_completed?
@@ -234,6 +234,7 @@ profiles = users_to_consider.map do |user|
       "languages_used": languages_used,
     }
   end
+  challenge_status = challenge_status.sort_by { |x| x["percentage_completed"] }.reverse
   languages_used = trials.map { |t| t.user_languages_completed(user.username) }.flatten
   {
     "username" => user.username,

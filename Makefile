@@ -1,4 +1,4 @@
-serve:
+serve: compile_profiles
 	bundle exec jekyll serve --livereload
 
 compile_profiles:
