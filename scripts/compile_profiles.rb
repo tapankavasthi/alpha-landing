@@ -48,6 +48,15 @@ class CompletedChallengeEvent
     @challenge = challenge
     @language = language
   end
+
+  def to_json(*args)
+    {
+      "type": "completed-challenge",
+      "challenge": challenge,
+      "language": language,
+      "timestamp": date.iso8601,
+    }
+  end
 end
 
 class StartedChallengeEvent
@@ -62,6 +71,15 @@ class StartedChallengeEvent
     @challenge = challenge
     @language = language
   end
+
+  def to_json(*args)
+    {
+      "type": "started-challenge",
+      "challenge": challenge,
+      "language": language,
+      "timestamp": date.iso8601,
+    }
+  end
 end
 
 class JoinedEarlyAccessEvent
@@ -71,6 +89,13 @@ class JoinedEarlyAccessEvent
   def initialize(username:, date:)
     @username = username
     @date = date
+  end
+
+  def to_json(*args)
+    {
+      "type": "joined-early-access",
+      "timestamp": date.iso8601,
+    }
   end
 end
 
@@ -175,7 +200,7 @@ class EarlyAccessParticipant
   end
 end
 
-trials = (1..3).map { |i| EarlyAccessTrial.from_file("_data/early_access_trials/#{i}.json") }
+trials = Dir["_data/early_access_trials/*"].map { |f| EarlyAccessTrial.from_file(f) }
 
 users_map = User.from_file("_data/users.yml").map { |user| [user.username, user] }.to_h
 challenge_events = trials.map { |trial| trial.challenge_events }.flatten
@@ -211,13 +236,16 @@ profiles = users_to_consider.map do |user|
   end
   languages_used = trials.map { |t| t.user_languages_completed(user.username) }.flatten
   {
-    "username": user.username,
-    "name": user.name,
-    "avatar_url": user.avatar_url,
-    "languages_used": languages_used,
-    "events": events,
-    "challenge_status": challenge_status,
+    "username" => user.username,
+    "name" => user.name,
+    "joined_at" => user.joined_early_access_at,
+    "avatar_url" => user.avatar_url,
+    "languages_used" => languages_used,
+    "events" => events.map(&:to_json),
+    "challenge_status" => challenge_status,
   }
 end
 
-puts JSON.dump(profiles)
+File.write("_data/user_profiles.json", JSON.pretty_generate(profiles))
+puts "Dumped #{profiles.count} profiles."
+puts profiles.map { |x| " - http://localhost:4000/users/#{x.fetch("username")}" }

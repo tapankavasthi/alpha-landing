@@ -1,0 +1,303 @@
+[
+  {
+    "username": "jepemo",
+    "name": "Jeremies Pérez",
+    "joined_at": "2020-02-19 11:00:00 +0530",
+    "avatar_url": "https://github.com/jepemo.png",
+    "languages_used": [
+      "python"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-19T11:00:00+05:30"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-02-29T14:00:00+05:30"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-03-08T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ]
+      },
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "python"
+        ]
+      }
+    ]
+  },
+  {
+    "username": "abhijat",
+    "name": "Abhijat Malviya",
+    "joined_at": "2020-01-03 12:00:00 +0530",
+    "avatar_url": "https://github.com/abhijat.png",
+    "languages_used": [
+      "python"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-01-03T12:00:00+05:30"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-02-29T14:00:00+05:30"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-03-08T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ]
+      },
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "python"
+        ]
+      }
+    ]
+  },
+  {
+    "username": "duaraghav8",
+    "name": "duaraghav8",
+    "joined_at": "2020-02-03 11:00:00 +0530",
+    "avatar_url": "https://github.com/duaraghav8.png",
+    "languages_used": [
+      "go"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-03T11:00:00+05:30"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-02-27T14:00:00+05:30"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-05T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "docker",
+        "percentage_completed": 100,
+        "languages_used": [
+          "go"
+        ]
+      },
+      {
+        "slug": "redis",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "username": "pratikju",
+    "name": "pratikju",
+    "joined_at": "2020-02-03 11:00:00 +0530",
+    "avatar_url": "https://github.com/pratikju.png",
+    "languages_used": [
+      "go"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-03T11:00:00+05:30"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-03T14:00:00+05:30"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-10T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "docker",
+        "percentage_completed": 100,
+        "languages_used": [
+          "go"
+        ]
+      },
+      {
+        "slug": "redis",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "username": "himaniJoshi",
+    "name": "himaniJoshi",
+    "joined_at": "2020-02-03 11:00:00 +0530",
+    "avatar_url": "https://github.com/himaniJoshi.png",
+    "languages_used": [
+      "go"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-03T11:00:00+05:30"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-03T14:00:00+05:30"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-10T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "docker",
+        "percentage_completed": 100,
+        "languages_used": [
+          "go"
+        ]
+      },
+      {
+        "slug": "redis",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "username": "garimaarorashuttl",
+    "name": "garimaarorashuttl",
+    "joined_at": "2020-02-03 11:00:00 +0530",
+    "avatar_url": "https://github.com/garimaarorashuttl.png",
+    "languages_used": [
+      "go"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-03T11:00:00+05:30"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-02-25T14:00:00+05:30"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-03T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "docker",
+        "percentage_completed": 100,
+        "languages_used": [
+          "go"
+        ]
+      },
+      {
+        "slug": "redis",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "username": "somyakumarsodani",
+    "name": "somyakumarsodani",
+    "joined_at": "2020-02-03 11:00:00 +0530",
+    "avatar_url": "https://github.com/somyakumarsodani.png",
+    "languages_used": [
+      "go"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-03T11:00:00+05:30"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-02-25T14:00:00+05:30"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-03T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "docker",
+        "percentage_completed": 100,
+        "languages_used": [
+          "go"
+        ]
+      },
+      {
+        "slug": "redis",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ]
+      }
+    ]
+  }
+]

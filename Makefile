@@ -1,8 +1,8 @@
 serve:
 	bundle exec jekyll serve --livereload
 
-compile_users:
-	bundle exec ruby scripts/compile_users.rb
+compile_profiles:
+	bundle exec ruby scripts/compile_profiles.rb
 
 copy_course_files:
 	hub api \
