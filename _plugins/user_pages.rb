@@ -3,7 +3,7 @@ module Jekyll
     safe true
 
     def generate(site)
-      site.data["users"].each do |user|
+      site.data["user_profiles"].each do |user|
         site.pages << UserPage.new(site, user["username"])
       end
     end
