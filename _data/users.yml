@@ -2,7 +2,8 @@ abhijat:
   username: "abhijat"
   name: "Abhijat Malviya"
   avatar_url: https://github.com/abhijat.png
-  languages_used: ["python", "nim"]
+  avatar_url: /images/sample-avatar-1.png
+  languages_used: ["python", "go"]
   challenge_status:
     - slug: "redis"
       percentage_completed: 100
