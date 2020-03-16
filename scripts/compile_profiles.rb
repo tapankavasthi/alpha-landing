@@ -224,6 +224,12 @@ profiles = users_to_consider.map do |user|
       .map { |trial| trial.user_percentage_completed(user.username) }
       .max
 
+    last_completed_at = trials
+      .select { |trial| trial.challenge_slug == challenge_slug }
+      .select { |trial| trial.user_percentage_completed(user.username) == 100 }
+      .map { |trial| trial.ended_at }
+      .max
+
     languages_used = trials
       .select { |trial| trial.challenge_slug == challenge_slug }
       .map { |trial| trial.user_languages_completed(user.username) }
@@ -232,6 +238,7 @@ profiles = users_to_consider.map do |user|
       "slug": challenge_slug,
       "percentage_completed": percentage_completed,
       "languages_used": languages_used,
+      "last_completed_at": last_completed_at,
     }
   end
   challenge_status = challenge_status.sort_by { |x| x["percentage_completed"] }.reverse

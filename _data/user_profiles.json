@@ -31,14 +31,16 @@
         "percentage_completed": 100,
         "languages_used": [
           "python"
-        ]
+        ],
+        "last_completed_at": "2020-03-08 14:00:00 +0530"
       },
       {
         "slug": "docker",
         "percentage_completed": 0,
         "languages_used": [
 
-        ]
+        ],
+        "last_completed_at": null
       }
     ]
   },
@@ -74,14 +76,16 @@
         "percentage_completed": 100,
         "languages_used": [
           "python"
-        ]
+        ],
+        "last_completed_at": "2020-03-08 14:00:00 +0530"
       },
       {
         "slug": "docker",
         "percentage_completed": 0,
         "languages_used": [
 
-        ]
+        ],
+        "last_completed_at": null
       }
     ]
   },
@@ -117,14 +121,16 @@
         "percentage_completed": 0,
         "languages_used": [
 
-        ]
+        ],
+        "last_completed_at": null
       },
       {
         "slug": "docker",
         "percentage_completed": 100,
         "languages_used": [
           "go"
-        ]
+        ],
+        "last_completed_at": "2020-03-05 14:00:00 +0530"
       }
     ]
   },
@@ -166,14 +172,16 @@
         "percentage_completed": 100,
         "languages_used": [
           "python"
-        ]
+        ],
+        "last_completed_at": "2020-02-07 14:00:00 +0530"
       },
       {
         "slug": "docker",
         "percentage_completed": 75,
         "languages_used": [
 
-        ]
+        ],
+        "last_completed_at": null
       }
     ]
   },
@@ -209,14 +217,16 @@
         "percentage_completed": 0,
         "languages_used": [
 
-        ]
+        ],
+        "last_completed_at": null
       },
       {
         "slug": "docker",
         "percentage_completed": 100,
         "languages_used": [
           "go"
-        ]
+        ],
+        "last_completed_at": "2020-03-10 14:00:00 +0530"
       }
     ]
   },
@@ -252,14 +262,16 @@
         "percentage_completed": 0,
         "languages_used": [
 
-        ]
+        ],
+        "last_completed_at": null
       },
       {
         "slug": "docker",
         "percentage_completed": 100,
         "languages_used": [
           "go"
-        ]
+        ],
+        "last_completed_at": "2020-03-10 14:00:00 +0530"
       }
     ]
   },
@@ -301,14 +313,16 @@
         "percentage_completed": 100,
         "languages_used": [
           "python"
-        ]
+        ],
+        "last_completed_at": "2020-02-07 14:00:00 +0530"
       },
       {
         "slug": "docker",
         "percentage_completed": 75,
         "languages_used": [
 
-        ]
+        ],
+        "last_completed_at": null
       }
     ]
   },
@@ -357,14 +371,16 @@
         "percentage_completed": 100,
         "languages_used": [
           "python"
-        ]
+        ],
+        "last_completed_at": "2020-02-07 14:00:00 +0530"
       },
       {
         "slug": "docker",
         "percentage_completed": 100,
         "languages_used": [
           "go"
-        ]
+        ],
+        "last_completed_at": "2020-03-03 14:00:00 +0530"
       }
     ]
   },
@@ -413,14 +429,16 @@
         "percentage_completed": 100,
         "languages_used": [
           "python"
-        ]
+        ],
+        "last_completed_at": "2020-02-07 14:00:00 +0530"
       },
       {
         "slug": "docker",
         "percentage_completed": 100,
         "languages_used": [
           "go"
-        ]
+        ],
+        "last_completed_at": "2020-03-03 14:00:00 +0530"
       }
     ]
   }
