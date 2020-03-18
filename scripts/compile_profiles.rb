@@ -100,21 +100,12 @@ class JoinedEarlyAccessEvent
 end
 
 class EarlyAccessTrial
-  attr_reader :slug
   attr_reader :challenge_slug
-  attr_reader :started_at
-  attr_reader :ended_at
   attr_reader :participants
 
-  def initialize(slug:,
-                 challenge_slug:,
-                 started_at:,
-                 ended_at:,
+  def initialize(challenge_slug:,
                  participants:)
-    @slug = slug
     @challenge_slug = challenge_slug
-    @started_at = started_at
-    @ended_at = ended_at
     @participants = participants
   end
 
@@ -130,19 +121,23 @@ class EarlyAccessTrial
     return participant&.percentage_completed || 0
   end
 
+  def user_ended_at(username)
+    participant = participants.select { |p| p.username == username }.first
+    return participant.ended_at
+  end
+
   def self.from_file(path)
     json = JSON.parse(File.read(path))
     EarlyAccessTrial.new(
-      slug: json.fetch("slug"),
       challenge_slug: json.fetch("challenge_slug"),
-      started_at: Time.parse(json.fetch("started_at")),
-      ended_at: Time.parse(json.fetch("ended_at")),
       participants: json.fetch("users").map { |user|
         EarlyAccessParticipant.new(
           username: user.fetch("username"),
           language: user.fetch("language"),
           stages_completed: user.fetch("stage_reached"),
           total_stages: json.fetch("total_stages"),
+          started_at: Time.parse(user.fetch("started_at")),
+          ended_at: Time.parse(user.fetch("ended_at")),
         )
       },
     )
@@ -154,7 +149,7 @@ class EarlyAccessTrial
       events.push(
         StartedChallengeEvent.new(
           username: participant.username,
-          date: started_at,
+          date: participant.started_at,
           challenge: challenge_slug,
           language: participant.language,
         )
@@ -164,7 +159,7 @@ class EarlyAccessTrial
         events.push(
           CompletedChallengeEvent.new(
             username: participant.username,
-            date: ended_at,
+            date: participant.ended_at,
             challenge: challenge_slug,
             language: participant.language,
           )
@@ -180,14 +175,18 @@ class EarlyAccessParticipant
   attr_reader :username
   attr_reader :language
   attr_reader :stages_completed
+  attr_reader :started_at
+  attr_reader :ended_at
   attr_reader :total_stages
 
   def initialize(username:, language:,
-                 stages_completed:,
+                 stages_completed:, started_at:, ended_at:,
                  total_stages:)
     @username = username
     @language = language
     @stages_completed = stages_completed
+    @started_at = started_at
+    @ended_at = ended_at
     @total_stages = total_stages
   end
 
@@ -227,7 +226,7 @@ profiles = users_to_consider.map do |user|
     last_completed_at = trials
       .select { |trial| trial.challenge_slug == challenge_slug }
       .select { |trial| trial.user_percentage_completed(user.username) == 100 }
-      .map { |trial| trial.ended_at }
+      .map { |trial| trial.user_ended_at(user.username) }
       .max
 
     languages_used = trials
