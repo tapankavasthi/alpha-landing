@@ -1,0 +1,27 @@
+{
+  "challenge_slug": "redis",
+  "total_stages": 7,
+  "users": [
+    {
+      "username": "jolheiser",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-03-18T02:32:54.355195+00:00",
+      "ended_at": "2020-03-18T03:56:09.218697+00:00"
+    },
+    {
+      "username": "JonasAgger",
+      "language": "go",
+      "stage_reached": 1,
+      "started_at": "2020-03-17T18:32:55.109726+00:00",
+      "ended_at": "2020-03-17T18:56:16.407845+00:00"
+    },
+    {
+      "username": "rohitpaulk",
+      "language": "php",
+      "stage_reached": 4,
+      "started_at": "2020-03-17T17:54:29.624464+00:00",
+      "ended_at": "2020-03-17T18:33:35.931289+00:00"
+    }
+  ]
+}

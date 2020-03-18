@@ -1,0 +1,48 @@
+{
+  "challenge_slug": "docker",
+  "total_stages": 6,
+  "users": [
+    {
+      "username": "abhijat",
+      "language": "nim",
+      "stage_reached": 6,
+      "started_at": "2020-03-14T04:23:48.919051+00:00",
+      "ended_at": "2020-03-14T10:00:47.328668+00:00"
+    },
+    {
+      "username": "wangsikuan",
+      "language": "go",
+      "stage_reached": 5,
+      "started_at": "2020-03-14T04:04:42.576293+00:00",
+      "ended_at": "2020-03-14T16:26:30.337214+00:00"
+    },
+    {
+      "username": "sd5869",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-03-14T08:17:12.400789+00:00",
+      "ended_at": "2020-03-14T19:02:09.026073+00:00"
+    },
+    {
+      "username": "jolheiser",
+      "language": "go",
+      "stage_reached": 6,
+      "started_at": "2020-03-14T19:28:39.175748+00:00",
+      "ended_at": "2020-03-17T15:24:24.852314+00:00"
+    },
+    {
+      "username": "J0",
+      "language": "go",
+      "stage_reached": 1,
+      "started_at": "2020-03-18T11:56:35.151714+00:00",
+      "ended_at": "2020-03-18T12:04:08.905259+00:00"
+    },
+    {
+      "username": "ghost2718",
+      "language": "go",
+      "stage_reached": 1,
+      "started_at": "2020-03-14T06:12:44.054009+00:00",
+      "ended_at": "2020-03-18T14:14:16.821308+00:00"
+    }
+  ]
+}
