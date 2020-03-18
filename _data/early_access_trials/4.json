@@ -1,49 +1,63 @@
 {
     "slug": "early-access-4",
     "challenge_slug": "redis",
-    "started_at": "29-02-2020 14:00+05:30",
-    "ended_at": "08-03-2020 14:00+05:30",
     "total_stages": 6,
     "users": [
         {
             "username": "jepemo",
             "language": "python",
-            "stage_reached": 6
+            "stage_reached": 6,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         },
         {
             "username": "abhijat",
             "language": "python",
-            "stage_reached": 6
+            "stage_reached": 6,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         },
         {
             "username": "josue-mendoza",
             "language": "python",
-            "stage_reached": 2
+            "stage_reached": 2,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         },
         {
             "username": "davidjameshowell",
             "language": "python",
-            "stage_reached": 1
+            "stage_reached": 1,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         },
         {
             "username": "PurHur",
             "language": "php",
-            "stage_reached": 2
+            "stage_reached": 2,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         },
         {
             "username": "CodeMangler",
             "language": "php",
-            "stage_reached": 1
+            "stage_reached": 1,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         },
         {
             "username": "hariscodes",
             "language": "python",
-            "stage_reached": 1
+            "stage_reached": 1,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         },
         {
             "username": "jaballes",
             "language": "python",
-            "stage_reached": 1
+            "stage_reached": 1,
+    "started_at": "29-02-2020 14:00+05:30",
+    "ended_at": "08-03-2020 14:00+05:30"
         }
     ]
 }

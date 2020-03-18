@@ -1,29 +1,35 @@
 {
     "slug": "early-access-1",
     "challenge_slug": "redis",
-    "started_at": "13-02-2020 14:00+05:30",
-    "ended_at": "20-02-2020 14:00+05:30",
     "total_stages": 5,
     "users": [
         {
             "username": "Saransh-Sharma",
             "language": "python",
-            "stage_reached": 4
+            "stage_reached": 4,
+            "started_at": "13-02-2020 14:00+05:30",
+            "ended_at": "20-02-2020 14:00+05:30"
         },
         {
             "username": "kshamashuttl",
             "language": "python",
-            "stage_reached": 4
+            "stage_reached": 4,
+            "started_at": "13-02-2020 14:00+05:30",
+            "ended_at": "20-02-2020 14:00+05:30"
         },
         {
             "username": "sunny-goel",
             "language": "python",
-            "stage_reached": 1
+            "stage_reached": 1,
+            "started_at": "13-02-2020 14:00+05:30",
+            "ended_at": "20-02-2020 14:00+05:30"
         },
         {
             "username": "abhishekmittal",
             "language": "python",
-            "stage_reached": 1
+            "stage_reached": 1,
+            "started_at": "13-02-2020 14:00+05:30",
+            "ended_at": "20-02-2020 14:00+05:30"
         }
     ]
 }

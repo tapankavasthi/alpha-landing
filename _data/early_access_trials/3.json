@@ -1,29 +1,35 @@
 {
     "slug": "early-access-3",
     "challenge_slug": "docker",
-    "started_at": "27-02-2020 14:00+05:30",
-    "ended_at": "05-03-2020 14:00+05:30",
     "total_stages": 4,
     "users": [
         {
             "username": "duaraghav8",
             "language": "go",
-            "stage_reached": 4
+            "stage_reached": 4,
+    "started_at": "27-02-2020 14:00+05:30",
+    "ended_at": "05-03-2020 14:00+05:30"
         },
         {
             "username": "kumarmunish",
             "language": "go",
-            "stage_reached": 3
+            "stage_reached": 3,
+    "started_at": "27-02-2020 14:00+05:30",
+    "ended_at": "05-03-2020 14:00+05:30"
         },
         {
             "username": "swarnimag",
             "language": "go",
-            "stage_reached": 3
+            "stage_reached": 3,
+    "started_at": "27-02-2020 14:00+05:30",
+    "ended_at": "05-03-2020 14:00+05:30"
         },
         {
             "username": "sherubthakur",
             "language": "go",
-            "stage_reached": 3
+            "stage_reached": 3,
+    "started_at": "27-02-2020 14:00+05:30",
+    "ended_at": "05-03-2020 14:00+05:30"
         }
     ]
 }
