@@ -70,8 +70,8 @@ module ProfileHelpers
         when "completed-challenge"
           CompletedChallengeEvent.new(
             Time.parse(event_hash["timestamp"]),
-            challenge_map[event_hash["challenge"]],
-            language_map[event_hash["language"]],
+            challenge_map.fetch(event_hash["challenge"]),
+            language_map.fetch(event_hash["language"]),
           )
         when "joined-early-access"
           JoinedEarlyAccessEvent.new(

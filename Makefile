@@ -9,6 +9,14 @@ refresh_ea_data:
 compile_profiles:
 	bundle exec ruby scripts/compile_profiles.rb
 
+preview_profiles:
+	cat _data/user_profiles.json \
+		| jq ". | map(.username)" \
+		| head -n -1 \
+		| tail -n +2 \
+		| tr -d ", \"" \
+		| xargs -I {} xdg-open http://localhost:4000/users/{}
+
 copy_course_files:
 	hub api \
 		repos/rohitpaulk/codecrafters-server/contents/codecrafters/store/data/redis.yml \
