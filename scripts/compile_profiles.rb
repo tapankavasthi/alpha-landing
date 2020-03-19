@@ -278,7 +278,7 @@ profiles = users_to_consider.map do |user|
   languages_used = trials.map { |t| t.user_languages_completed(user.username) }.flatten
   {
     "username" => user.username,
-    "name" => user.name,
+    "name" => user.name || user.username,
     "joined_at" => user.joined_early_access_at,
     "avatar_url" => user.avatar_url,
     "languages_used" => languages_used,
