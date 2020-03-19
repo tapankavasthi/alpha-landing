@@ -17,6 +17,7 @@ compile_profiles:
 	bundle exec ruby scripts/compile_profiles.rb
 
 preview_profiles:
+	curl localhost:4000 # Checking the server is up
 	cat _data/user_profiles.json \
 		| jq ". | map(.username)" \
 		| head -n -1 \

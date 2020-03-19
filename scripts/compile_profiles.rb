@@ -268,13 +268,13 @@ profiles = users_to_consider.map do |user|
       .map { |trial| trial.user_languages_completed(user.username) }
       .flatten
     {
-      "slug": challenge_slug,
-      "percentage_completed": percentage_completed,
-      "languages_used": languages_used,
-      "last_completed_at": last_completed_at,
+      "slug" => challenge_slug,
+      "percentage_completed" => percentage_completed,
+      "languages_used" => languages_used,
+      "last_completed_at" => last_completed_at,
     }
   end
-  challenge_status = challenge_status.sort_by { |x| x["percentage_completed"] }.reverse
+  challenge_status = challenge_status.sort_by { |x| x.fetch("percentage_completed") }.reverse
   languages_used = trials.map { |t| t.user_languages_completed(user.username) }.flatten
   {
     "username" => user.username,
