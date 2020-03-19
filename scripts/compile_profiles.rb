@@ -267,6 +267,7 @@ profiles = users_to_consider.map do |user|
       .select { |trial| trial.challenge_slug == challenge_slug }
       .map { |trial| trial.user_languages_completed(user.username) }
       .flatten
+      .uniq
     {
       "slug" => challenge_slug,
       "percentage_completed" => percentage_completed,
@@ -275,7 +276,7 @@ profiles = users_to_consider.map do |user|
     }
   end
   challenge_status = challenge_status.sort_by { |x| x.fetch("percentage_completed") }.reverse
-  languages_used = trials.map { |t| t.user_languages_completed(user.username) }.flatten
+  languages_used = trials.map { |t| t.user_languages_completed(user.username) }.flatten.uniq
   {
     "username" => user.username,
     "name" => user.name || user.username,
