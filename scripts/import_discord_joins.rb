@@ -18,7 +18,7 @@ bot = Discordrb::Bot.new(token: ENV.fetch("DISCORD_BOT_TOKEN"))
 new_data = []
 after = nil
 loop do
-  members_json = Discordrb::API::Server.resolve_members(bot.token, 673463293901537291, 50, after)
+  members_json = Discordrb::API::Server.resolve_members(bot.token, 673463293901537291, 200, after)
   members = JSON.parse(members_json)
   break if members.empty?
   new_data += members.map { |member|

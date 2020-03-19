@@ -1,10 +1,12 @@
 require "json"
 require "yaml"
 require "time"
+require "pry"
 
 class User
   attr_reader :username
   attr_reader :name
+
   attr_reader :avatar_url
   attr_reader :joined_early_access_at
 
@@ -22,17 +24,39 @@ class User
     )
   end
 
-  def self.from_file(path)
-    json = YAML.load(File.read(path))
+  def self.from_files(github_discord_mapping_path:, github_data_path:, discord_joins_path:)
+    github_data_json = JSON.parse(File.read(github_data_path))
+    github_discord_mapping = YAML.load(File.read(github_discord_mapping_path)).map { |k|
+      [k.fetch("github_username"), k.fetch("discord_username")]
+    }.to_h
 
-    json.map { |hash|
-      User.new(
-        username: hash.fetch("username"),
-        name: hash.fetch("name"),
-        avatar_url: hash.fetch("avatar_url"),
-        joined_early_access_at: Time.parse(hash.fetch("joined_early_access_at")),
-      )
-    }
+    discord_joins = JSON.parse(File.read(discord_joins_path))
+      .group_by { |d| d.fetch("username") }
+      .map { |username, entries|
+      [
+        username,
+        entries
+          .sort_by { |entry| Time.parse(entry.fetch("joined_at")) }
+          .first["joined_at"],
+      ]
+    }.map { |username, joined_at_string|
+      [username, Time.parse(joined_at_string)]
+    }.to_h
+
+    github_data_json.map do |data|
+      gh_username = data.fetch("username")
+      discord_username = github_discord_mapping[gh_username]
+      if discord_username
+        User.new(
+          username: data.fetch("username"),
+          name: data.fetch("name"),
+          avatar_url: "https://github.com/#{gh_username}.png",
+          joined_early_access_at: discord_joins.fetch(discord_username),
+        )
+      else
+        nil
+      end
+    end.compact
   end
 end
 
@@ -201,7 +225,12 @@ end
 
 trials = Dir["_data/early_access_trials/*"].map { |f| EarlyAccessTrial.from_file(f) }
 
-users_map = User.from_file("_data/users.yml").map { |user| [user.username, user] }.to_h
+users_map = User.from_files(
+  github_discord_mapping_path: "_data/github_discord_mapping.yml",
+  github_data_path: "_data/github_data.json",
+  discord_joins_path: "_data/discord_joins.json",
+).map { |user| [user.username, user] }.to_h
+
 challenge_events = trials.map { |trial| trial.challenge_events }.flatten
 
 # Only consider completed ones
@@ -210,6 +239,11 @@ challenge_events_by_user = challenge_events_by_user.select do |_username, events
   events.any? { |x| x.class == CompletedChallengeEvent }
 end
 
+usernames_to_consider = challenge_events_by_user.keys
+missing_usernames = usernames_to_consider - users_map.keys
+if missing_usernames.any?
+  raise RuntimeError.new("Missing user mappings: \n#{missing_usernames.join("\n")}")
+end
 users_to_consider = challenge_events_by_user.keys.map { |username| users_map.fetch(username) }
 
 profiles = users_to_consider.map do |user|

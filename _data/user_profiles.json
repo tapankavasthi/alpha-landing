@@ -2,7 +2,7 @@
   {
     "username": "jepemo",
     "name": "Jeremies Pérez",
-    "joined_at": "2020-02-19 11:00:00 +0530",
+    "joined_at": "2020-02-19 08:18:01 +0000",
     "avatar_url": "https://github.com/jepemo.png",
     "languages_used": [
       "python"
@@ -10,7 +10,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-19T11:00:00+05:30"
+        "timestamp": "2020-02-19T08:18:01+00:00"
       },
       {
         "type": "started-challenge",
@@ -47,7 +47,7 @@
   {
     "username": "abhijat",
     "name": "Abhijat Malviya",
-    "joined_at": "2020-01-03 12:00:00 +0530",
+    "joined_at": "2020-02-19 17:52:16 +0000",
     "avatar_url": "https://github.com/abhijat.png",
     "languages_used": [
       "python",
@@ -56,7 +56,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-01-03T12:00:00+05:30"
+        "timestamp": "2020-02-19T17:52:16+00:00"
       },
       {
         "type": "started-challenge",
@@ -104,8 +104,8 @@
   },
   {
     "username": "duaraghav8",
-    "name": "duaraghav8",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": "Raghav Dua",
+    "joined_at": "2020-02-19 06:37:43 +0000",
     "avatar_url": "https://github.com/duaraghav8.png",
     "languages_used": [
       "go"
@@ -113,7 +113,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-02-19T06:37:43+00:00"
       },
       {
         "type": "started-challenge",
@@ -149,8 +149,8 @@
   },
   {
     "username": "sherubthakur",
-    "name": "sherubthakur",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": "Sherub Thakur",
+    "joined_at": "2020-02-11 09:18:11 +0000",
     "avatar_url": "https://github.com/sherubthakur.png",
     "languages_used": [
       "python"
@@ -158,7 +158,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-02-11T09:18:11+00:00"
       },
       {
         "type": "started-challenge",
@@ -200,8 +200,8 @@
   },
   {
     "username": "pratikju",
-    "name": "pratikju",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": "Pratik Singh",
+    "joined_at": "2020-02-19 06:06:15 +0000",
     "avatar_url": "https://github.com/pratikju.png",
     "languages_used": [
       "go"
@@ -209,7 +209,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-02-19T06:06:15+00:00"
       },
       {
         "type": "started-challenge",
@@ -245,8 +245,8 @@
   },
   {
     "username": "himaniJoshi",
-    "name": "himaniJoshi",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": null,
+    "joined_at": "2020-02-16 18:44:21 +0000",
     "avatar_url": "https://github.com/himaniJoshi.png",
     "languages_used": [
       "go"
@@ -254,7 +254,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-02-16T18:44:21+00:00"
       },
       {
         "type": "started-challenge",
@@ -290,8 +290,8 @@
   },
   {
     "username": "akshaykmr",
-    "name": "akshaykmr",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": "Akshay Kumar",
+    "joined_at": "2020-02-12 02:54:53 +0000",
     "avatar_url": "https://github.com/akshaykmr.png",
     "languages_used": [
       "python"
@@ -299,7 +299,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-02-12T02:54:53+00:00"
       },
       {
         "type": "started-challenge",
@@ -341,8 +341,8 @@
   },
   {
     "username": "garimaarorashuttl",
-    "name": "garimaarorashuttl",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": "Garima Arora",
+    "joined_at": "2020-02-12 05:10:40 +0000",
     "avatar_url": "https://github.com/garimaarorashuttl.png",
     "languages_used": [
       "python",
@@ -351,7 +351,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-02-12T05:10:40+00:00"
       },
       {
         "type": "started-challenge",
@@ -399,8 +399,8 @@
   },
   {
     "username": "somyakumarsodani",
-    "name": "somyakumarsodani",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": "Somya Kumar Sodani",
+    "joined_at": "2020-02-19 05:56:10 +0000",
     "avatar_url": "https://github.com/somyakumarsodani.png",
     "languages_used": [
       "python",
@@ -409,7 +409,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-02-19T05:56:10+00:00"
       },
       {
         "type": "started-challenge",
@@ -458,7 +458,7 @@
   {
     "username": "jolheiser",
     "name": "John Olheiser",
-    "joined_at": "2020-03-07 11:00:00 +0530",
+    "joined_at": "2020-03-07 14:59:11 +0000",
     "avatar_url": "https://github.com/jolheiser.png",
     "languages_used": [
       "go"
@@ -466,7 +466,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-03-07T11:00:00+05:30"
+        "timestamp": "2020-03-07T14:59:11+00:00"
       },
       {
         "type": "started-challenge",
@@ -509,7 +509,7 @@
   {
     "username": "Jumballaya",
     "name": "Patrick Burris",
-    "joined_at": "2020-02-29 11:00:00 +0530",
+    "joined_at": "2020-02-29 16:09:27 +0000",
     "avatar_url": "https://github.com/Jumballaya.png",
     "languages_used": [
       "go"
@@ -517,7 +517,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-29T11:00:00+05:30"
+        "timestamp": "2020-02-29T16:09:27+00:00"
       },
       {
         "type": "started-challenge",
@@ -554,7 +554,7 @@
   {
     "username": "wangsikuan",
     "name": "sikuan",
-    "joined_at": "2020-03-07 11:00:00 +0530",
+    "joined_at": "2020-03-07 04:33:07 +0000",
     "avatar_url": "https://github.com/wangsikuan.png",
     "languages_used": [
       "go"
@@ -562,7 +562,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-03-07T11:00:00+05:30"
+        "timestamp": "2020-03-07T04:33:07+00:00"
       },
       {
         "type": "started-challenge",
@@ -604,8 +604,8 @@
   },
   {
     "username": "sd5869",
-    "name": "sd5869",
-    "joined_at": "2020-02-03 11:00:00 +0530",
+    "name": "Siddharth Dungarwal",
+    "joined_at": "2020-03-09 16:31:29 +0000",
     "avatar_url": "https://github.com/sd5869.png",
     "languages_used": [
       "go"
@@ -613,7 +613,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-02-03T11:00:00+05:30"
+        "timestamp": "2020-03-09T16:31:29+00:00"
       },
       {
         "type": "started-challenge",
@@ -656,7 +656,7 @@
   {
     "username": "mikekwright",
     "name": "Michael Wright",
-    "joined_at": "2020-03-02 11:00:00 +0530",
+    "joined_at": "2020-03-02 04:32:53 +0000",
     "avatar_url": "https://github.com/mikekwright.png",
     "languages_used": [
       "python"
@@ -664,7 +664,7 @@
     "events": [
       {
         "type": "joined-early-access",
-        "timestamp": "2020-03-02T11:00:00+05:30"
+        "timestamp": "2020-03-02T04:32:53+00:00"
       },
       {
         "type": "started-challenge",
