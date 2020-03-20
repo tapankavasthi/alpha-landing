@@ -1,5 +1,5 @@
 serve: compile_profiles
-	bundle exec jekyll serve --livereload
+	bundle exec jekyll serve --trace --livereload
 
 refresh_ea_data:
 	bundle exec ruby scripts/import_ea_data.rb early-access-7 https://ea2-app.codecrafters.io
