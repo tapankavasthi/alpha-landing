@@ -1,3 +1,20 @@
+- date: "16th March 2020"
+  title: "Early Access #6: Redis"
+  type: "announcement"
+  description_md: |
+    The third early access trial for [Build your own Redis](/challenges/redis)
+    has ended.
+
+    Players:
+
+    - [@Jumballaya](https://github.com/Jumballaya) 🏆 
+    - [@wangsikuan](https://github.com/wangsikuan) 🏆 
+    - [@sd5869](https://github.com/sd5869) 🏆 
+    - [@mikekwright](https://github.com/mikekwright) 🏆 
+    - [@asnimansari](https://github.com/asnimansari)
+    - [@prathyk](https://github.com/prathyk)
+    - [@lajosbnk](https://github.com/lajosbnk)
+
 - date: "6th March 2020"
   title: "Tweaks to first 3 Redis challenges levels"
   type: "improvement"
