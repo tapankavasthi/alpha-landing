@@ -1,12 +1,16 @@
 - slug: python
   name: Python
   icon: "python"
+  url: "https://www.python.org/"
 - slug: php
   name: PHP
   icon: "php"
+  url: "https://www.php.net/"
 - slug: go
   name: Go
   icon: "go"
+  url: "https://golang.org/"
 - slug: nim
   name: Nim
   icon: "nim" # TODO: Add image for this!
+  url: "https://nim-lang.org/"
