@@ -3,6 +3,20 @@
   "total_stages": 7,
   "users": [
     {
+      "username": "matthsimon",
+      "language": "go",
+      "stage_reached": 5,
+      "started_at": "2020-03-18T20:04:03.979198+00:00",
+      "ended_at": "2020-03-20T08:03:18.737888+00:00"
+    },
+    {
+      "username": "WillBrindle",
+      "language": "go",
+      "stage_reached": 1,
+      "started_at": "2020-03-20T07:49:08.269524+00:00",
+      "ended_at": "2020-03-20T08:46:46.809053+00:00"
+    },
+    {
       "username": "rohitpaulk",
       "language": "php",
       "stage_reached": 4,
@@ -17,18 +31,18 @@
       "ended_at": "2020-03-18T22:19:28.398356+00:00"
     },
     {
-      "username": "matthsimon",
-      "language": "go",
-      "stage_reached": 4,
-      "started_at": "2020-03-18T20:04:03.979198+00:00",
-      "ended_at": "2020-03-19T02:26:32.146070+00:00"
-    },
-    {
       "username": "jolheiser",
       "language": "go",
       "stage_reached": 7,
       "started_at": "2020-03-18T02:32:54.355195+00:00",
       "ended_at": "2020-03-19T03:56:05.477995+00:00"
+    },
+    {
+      "username": "prathyk",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-03-19T13:01:52.892548+00:00",
+      "ended_at": "2020-03-19T13:06:17.691396+00:00"
     }
   ]
 }
