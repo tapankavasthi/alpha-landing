@@ -25,7 +25,6 @@
     </script>
   {% endif %}
 
-  <title>CodeCrafters - Advanced programming challenges</title>
   <link rel="stylesheet" href="/css/tw_style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,10 +32,13 @@
   {% if page.title %}
     <meta property="og:title" content="{{ page.title  }}">
     <meta name="title" content="{{ page.title }}">
+    <title>{{ page.title }}</title>
   {% else %}
     <meta name="title" content="CodeCrafters: Advanced Programming Challenges">
     <meta property="og:title" content="CodeCrafters: Advanced Programming Challenges">
+    <title>CodeCrafters - Advanced programming challenges</title>
   {% endif %}
+
 
   {% if page.description %}
     <meta property="og:description" content="{{ page.description }}">
