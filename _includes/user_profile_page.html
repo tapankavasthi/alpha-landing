@@ -11,12 +11,17 @@
             <div class="full-width-padding border-2 border-gray-400 mb-4 w-full max-w-xs rounded-md box-content">
                 <img src="{{ user.avatar_url + "abcd" }}" class="border-2 border-transparent w-full rounded-md absolute inset-0 box-content">
             </div>
-            <div class="text-gray-700 text-xl font-bold">
-                {{ user.name }}
+            <div class="flex items-center">
+                <div class="text-gray-700 text-xl font-bold">
+                    {{ user.name }}
+                </div>
             </div>
-            <div class="mb-2 text-gray-500">
-                {{ user.username }}
-            </div>
+            <a href="https://github.com/{{ user.username }}" class="flex items-center mb-3">
+                <div class="text-gray-500">
+                    {{ user.username }}
+                </div>
+                <img src="/images/github.png" class="w-4 h-4 ml-1">
+            </a>
             <div class="text-teal-500 text-2xl mb-2">
                 {% for lang_slug in user.languages_used %}
                     {% assign lang = site.data.languages | where: "slug", lang_slug | first %}
