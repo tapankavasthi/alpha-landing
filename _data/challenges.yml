@@ -15,6 +15,7 @@
     - name: Go
       icon: "go"
   player_count: 16
+  completion_rate: 36
 
 - slug: "docker"
   name: "Build your own Docker"
@@ -29,6 +30,7 @@
     - name: Go
       icon: "go"
   player_count: 4
+  completion_rate: 9
 
 - slug: "git"
   state: "coming-soon"

@@ -1,0 +1,73 @@
+{% assign challenge = site.data.challenges | where: "slug", include.challenge_status.slug | first %}
+
+<a href="/challenges/{{ challenge.slug }}"
+   class="
+        flex flex-col
+        shadow hover:shadow-md
+        text-gray-700
+        ">
+    <!-- Card Background -->
+    <div class="flex-grow
+                flex flex-col
+                pl-4 pr-0 pt-4 pb-3 bg-white
+                rounded-md">
+        <!-- Name, Description, Logo -->
+        <div class="flex flex-grow">
+            <div class="flex-grow pr-4 pb-4">
+                <div class="flex-wrap">
+                    <div class="text-lg font-bold text-gray-600 mb-3 mr-3 flex items-start">
+                        {{ challenge.name }}
+                    </div>
+                </div>
+                <div class="text-sm flex-grow text-gray-500">
+                    {{ challenge.description }}
+                </div>
+            </div>
+            <div class="pt-6 flex flex-shrink-0 items-center w-16 overflow-hidden">
+                <div class="h-24">
+                    <div class="w-64">
+                        {% if include.challenge_status.percentage_completed == 100  %}
+                            <img class="h-20" src="/images/challenge-logo-{{challenge.slug}}-green.png">
+                        {% else %}
+                            <img class="h-20" src="/images/challenge-logo-{{challenge.slug}}-green.png">
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if include.challenge_status.percentage_completed == 100  %}
+            <!-- Languages Used + Completion Rate -->
+            <div class="flex items-center">
+                <div class="flex items-center justify-between w-full pr-4">
+                    <!-- Label -->
+                    <div class="flex flex-grow text-xs text-gray-400">
+                        <img src="/images/tick1.png" class="w-4 h-4">
+
+                        <div class="text-gray-500 leading-none text-xs ml-2">
+                            {{ include.challenge_status.last_completed_at | timeago }}
+                        </div>
+                    </div>
+
+                    <div class="flex text-gray-500 leading-none">
+                        {% for lang_slug in include.challenge_status.languages_used %}
+                            {% assign lang = site.data.languages | where: "slug", lang_slug | first %}
+                            <i class="devicon-{{lang.icon}}-plain ml-1" title="{{ lang.name }}"></i>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <!-- Completion bar -->
+            <div class="flex items-center">
+                <div class="relative bg-gray-300 h-3 w-20 rounded mr-2">
+                    <div class="bg-yellow-500 h-3 rounded-l"
+                         style="width: {{ challenge_status.percentage_completed }}%">
+                    </div>
+                </div>
+                <div class="text-xs text-gray-500">
+                    <b>{{ challenge_status.percentage_completed }}%</b> completed
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</a>
