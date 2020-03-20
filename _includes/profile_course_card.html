@@ -49,8 +49,9 @@
                     </div>
 
                     <div class="flex text-gray-500 leading-none">
-                        {% for lang in include.challenge_status.languages_used %}
-                            <i class="devicon-{{lang}}-plain ml-1" title="{{ lang }}"></i>
+                        {% for lang_slug in include.challenge_status.languages_used %}
+                            {% assign lang = site.data.languages | where: "slug", lang_slug | first %}
+                            <i class="devicon-{{lang.icon}}-plain ml-1" title="{{ lang.name }}"></i>
                         {% endfor %}
                     </div>
                 </div>

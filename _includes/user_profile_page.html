@@ -18,8 +18,9 @@
                 {{ user.username }}
             </div>
             <div class="text-teal-500 text-2xl mb-2">
-                {% for lang in user.languages_used %}
-                    <i class="devicon-{{lang}}-plain" title="{{ lang }}"></i>
+                {% for lang_slug in user.languages_used %}
+                    {% assign lang = site.data.languages | where: "slug", lang_slug | first %}
+                    <i class="devicon-{{lang.icon}}-plain" title="{{ lang.name }}"></i>
                 {% endfor %}
             </div>
             <div class="text-xs text-gray-500">
