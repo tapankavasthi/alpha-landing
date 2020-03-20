@@ -35,7 +35,7 @@ module Jekyll
                     end
       self.data = {
         "layout" => "default_tailwind",
-        "title" => "#{username} #{name ? "(#{name})" : ""} | CodeCrafters",
+        "title" => username + (name ? " (#{name})" : ""),
         "description" => description,
       }
       self.content = "{% include user_profile_page.html username=\"#{username}\" %}"
