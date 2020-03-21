@@ -42,7 +42,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 16,
+        "percentage_completed": 50,
         "languages_used": [
 
         ],
@@ -475,6 +475,51 @@
     ]
   },
   {
+    "username": "matthsimon",
+    "name": "Matthieu Simon",
+    "joined_at": "2020-03-13 15:33:56 +0000",
+    "avatar_url": "https://github.com/matthsimon.png",
+    "languages_used": [
+      "go"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-03-13T15:33:56+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "go",
+        "timestamp": "2020-03-18T20:04:03+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "go",
+        "timestamp": "2020-03-21T04:59:45+00:00"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "go"
+        ],
+        "last_completed_at": "2020-03-21 04:59:45 +0000"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
     "username": "JonasAgger",
     "name": "JonasAgger",
     "joined_at": "2020-03-10 13:01:17 +0000",
@@ -651,6 +696,12 @@
         "challenge": "docker",
         "language": "go",
         "timestamp": "2020-03-14T04:04:42+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-03-21T07:09:33+00:00"
       }
     ],
     "challenge_status": [
@@ -664,11 +715,11 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 83,
+        "percentage_completed": 100,
         "languages_used": [
-
+          "go"
         ],
-        "last_completed_at": null
+        "last_completed_at": "2020-03-21 07:09:33 +0000"
       }
     ]
   },

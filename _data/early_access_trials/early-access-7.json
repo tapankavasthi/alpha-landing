@@ -10,18 +10,11 @@
       "ended_at": "2020-03-14T10:00:47.328668+00:00"
     },
     {
-      "username": "wangsikuan",
-      "language": "go",
-      "stage_reached": 5,
-      "started_at": "2020-03-14T04:04:42.576293+00:00",
-      "ended_at": "2020-03-14T16:26:30.337214+00:00"
-    },
-    {
       "username": "jepemo",
       "language": "go",
-      "stage_reached": 1,
+      "stage_reached": 3,
       "started_at": "2020-03-14T17:38:18.396254+00:00",
-      "ended_at": "2020-03-18T19:36:19.864879+00:00"
+      "ended_at": "2020-03-20T19:06:30.720214+00:00"
     },
     {
       "username": "sd5869",
@@ -29,6 +22,13 @@
       "stage_reached": 4,
       "started_at": "2020-03-14T08:17:12.400789+00:00",
       "ended_at": "2020-03-14T19:02:09.026073+00:00"
+    },
+    {
+      "username": "wangsikuan",
+      "language": "go",
+      "stage_reached": 6,
+      "started_at": "2020-03-14T04:04:42.576293+00:00",
+      "ended_at": "2020-03-21T07:09:33.773562+00:00"
     },
     {
       "username": "jolheiser",
