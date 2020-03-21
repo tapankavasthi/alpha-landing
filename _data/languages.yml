@@ -8,9 +8,13 @@
   url: "https://www.php.net/"
 - slug: go
   name: Go
-  icon: "go"
+  icon: "gopher"
   url: "https://golang.org/"
 - slug: nim
   name: Nim
   icon: "nim" # TODO: Add image for this!
   url: "https://nim-lang.org/"
+- slug: haskell
+  name: Haskell
+  icon: "haskell"
+  url: "https://www.haskell.org/"

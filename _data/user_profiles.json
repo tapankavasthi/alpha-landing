@@ -172,7 +172,7 @@
     "joined_at": "2020-02-11 09:18:11 +0000",
     "avatar_url": "https://github.com/sherubthakur.png",
     "languages_used": [
-      "python"
+      "haskell"
     ],
     "events": [
       {
@@ -188,13 +188,13 @@
       {
         "type": "started-challenge",
         "challenge": "redis",
-        "language": "python",
+        "language": "haskell",
         "timestamp": "2020-02-15T14:00:00+05:30"
       },
       {
         "type": "completed-challenge",
         "challenge": "redis",
-        "language": "python",
+        "language": "haskell",
         "timestamp": "2020-02-21T14:00:00+05:30"
       }
     ],
@@ -203,7 +203,7 @@
         "slug": "redis",
         "percentage_completed": 100,
         "languages_used": [
-          "python"
+          "haskell"
         ],
         "last_completed_at": "2020-02-21 14:00:00 +0530"
       },

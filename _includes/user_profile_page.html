@@ -22,11 +22,11 @@
                 </div>
                 <img src="/images/github.png" class="w-4 h-4 ml-1">
             </a>
-            <div class="text-teal-500 text-2xl mb-2">
+            <div class="mb-2 flex">
                 {% for lang_slug in user.languages_used %}
                     {% assign lang = site.data.languages | where: "slug", lang_slug | first %}
                     <a href="{{lang.url}}">
-                        <i class="devicon-{{lang.icon}}-plain" title="{{ lang.name }}"></i>
+                        <img src="/images/{{lang.icon}}-teal-500.svg" class="h-6 mr-1" title="{{ lang.name }}">
                     </a>
                 {% endfor %}
             </div>

@@ -48,10 +48,10 @@
                         </div>
                     </div>
 
-                    <div class="flex text-gray-500 leading-none">
+                    <div class="flex">
                         {% for lang_slug in include.challenge_status.languages_used %}
                             {% assign lang = site.data.languages | where: "slug", lang_slug | first %}
-                            <i class="devicon-{{lang.icon}}-plain ml-1" title="{{ lang.name }}"></i>
+                            <img src="/images/{{lang.icon}}-gray-500.svg" class="h-4 mr-1" title="{{ lang.name }}">
                         {% endfor %}
                     </div>
                 </div>
