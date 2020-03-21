@@ -3,8 +3,6 @@ layout: default_tailwind
 ---
 
 
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
 <div class="bg-gray-200 min-h-screen">
     {% include tw_header.html %}
 
@@ -47,10 +45,9 @@ layout: default_tailwind
                                     <div class="flex mr-3">
                                         <!-- languages -->
                                         <div class="h-4 flex items-center flex-shrink-0 text-teal-500 text-lg">
-                                            {% for lang in challenge.languages %}
-                                            <div class="mr-2">
-                                                <i class="devicon-{{lang.icon}}-plain" title="{{  lang.name }}"></i>
-                                            </div>
+                                            {% for lang_slug in challenge.languages %}
+                                                {% assign lang = site.data.languages | where: "slug", lang_slug | first %}
+                                                <img src="/images/{{lang.icon}}-teal-500.svg" class="h-4 mr-1" title="{{ lang.name }}">
                                             {% endfor %}
                                         </div>
                                     </div>

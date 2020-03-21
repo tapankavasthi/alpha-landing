@@ -7,13 +7,7 @@
     - /images/sample-avatar-1.png
     - /images/sample-avatar-2.png
     - /images/sample-avatar-3.png
-  languages:
-    - name: Python
-      icon: "python"
-    - name: PHP
-      icon: "php"
-    - name: Go
-      icon: "go"
+  languages: ["python", "php", "go"]
   player_count: 16
   completion_rate: 36
 
@@ -26,9 +20,7 @@
     - /images/sample-avatar-1.png
     - /images/sample-avatar-2.png
     - /images/sample-avatar-3.png
-  languages:
-    - name: Go
-      icon: "go"
+  languages: ["go"]
   player_count: 4
   completion_rate: 9
 
