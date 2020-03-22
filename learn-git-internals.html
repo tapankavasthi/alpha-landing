@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="learn-internals-container bg-grey-linear page">
+    {% include header.html %}
+    <div class="content-container">
+        <div class="content">
+            <div class="content-header">
+                <h1>Learn Git Internals</h1>
+                <div class="markdown page-description">
+                    How <i>exactly</i> does Git work internally?
+                </div>
+            </div>
+            <div class="markdown">
+                {{ site.data.copy.learn_git_internals_md | markdownify }}
+
+                {% include early_access_form.html %}
+            </div>
+        </div>
+    </div>
+</div>

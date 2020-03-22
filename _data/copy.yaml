@@ -60,6 +60,64 @@ learn_redis_internals_md: |
 
   Sounds like your jam? Signup below for early access!
 
+learn_git_internals_md: |
+  For many of us, how Git works under the hood is a mystery.
+
+  - What is the `.git` directory used for?
+
+  - What are Git objects? 
+
+  - How does a Git client communicate with a Git server? 
+
+  If one really wanted to understand this topic better, these are some of the
+  resources they'd probably look at:
+
+  - [The Pro Git book](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain) by
+    Scott Chacon & Ben Straub
+
+  - [Peepcode's Git Internals](https://github.com/pluralsight/git-internals-pdf)
+
+  - [Rebuilding Git in Ruby](https://thoughtbot.com/blog/rebuilding-git-in-ruby)
+    by Thoughtbot
+
+  - [Write yourself a Git](https://wyag.thb.lt/) by Thibault Polge
+
+  I've read _all_ of these, and I know that they aren't the easiest to follow.
+  They're often theory-heavy with no code examples, or 2000 word+ series that
+  can get hard to keep up with.
+
+  Here's the part where I offer you a better solution. 
+
+  The CodeCrafters' [Build your own Git challenge](/challenges/git) is a
+  hands-on challenge where you'll learn Git internals by _building_ a small
+  Git implementation. The application you build will be capable of cloning a public
+  repository, committing changes and pushing them back to a Git server.
+
+  <img class="course-preview" src="/images/git_challenge_preview.png">
+
+  You'll proceed stage by stage, starting with simple stages like "Initialize a
+  repository" and eventually building up to a minimal-featured Git
+  implementation that can interact with a public repository. Along the way,
+  you'll learn about the [`.git`
+  directory](http://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html),
+  a few of Git's ["plumbing"
+  commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain),
+  [Git objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
+  (blobs, commits, trees etc.), Git's [transfer
+  protocols](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols) and
+  more.
+
+  You're free to use any programming language of your choice,
+  and work from the comfort of your own editor. Submit code via a git push once
+  ready, and we'll stream test results directly to your terminal.
+
+  You'll also get to chat & compete with like-minded folks in the process. (We
+  run 1-week long sessions, attempt at your own pace)
+
+  <img class="course-preview" src="/images/chat_preview.png" style="max-width: 450px;">
+
+  Sounds like your jam? Signup below for early access!
+
 early_access_md: |
   Hi there, I'm [Paul](https://rohitpaulk.com). 
   
