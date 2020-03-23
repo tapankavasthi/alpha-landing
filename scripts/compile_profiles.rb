@@ -170,20 +170,20 @@ class EarlyAccessTrial
   def challenge_events
     participants.map { |participant|
       events = []
-      events.push(
-        StartedChallengeEvent.new(
-          username: participant.username,
-          date: participant.started_at,
-          challenge: challenge_slug,
-          language: participant.language,
-        )
-      )
-
       if participant.has_completed?
         events.push(
           CompletedChallengeEvent.new(
             username: participant.username,
             date: participant.ended_at,
+            challenge: challenge_slug,
+            language: participant.language,
+          )
+        )
+      else
+        events.push(
+          StartedChallengeEvent.new(
+            username: participant.username,
+            date: participant.started_at,
             challenge: challenge_slug,
             language: participant.language,
           )
@@ -233,7 +233,7 @@ users_map = User.from_files(
 
 challenge_events = trials.map { |trial| trial.challenge_events }.flatten
 
-# Only consider completed ones
+# Only consider users who've completed at-least one challenge
 challenge_events_by_user = challenge_events.group_by(&:username)
 challenge_events_by_user = challenge_events_by_user.select do |_username, events|
   events.any? { |x| x.class == CompletedChallengeEvent }
