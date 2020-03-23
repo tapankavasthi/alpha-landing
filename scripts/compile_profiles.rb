@@ -3,6 +3,11 @@ require "yaml"
 require "time"
 require "pry"
 
+USERS_NOT_ON_DISCORD = [
+  "dhruvagarwal",
+  "nikhil-roy",
+]
+
 class User
   attr_reader :username
   attr_reader :name
@@ -52,6 +57,13 @@ class User
           name: data.fetch("name"),
           avatar_url: "https://github.com/#{gh_username}.png",
           joined_early_access_at: discord_joins.fetch(discord_username),
+        )
+      elsif USERS_NOT_ON_DISCORD.include?(gh_username)
+        User.new(
+          username: data.fetch("username"),
+          name: data.fetch("name"),
+          avatar_url: "https://github.com/#{gh_username}.png",
+          joined_early_access_at: Time.parse("2020-02-11 09:18:11 +0000"),
         )
       else
         nil
