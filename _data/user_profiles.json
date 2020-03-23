@@ -733,6 +733,45 @@
     ]
   },
   {
+    "username": "vidzi",
+    "name": "Vidisha Jitani",
+    "joined_at": "2020-03-13 13:20:39 +0000",
+    "avatar_url": "https://github.com/vidzi.png",
+    "languages_used": [
+      "python"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-03-13T13:20:39+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-02-21T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "python"
+        ],
+        "last_completed_at": "2020-02-21 14:00:00 +0530"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
     "username": "wangsikuan",
     "name": "sikuan",
     "joined_at": "2020-03-07 04:33:07 +0000",
