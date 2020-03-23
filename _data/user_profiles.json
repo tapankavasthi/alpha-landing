@@ -130,6 +130,45 @@
     ]
   },
   {
+    "username": "dhruvagarwal",
+    "name": "Dhruv Agarwal",
+    "joined_at": "2020-02-11 09:18:11 +0000",
+    "avatar_url": "https://github.com/dhruvagarwal.png",
+    "languages_used": [
+      "python"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-11T09:18:11+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-02-21T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "python"
+        ],
+        "last_completed_at": "2020-02-21 14:00:00 +0530"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
     "username": "duaraghav8",
     "name": "Raghav Dua",
     "joined_at": "2020-02-19 06:37:43 +0000",
@@ -435,6 +474,45 @@
     ]
   },
   {
+    "username": "kiranps",
+    "name": "kiran ps",
+    "joined_at": "2020-02-11 11:04:43 +0000",
+    "avatar_url": "https://github.com/kiranps.png",
+    "languages_used": [
+      "reasonml"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-11T11:04:43+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "reasonml",
+        "timestamp": "2020-02-21T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "reasonml"
+        ],
+        "last_completed_at": "2020-02-21 14:00:00 +0530"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
     "username": "matthsimon",
     "name": "Matthieu Simon",
     "joined_at": "2020-03-13 15:33:56 +0000",
@@ -546,6 +624,45 @@
           "go"
         ],
         "last_completed_at": "2020-03-22 12:18:12 +0000"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
+    "username": "nikhil-roy",
+    "name": "nikhil-roy",
+    "joined_at": "2020-02-11 09:18:11 +0000",
+    "avatar_url": "https://github.com/nikhil-roy.png",
+    "languages_used": [
+      "haskell"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-11T09:18:11+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "haskell",
+        "timestamp": "2020-02-21T14:00:00+05:30"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "haskell"
+        ],
+        "last_completed_at": "2020-02-21 14:00:00 +0530"
       },
       {
         "slug": "docker",
