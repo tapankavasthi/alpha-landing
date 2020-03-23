@@ -31,6 +31,20 @@
     - [@prathyk](https://github.com/prathyk)
     - [@lajosbnk](https://github.com/lajosbnk)
 
+- date: "14th March 2020"
+  title: "Language-specific hints"
+  type: "new"
+  description_md: |
+    In some challenges, depending on the language you're using, you might
+    receive language-specific hints.
+
+    <img class="changelog-preview" src="/images/language-hints.png">
+
+    The language you attempt a challenge in a huge part of the experience. There
+    are often quirks to watch out for. Some have a better standard library than
+    others. Hopefully this'll make the experience a bit more delightful,
+    especially if you're new to a language!
+
 - date: "6th March 2020"
   title: "Tweaks to first 3 Redis challenges levels"
   type: "improvement"
