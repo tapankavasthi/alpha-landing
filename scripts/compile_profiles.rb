@@ -288,6 +288,8 @@ profiles = users_to_consider.map do |user|
   }
 end
 
+profiles = profiles.sort_by { |profile| profile.fetch("username").downcase }
+
 File.write("_data/user_profiles.json", JSON.pretty_generate(profiles))
 puts "Dumped #{profiles.count} profiles."
 puts profiles.map { |x| " - http://localhost:4000/users/#{x.fetch("username")}" }
