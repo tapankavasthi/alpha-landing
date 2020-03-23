@@ -12,9 +12,13 @@
   url: "https://golang.org/"
 - slug: nim
   name: Nim
-  icon: "nim" # TODO: Add image for this!
+  icon: "nim"
   url: "https://nim-lang.org/"
 - slug: haskell
   name: Haskell
   icon: "haskell"
   url: "https://www.haskell.org/"
+- slug: reasonml
+  name: ReasonML
+  icon: "haskell" # TODO: Change!
+  url: "https://reasonml.github.io"
