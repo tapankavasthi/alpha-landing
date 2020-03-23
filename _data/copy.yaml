@@ -219,3 +219,13 @@ faqs:
       [Early Access](/early-access), let us know what language you'd like added
       on our Discord server - and we'll try our best to support it in the next
       early access trial!
+
+  - slug: where-is-my-profile-page
+    question: Where is my profile page? 
+    content_md: |
+      If you've completed one or more challenges, you'll find your profile page
+      at https://codecrafters.io/users/\<your_github_username\>.
+
+      Profile pages might take upto 24 hours to sync. If you've completed a
+      challenge recently and don't see your profile page yet, check back in 24
+      hours.

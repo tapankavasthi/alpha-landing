@@ -1,3 +1,19 @@
+- date: "23rd March 2020"
+  title: "Profile pages are in!"
+  type: "new"
+  description_md: |
+    If you've completed one or more challenges, you now have a swanky new
+    profile page!
+
+    [Example](https://codecrafters.io/users/akshaykmr):
+
+    <img class="changelog-preview" src="/images/profile_preview.png">
+
+    Visit https://codecrafters.io/users/\<your_github_username\> to see yours.
+
+    Unlike early access trials, the data stored here is persistent. For now,
+    activity is synced once a day. This'll be more real-time in the future. 
+
 - date: "16th March 2020"
   title: "Early Access #6: Redis"
   type: "announcement"
