@@ -31,18 +31,18 @@
       "ended_at": "2020-03-21T04:59:45.373071+00:00"
     },
     {
-      "username": "arjunmanevannan",
-      "language": "python",
-      "stage_reached": 1,
-      "started_at": "2020-03-21T00:46:20.194475+00:00",
-      "ended_at": "2020-03-22T23:36:50.626699+00:00"
-    },
-    {
       "username": "KabirKwatra",
       "language": "python",
       "stage_reached": 3,
       "started_at": "2020-03-23T00:57:15.748998+00:00",
       "ended_at": "2020-03-23T03:21:52.157349+00:00"
+    },
+    {
+      "username": "arjunmanevannan",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-03-21T00:46:20.194475+00:00",
+      "ended_at": "2020-03-23T16:55:51.198943+00:00"
     },
     {
       "username": "WillBrindle",
