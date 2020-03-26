@@ -91,6 +91,45 @@
     ]
   },
   {
+    "username": "batikeler",
+    "name": "Berkehan Atikeler",
+    "joined_at": "2020-03-22 16:44:45 +0000",
+    "avatar_url": "https://github.com/batikeler.png",
+    "languages_used": [
+      "python"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-03-22T16:44:45+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-03-25T16:58:22+00:00"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "python"
+        ],
+        "last_completed_at": "2020-03-25 16:58:22 +0000"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
     "username": "codaitya",
     "name": "Anand",
     "joined_at": "2020-03-17 07:19:38 +0000",
@@ -462,6 +501,45 @@
           "go"
         ],
         "last_completed_at": "2020-03-12 03:49:57 +0000"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 0,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
+    "username": "KevinSjoberg",
+    "name": "Kevin Sjöberg",
+    "joined_at": "2020-03-22 17:32:33 +0000",
+    "avatar_url": "https://github.com/KevinSjoberg.png",
+    "languages_used": [
+      "python"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-03-22T17:32:33+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-03-25T18:20:17+00:00"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "python"
+        ],
+        "last_completed_at": "2020-03-25 18:20:17 +0000"
       },
       {
         "slug": "docker",
