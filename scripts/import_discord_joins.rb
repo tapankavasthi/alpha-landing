@@ -9,6 +9,8 @@ existing_data = JSON.parse(File.read(FILENAME)).map { |m|
   {
     "id" => m.fetch("id"),
     "username" => m.fetch("username"),
+    "discriminator" => m.fetch("discriminator"),
+    "nick" => m.fetch("nick"),
     "joined_at" => Time.parse(m.fetch("joined_at")).round,
   }
 }
@@ -25,6 +27,8 @@ loop do
     {
       "id" => member.fetch("user").fetch("id"),
       "username" => member.fetch("user").fetch("username"),
+      "discriminator" => member.fetch("user").fetch("discriminator"),
+      "nick" => member.fetch("nick"),
       "joined_at" => Time.parse(member.fetch("joined_at")).round,
     }
   }
