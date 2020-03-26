@@ -3,7 +3,7 @@ serve: compile_profiles
 
 refresh_ea_data:
 	bundle exec ruby scripts/import_ea_data.rb early-access-9 https://ea2-app.codecrafters.io
-	bundle exec ruby scripts/import_ea_data.rb early-access-8 https://ea1-app.codecrafters.io
+	bundle exec ruby scripts/import_ea_data.rb early-access-10 https://ea1-app.codecrafters.io
 
 refresh_github_data:
 	bundle exec ruby scripts/import_github_data.rb
