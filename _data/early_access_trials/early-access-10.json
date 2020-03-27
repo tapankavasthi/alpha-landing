@@ -3,6 +3,34 @@
   "total_stages": 7,
   "users": [
     {
+      "username": "danwilhelm",
+      "language": "python",
+      "stage_reached": 7,
+      "started_at": "2020-03-25T22:13:56.079508+00:00",
+      "ended_at": "2020-03-26T06:36:11.601523+00:00"
+    },
+    {
+      "username": "nirenjan",
+      "language": "go",
+      "stage_reached": 7,
+      "started_at": "2020-03-25T13:35:24.192718+00:00",
+      "ended_at": "2020-03-26T08:51:13.350020+00:00"
+    },
+    {
+      "username": "nehri97",
+      "language": "python",
+      "stage_reached": 6,
+      "started_at": "2020-03-25T13:50:41.563145+00:00",
+      "ended_at": "2020-03-27T14:44:21.225591+00:00"
+    },
+    {
+      "username": "nimah79",
+      "language": "php",
+      "stage_reached": 4,
+      "started_at": "2020-03-27T14:19:48.032993+00:00",
+      "ended_at": "2020-03-27T15:02:50.360103+00:00"
+    },
+    {
       "username": "jabberwik",
       "language": "python",
       "stage_reached": 1,
@@ -10,11 +38,18 @@
       "ended_at": "2020-03-25T15:47:58.540518+00:00"
     },
     {
-      "username": "ngilles",
+      "username": "KillahB33",
       "language": "python",
       "stage_reached": 4,
-      "started_at": "2020-03-25T09:58:40.601303+00:00",
-      "ended_at": "2020-03-25T11:41:50.312651+00:00"
+      "started_at": "2020-03-25T14:24:27.167684+00:00",
+      "ended_at": "2020-03-27T15:50:58.935155+00:00"
+    },
+    {
+      "username": "nirenjan",
+      "language": "go",
+      "stage_reached": 7,
+      "started_at": "2020-03-26T09:20:49.593099+00:00",
+      "ended_at": "2020-03-26T09:37:46.717807+00:00"
     },
     {
       "username": "KillahB33",
@@ -31,6 +66,13 @@
       "ended_at": "2020-03-25T16:58:22.781622+00:00"
     },
     {
+      "username": "ngilles",
+      "language": "python",
+      "stage_reached": 7,
+      "started_at": "2020-03-25T09:58:40.601303+00:00",
+      "ended_at": "2020-03-26T16:55:59.037982+00:00"
+    },
+    {
       "username": "KevinSjoberg",
       "language": "python",
       "stage_reached": 7,
@@ -38,39 +80,18 @@
       "ended_at": "2020-03-25T18:20:17.567174+00:00"
     },
     {
-      "username": "KillahB33",
-      "language": "python",
-      "stage_reached": 2,
-      "started_at": "2020-03-25T14:24:27.167684+00:00",
-      "ended_at": "2020-03-25T20:51:51.463987+00:00"
-    },
-    {
-      "username": "nirenjan",
-      "language": "go",
-      "stage_reached": 5,
-      "started_at": "2020-03-25T13:35:24.192718+00:00",
-      "ended_at": "2020-03-25T23:55:52.645044+00:00"
-    },
-    {
       "username": "chammaaomar",
       "language": "python",
-      "stage_reached": 4,
+      "stage_reached": 7,
       "started_at": "2020-03-25T16:48:11.777768+00:00",
-      "ended_at": "2020-03-26T00:36:18.856462+00:00"
+      "ended_at": "2020-03-27T00:49:11.776979+00:00"
     },
     {
-      "username": "nehri97",
+      "username": "KabirKwatra",
       "language": "python",
-      "stage_reached": 4,
-      "started_at": "2020-03-25T13:50:41.563145+00:00",
-      "ended_at": "2020-03-26T01:01:41.750447+00:00"
-    },
-    {
-      "username": "danwilhelm",
-      "language": "python",
-      "stage_reached": 5,
-      "started_at": "2020-03-25T22:13:56.079508+00:00",
-      "ended_at": "2020-03-26T05:32:02.002359+00:00"
+      "stage_reached": 7,
+      "started_at": "2020-03-26T19:37:02.801200+00:00",
+      "ended_at": "2020-03-27T01:17:10.877659+00:00"
     }
   ]
 }

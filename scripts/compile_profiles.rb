@@ -6,6 +6,7 @@ require "pry"
 USERS_NOT_ON_DISCORD = [
   "dhruvagarwal",
   "nikhil-roy",
+  "KabirKwatra",  # Couldn't link discord profile
 ]
 
 class User

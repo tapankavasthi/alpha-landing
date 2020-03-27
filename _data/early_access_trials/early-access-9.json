@@ -3,20 +3,6 @@
   "total_stages": 6,
   "users": [
     {
-      "username": "ayyjohn",
-      "language": "go",
-      "stage_reached": 3,
-      "started_at": "2020-03-25T01:09:31.853657+00:00",
-      "ended_at": "2020-03-25T04:02:59.787564+00:00"
-    },
-    {
-      "username": "matthsimon",
-      "language": "go",
-      "stage_reached": 5,
-      "started_at": "2020-03-23T16:15:04.390516+00:00",
-      "ended_at": "2020-03-25T05:33:34.680178+00:00"
-    },
-    {
       "username": "javamonk",
       "language": "go",
       "stage_reached": 1,
@@ -29,6 +15,20 @@
       "stage_reached": 1,
       "started_at": "2020-03-25T21:20:09.767091+00:00",
       "ended_at": "2020-03-25T21:39:37.590742+00:00"
+    },
+    {
+      "username": "ayyjohn",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-03-25T01:09:31.853657+00:00",
+      "ended_at": "2020-03-27T04:21:51.994673+00:00"
+    },
+    {
+      "username": "matthsimon",
+      "language": "go",
+      "stage_reached": 6,
+      "started_at": "2020-03-23T16:15:04.390516+00:00",
+      "ended_at": "2020-03-27T08:50:20.536441+00:00"
     },
     {
       "username": "frakman1",
@@ -50,6 +50,13 @@
       "stage_reached": 6,
       "started_at": "2020-03-22T12:45:16.292759+00:00",
       "ended_at": "2020-03-23T16:14:39.674117+00:00"
+    },
+    {
+      "username": "neriksso",
+      "language": "go",
+      "stage_reached": 3,
+      "started_at": "2020-03-27T14:43:11.215498+00:00",
+      "ended_at": "2020-03-27T15:03:45.205203+00:00"
     },
     {
       "username": "ProxyCat",
