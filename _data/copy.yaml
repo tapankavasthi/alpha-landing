@@ -154,13 +154,13 @@ early_access_md: |
   We'd love to have you on-board.
 
 early_access_stats:
-  - number: 30+
+  - number: 50+
     text: early access participants
-  - number: 500+
+  - number: 800+
     text: users enrolled for early access
-  - number: 6
+  - number: 8
     text: early access trials completed
-  - number: 500+
+  - number: 1400+
     text: code submissions evaluated
 
 
