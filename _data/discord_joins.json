@@ -616,13 +616,6 @@
     "joined_at": "2020-03-12 15:47:39 +0000"
   },
   {
-    "id": "688003159590830089",
-    "username": "holla1144",
-    "discriminator": "3538",
-    "nick": null,
-    "joined_at": "2020-03-13 12:39:48 +0000"
-  },
-  {
     "id": "688010731287085124",
     "username": "ashuto0sh",
     "discriminator": "7728",
@@ -1237,5 +1230,103 @@
     "discriminator": "4951",
     "nick": null,
     "joined_at": "2020-03-27 15:43:09 +0000"
+  },
+  {
+    "id": "616703470967324702",
+    "username": "vicki",
+    "discriminator": "6313",
+    "nick": null,
+    "joined_at": "2020-03-27 17:21:34 +0000"
+  },
+  {
+    "id": "458276816071950337",
+    "username": "ServerStats",
+    "discriminator": "0197",
+    "nick": null,
+    "joined_at": "2020-03-27 18:15:49 +0000"
+  },
+  {
+    "id": "196677569867677697",
+    "username": "de_theannomc1",
+    "discriminator": "5546",
+    "nick": null,
+    "joined_at": "2020-03-27 20:40:39 +0000"
+  },
+  {
+    "id": "341198389951594497",
+    "username": "Luca",
+    "discriminator": "4545",
+    "nick": null,
+    "joined_at": "2020-03-27 21:27:23 +0000"
+  },
+  {
+    "id": "168413918828560384",
+    "username": "Falgorin",
+    "discriminator": "1306",
+    "nick": null,
+    "joined_at": "2020-03-27 22:23:58 +0000"
+  },
+  {
+    "id": "616299694871674885",
+    "username": "topaz",
+    "discriminator": "1167",
+    "nick": null,
+    "joined_at": "2020-03-28 11:37:04 +0000"
+  },
+  {
+    "id": "684458181573083136",
+    "username": "Andrew1234321",
+    "discriminator": "7015",
+    "nick": null,
+    "joined_at": "2020-03-28 13:26:42 +0000"
+  },
+  {
+    "id": "693466250218569740",
+    "username": "nullnon",
+    "discriminator": "5443",
+    "nick": null,
+    "joined_at": "2020-03-28 14:38:49 +0000"
+  },
+  {
+    "id": "502651563907481610",
+    "username": "mikey",
+    "discriminator": "7649",
+    "nick": null,
+    "joined_at": "2020-03-28 19:29:21 +0000"
+  },
+  {
+    "id": "325672629077934080",
+    "username": "hwoodiwiss",
+    "discriminator": "2954",
+    "nick": null,
+    "joined_at": "2020-03-28 22:23:41 +0000"
+  },
+  {
+    "id": "382860618488741890",
+    "username": "monarch",
+    "discriminator": "2905",
+    "nick": null,
+    "joined_at": "2020-03-29 13:22:20 +0000"
+  },
+  {
+    "id": "452887049989521409",
+    "username": "Dawny33",
+    "discriminator": "3358",
+    "nick": null,
+    "joined_at": "2020-03-29 13:35:19 +0000"
+  },
+  {
+    "id": "181597108225179649",
+    "username": "Greg",
+    "discriminator": "1940",
+    "nick": null,
+    "joined_at": "2020-03-30 01:19:07 +0000"
+  },
+  {
+    "id": "171336809836576768",
+    "username": "Moltke",
+    "discriminator": "8821",
+    "nick": null,
+    "joined_at": "2020-03-30 04:17:31 +0000"
   }
 ]

@@ -24,13 +24,6 @@
       "ended_at": "2020-03-27T14:44:21.225591+00:00"
     },
     {
-      "username": "nimah79",
-      "language": "php",
-      "stage_reached": 4,
-      "started_at": "2020-03-27T14:19:48.032993+00:00",
-      "ended_at": "2020-03-27T15:02:50.360103+00:00"
-    },
-    {
       "username": "jabberwik",
       "language": "python",
       "stage_reached": 1,
@@ -66,6 +59,13 @@
       "ended_at": "2020-03-25T16:58:22.781622+00:00"
     },
     {
+      "username": "nimah79",
+      "language": "php",
+      "stage_reached": 7,
+      "started_at": "2020-03-27T13:50:55.221777+00:00",
+      "ended_at": "2020-03-27T22:11:12.911916+00:00"
+    },
+    {
       "username": "ngilles",
       "language": "python",
       "stage_reached": 7,
@@ -80,6 +80,27 @@
       "ended_at": "2020-03-25T18:20:17.567174+00:00"
     },
     {
+      "username": "vickiniu",
+      "language": "go",
+      "stage_reached": 7,
+      "started_at": "2020-03-27T17:24:34.013215+00:00",
+      "ended_at": "2020-03-27T21:13:45.064062+00:00"
+    },
+    {
+      "username": "nimah79",
+      "language": "php",
+      "stage_reached": 7,
+      "started_at": "2020-03-27T14:19:48.032993+00:00",
+      "ended_at": "2020-03-29T21:25:24.171372+00:00"
+    },
+    {
+      "username": "monarch0111",
+      "language": "go",
+      "stage_reached": 3,
+      "started_at": "2020-03-29T13:38:09.171410+00:00",
+      "ended_at": "2020-03-30T00:27:41.634501+00:00"
+    },
+    {
       "username": "chammaaomar",
       "language": "python",
       "stage_reached": 7,
@@ -87,11 +108,32 @@
       "ended_at": "2020-03-27T00:49:11.776979+00:00"
     },
     {
+      "username": "LoLlYdE",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-03-27T20:27:21.463508+00:00",
+      "ended_at": "2020-03-28T15:58:13.716259+00:00"
+    },
+    {
       "username": "KabirKwatra",
       "language": "python",
       "stage_reached": 7,
       "started_at": "2020-03-26T19:37:02.801200+00:00",
       "ended_at": "2020-03-27T01:17:10.877659+00:00"
+    },
+    {
+      "username": "LoLlYdE",
+      "language": "go",
+      "stage_reached": 1,
+      "started_at": "2020-03-27T19:09:11.537161+00:00",
+      "ended_at": "2020-03-27T20:11:21.933398+00:00"
+    },
+    {
+      "username": "ali-l",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-03-26T23:59:33.441040+00:00",
+      "ended_at": "2020-03-29T04:29:17.290606+00:00"
     }
   ]
 }
