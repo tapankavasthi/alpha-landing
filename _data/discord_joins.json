@@ -1328,5 +1328,47 @@
     "discriminator": "8821",
     "nick": null,
     "joined_at": "2020-03-30 04:17:31 +0000"
+  },
+  {
+    "id": "342142103469686795",
+    "username": "catbug",
+    "discriminator": "9808",
+    "nick": null,
+    "joined_at": "2020-03-30 15:02:46 +0000"
+  },
+  {
+    "id": "282644226192310272",
+    "username": "ArianSun",
+    "discriminator": "3827",
+    "nick": null,
+    "joined_at": "2020-03-30 16:12:33 +0000"
+  },
+  {
+    "id": "195827698935791617",
+    "username": "Lucid",
+    "discriminator": "1604",
+    "nick": null,
+    "joined_at": "2020-03-31 05:28:37 +0000"
+  },
+  {
+    "id": "212421186460712963",
+    "username": "Jypotheren",
+    "discriminator": "1991",
+    "nick": null,
+    "joined_at": "2020-03-31 17:44:38 +0000"
+  },
+  {
+    "id": "607974096386523143",
+    "username": "callcc",
+    "discriminator": "9536",
+    "nick": null,
+    "joined_at": "2020-03-31 22:15:20 +0000"
+  },
+  {
+    "id": "540292494630322191",
+    "username": "tbrashaw",
+    "discriminator": "7018",
+    "nick": null,
+    "joined_at": "2020-04-01 03:47:10 +0000"
   }
 ]
