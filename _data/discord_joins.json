@@ -1079,7 +1079,7 @@
   },
   {
     "id": "555280466429870090",
-    "username": "Wildfire Zyra",
+    "username": "Nooblette",
     "discriminator": "1677",
     "nick": null,
     "joined_at": "2020-03-24 18:29:48 +0000"
@@ -1323,13 +1323,6 @@
     "joined_at": "2020-03-30 01:19:07 +0000"
   },
   {
-    "id": "171336809836576768",
-    "username": "Moltke",
-    "discriminator": "8821",
-    "nick": null,
-    "joined_at": "2020-03-30 04:17:31 +0000"
-  },
-  {
     "id": "342142103469686795",
     "username": "catbug",
     "discriminator": "9808",
@@ -1370,5 +1363,68 @@
     "discriminator": "7018",
     "nick": null,
     "joined_at": "2020-04-01 03:47:10 +0000"
+  },
+  {
+    "id": "694840381992599604",
+    "username": "mavihs",
+    "discriminator": "4549",
+    "nick": null,
+    "joined_at": "2020-04-01 09:27:48 +0000"
+  },
+  {
+    "id": "130441999529541632",
+    "username": "Keats",
+    "discriminator": "9176",
+    "nick": null,
+    "joined_at": "2020-04-01 13:37:30 +0000"
+  },
+  {
+    "id": "429004448732545054",
+    "username": "ItsAlium",
+    "discriminator": "5885",
+    "nick": null,
+    "joined_at": "2020-04-01 14:26:18 +0000"
+  },
+  {
+    "id": "508648565095137290",
+    "username": "pe",
+    "discriminator": "5444",
+    "nick": null,
+    "joined_at": "2020-04-01 14:47:02 +0000"
+  },
+  {
+    "id": "430421342987354113",
+    "username": "uhqqow",
+    "discriminator": "4158",
+    "nick": null,
+    "joined_at": "2020-04-01 15:01:32 +0000"
+  },
+  {
+    "id": "694958309790187585",
+    "username": "Lasse",
+    "discriminator": "4575",
+    "nick": null,
+    "joined_at": "2020-04-01 17:16:21 +0000"
+  },
+  {
+    "id": "592319752433827870",
+    "username": "wessel",
+    "discriminator": "1620",
+    "nick": null,
+    "joined_at": "2020-04-01 22:41:25 +0000"
+  },
+  {
+    "id": "272904486551289868",
+    "username": "JB",
+    "discriminator": "3886",
+    "nick": null,
+    "joined_at": "2020-04-02 19:05:08 +0000"
+  },
+  {
+    "id": "694802824504279053",
+    "username": "skaldesh",
+    "discriminator": "3401",
+    "nick": null,
+    "joined_at": "2020-04-03 08:41:09 +0000"
   }
 ]

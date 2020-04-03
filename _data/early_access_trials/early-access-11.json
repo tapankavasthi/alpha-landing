@@ -3,11 +3,32 @@
   "total_stages": 6,
   "users": [
     {
+      "username": "mrybak834",
+      "language": "nim",
+      "stage_reached": 1,
+      "started_at": "2020-04-01T21:33:01.043990+00:00",
+      "ended_at": "2020-04-01T22:52:23.699769+00:00"
+    },
+    {
+      "username": "GarrickHe",
+      "language": "go",
+      "stage_reached": 5,
+      "started_at": "2020-03-30T19:33:18.342395+00:00",
+      "ended_at": "2020-04-01T23:18:45.930601+00:00"
+    },
+    {
       "username": "batikeler",
       "language": "go",
       "stage_reached": 3,
       "started_at": "2020-03-30T13:25:39.675008+00:00",
       "ended_at": "2020-03-30T15:29:22.882417+00:00"
+    },
+    {
+      "username": "Greg15153",
+      "language": "go",
+      "stage_reached": 5,
+      "started_at": "2020-04-01T03:50:37.521268+00:00",
+      "ended_at": "2020-04-03T00:31:28.982586+00:00"
     },
     {
       "username": "vickiniu",
@@ -43,13 +64,6 @@
       "stage_reached": 1,
       "started_at": "2020-03-31T22:19:27.077307+00:00",
       "ended_at": "2020-04-01T01:03:39.520297+00:00"
-    },
-    {
-      "username": "GarrickHe",
-      "language": "go",
-      "stage_reached": 3,
-      "started_at": "2020-03-30T19:33:18.342395+00:00",
-      "ended_at": "2020-04-01T02:59:16.050565+00:00"
     }
   ]
 }
