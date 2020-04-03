@@ -1,0 +1,95 @@
+slug: "react"
+name: "React"
+description_md: |
+  In this challenge, you'll build a barebones React implementation that supports
+  function components and hooks!
+
+  Along the way, you'll learn about React's
+  component API, DOM-diffing algorithm and how hooks are implemented under the
+  hood. 
+
+supported_languages: ["go"]
+starter_repos:
+  go: https://github.com/codecrafters-io/docker-starter-golang
+  
+marketing_intro_md: |
+  In this challenge, you'll build a barebones React implementation that supports
+  function components and hooks!
+
+  Along the way, you'll learn about React's component API, DOM-diffing algorithm
+  and how hooks are implemented under the hood.
+
+stages:
+  - slug: "init"
+    name: "Create an element"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      In this stage, you'll implement `React.CreateElement`, the function
+      internally called when you write JSX. We'll only support creating a simple
+      element with no children at the moment.
+
+  - slug: "create_element_children"
+    name: "Create an element with children"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      In this stage, you'll amend the function from the previous stage to add
+      support for child elements.
+
+  - slug: "render"
+    name: "Render an element"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      Let's start interacting with the DOM! In this stage, you'll implement
+      `React.render`, which'll take an element created using
+      `React.createElement` and render it to a given HTML container.
+
+      We won't worry about updating/deleting elements at this point - just a
+      basic 'put it there.'.
+
+  - slug: "render"
+    name: "Render a component"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      It's component time! In this stage, you'll add support for function
+      components. We'll amend the `React.createElement` implementation to accept
+      a function component.
+
+  - slug: "render_diff"
+    name: "Update an element"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      What happens when `React.render` is called again on an element that was
+      already rendered? You'll need to 
+
+  - slug: "useState"
+    name: "The useState hook"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      Now that we can render function components just fine, let's add state. In
+      React, this is done using hooks. In this stage, you'll implement the
+      `useState` hook.
+
+  - slug: "useEffect"
+    name: "The useEffect hook"
+    description_md: |
+      WIP
+
+    marketing_md: |
+      Now that we can render function components just fine, let's add state. In
+      React, this is done using hooks. In this stage, you'll implement the
+      `useState` hook.
+
+
+
