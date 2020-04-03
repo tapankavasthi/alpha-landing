@@ -2,11 +2,12 @@ slug: "react"
 name: "React"
 description_md: |
   In this challenge, you'll build a barebones React implementation that supports
-  function components and hooks!
+  function components and hooks.
 
   Along the way, you'll learn about React's
-  component API, DOM-diffing algorithm and how hooks are implemented under the
-  hood. 
+  [API](https://reactjs.org/docs/react-api.html), [DOM-diffing
+  algorithm](https://reactjs.org/docs/reconciliation.html#the-diffing-algorithm),
+  [hooks](https://reactjs.org/docs/hooks-intro.html) and more!
 
 supported_languages: ["go"]
 starter_repos:
@@ -14,10 +15,10 @@ starter_repos:
   
 marketing_intro_md: |
   In this challenge, you'll build a barebones React implementation that supports
-  function components and hooks!
-
-  Along the way, you'll learn about React's component API, DOM-diffing algorithm
-  and how hooks are implemented under the hood.
+  function components and hooks. Along the way, you'll learn about React's
+  [API](https://reactjs.org/docs/react-api.html), [DOM-diffing
+  algorithm](https://reactjs.org/docs/reconciliation.html#the-diffing-algorithm),
+  [hooks](https://reactjs.org/docs/hooks-intro.html) and more!
 
 stages:
   - slug: "init"
@@ -26,9 +27,13 @@ stages:
       WIP
 
     marketing_md: |
-      In this stage, you'll implement `React.CreateElement`, the function
-      internally called when you write JSX. We'll only support creating a simple
-      element with no children at the moment.
+      In this stage, you'll implement
+      [`React.createElement`](https://reactjs.org/docs/react-api.html#createelement),
+      the function that [JSX](https://reactjs.org/docs/introducing-jsx.html)
+      translates to internally.
+
+      To start out simple, we'll only support creating a simple HTML element
+      with no children.
 
   - slug: "create_element_children"
     name: "Create an element with children"
@@ -46,11 +51,12 @@ stages:
 
     marketing_md: |
       Let's start interacting with the DOM! In this stage, you'll implement
-      `React.render`, which'll take an element created using
-      `React.createElement` and render it to a given HTML container.
+      [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render),
+      which'll take an element created using `React.createElement` and render it
+      into a given HTML container.
 
-      We won't worry about updating/deleting elements at this point - just a
-      basic 'put it there.'.
+      We won't worry about updating/deleting elements at this point - just the
+      first-time render.
 
   - slug: "render"
     name: "Render a component"
@@ -58,18 +64,23 @@ stages:
       WIP
 
     marketing_md: |
-      It's component time! In this stage, you'll add support for function
-      components. We'll amend the `React.createElement` implementation to accept
-      a function component.
+      In this stage, you'll add support for [function
+      components](https://reactjs.org/docs/components-and-props.html#function-and-class-components).
+      We'll amend the `React.createElement` & `ReactDOM.render` implementations
+      to work with function components.
 
   - slug: "render_diff"
-    name: "Update an element"
+    name: "Re-render an element"
     description_md: |
       WIP
 
     marketing_md: |
-      What happens when `React.render` is called again on an element that was
-      already rendered? You'll need to 
+      When `ReactDOM.render` is called again after a component changes, not all
+      DOM nodes are created from scratch. React runs a [heuristic diffing
+      algorithm](https://reactjs.org/docs/reconciliation.html#the-diffing-algorithm)
+      to figure out the minimum transformations required to transform the DOM
+      tree to the expected state. In this stage, you'll implement this
+      DOM-diffing algorithm.
 
   - slug: "useState"
     name: "The useState hook"
@@ -78,8 +89,10 @@ stages:
 
     marketing_md: |
       Now that we can render function components just fine, let's add state. In
-      React, this is done using hooks. In this stage, you'll implement the
-      `useState` hook.
+      React, this is done using
+      [hooks](https://reactjs.org/docs/hooks-intro.html). In this stage, you'll
+      implement the [`useState`](https://reactjs.org/docs/hooks-state.html)
+      hook.
 
   - slug: "useEffect"
     name: "The useEffect hook"
@@ -87,9 +100,5 @@ stages:
       WIP
 
     marketing_md: |
-      Now that we can render function components just fine, let's add state. In
-      React, this is done using hooks. In this stage, you'll implement the
-      `useState` hook.
-
-
-
+      This is the last stage of the challenge. We'll add support for one more
+      hook: [`useEffect`](https://reactjs.org/docs/hooks-effect.html).
