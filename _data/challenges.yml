@@ -32,3 +32,12 @@
   example_languages:
     - /images/
   coming_soon: true
+
+- slug: "react"
+  state: "coming-soon"
+  name: "Build your own React"
+  description: |
+    Learn about React's createElement API, function components, DOM-diffing algorithm, hooks and more
+  example_languages:
+    - /images/
+  coming_soon: true
