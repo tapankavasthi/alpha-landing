@@ -7,7 +7,7 @@
     - /images/sample-avatar-1.png
     - /images/sample-avatar-2.png
     - /images/sample-avatar-3.png
-  languages: ["python", "php", "go"]
+  languages: ["python", "php", "go", "c"]
   player_count: 16
   completion_rate: 36
 
@@ -20,7 +20,7 @@
     - /images/sample-avatar-1.png
     - /images/sample-avatar-2.png
     - /images/sample-avatar-3.png
-  languages: ["go"]
+  languages: ["go", "nim", "c"]
   player_count: 4
   completion_rate: 9
 
