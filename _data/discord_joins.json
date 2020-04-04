@@ -1426,5 +1426,19 @@
     "discriminator": "3401",
     "nick": null,
     "joined_at": "2020-04-03 08:41:09 +0000"
+  },
+  {
+    "id": "282031472427139073",
+    "username": "cassidoo",
+    "discriminator": "1456",
+    "nick": null,
+    "joined_at": "2020-04-03 17:44:03 +0000"
+  },
+  {
+    "id": "223345142889840641",
+    "username": "thg",
+    "discriminator": "7104",
+    "nick": null,
+    "joined_at": "2020-04-03 18:12:14 +0000"
   }
 ]
