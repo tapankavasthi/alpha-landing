@@ -1,14 +1,14 @@
 slug: "git"
-name: "Git"
+name: "Build your own Git"
 description_md: |
   In this challenge, you'll build a toy Git implementation that can clone a
   public repository, add commits and push them back to a git server. Along the
   way, you'll learn about the `.git` directory, Git objects (blobs, commits,
   trees etc.), Git's transfer protocols and much more.
 
-supported_languages: ["go"]
+supported_languages: ["python"]
 starter_repos:
-  go: https://github.com/codecrafters-io/docker-starter-golang
+  python: https://github.com/codecrafters-io/git-starter-python
   
 marketing_intro_md: |
   In this challenge, you'll build a toy Git implementation that can clone a
@@ -22,11 +22,17 @@ marketing_intro_md: |
   protocols](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols) and
   more.
 
+
 stages:
   - slug: "init"
     name: "Initialize the .git directory"
     description_md: |
-      WIP
+      In this stage, you'll implement the `git init` command. This command
+      initailizes a repository by creating a `.git` directory and some files
+      inside it.
+
+      We'd like to make the first stage easy to pass, so we've included steps on
+      how to pass this stage in the readme.
 
     marketing_md: |
       In this stage, you'll implement the `git init` command. You'll initialize
@@ -35,31 +41,104 @@ stages:
   - slug: "create_blob"
     name: "Create a blob object"
     description_md: |
-      WIP
+      In this challenge, we'll deal with three [Git
+      objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects):
+
+        - blobs
+        - trees
+        - commits
+
+      Let's start with blobs, which represent files (binary data, to be
+      precise).
+
+      In this stage, you'll add a blob to your git repository by persisting it
+      in the `.git/objects` directory.
+
+      You'll do this using the first of multiple ["plumbing"
+      commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+      we'll encounter in this challenge: [`git
+      hash-object`](https://git-scm.com/docs/git-hash-object).
+
+      Your program will be called like so:
+
+      ```
+      ./your_git.sh hash-object -v <file>
+      ```
+
+      It is expected to store the data from `<file>` as a blob in `.git/objects`
+      and print a 40-char SHA to stdout.
+
+      To verify your implementation, the tester will try to read the blob your
+      program wrote. It'll do this using [`git
+      cat-file`](https://git-scm.com/docs/git-cat-file), which prints the
+      contents of a blob.
+
+      ```
+      git cat-file -p <blob_sha>
+      ```
 
     marketing_md: |
       In this stage, you'll add a file to your git repository by creating a blob
       object and persisting it in the `.git/objects` directory.
 
-      You'll do this using the first of multiple ["plumbing" commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain) we'll
-      encounter in thie challenge: [`git hash-object`](https://git-scm.com/docs/git-hash-object).
+      You'll do this using the first of multiple ["plumbing"
+      commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+      we'll encounter in thie challenge: [`git
+      hash-object`](https://git-scm.com/docs/git-hash-object).
 
 
   - slug: "read_blob"
     name: "Read a blob object"
     description_md: |
-      WIP
+      In the previous stage, we learnt how to persist a blob. In this stage,
+      we'll read a blob that already exists in storage by implementing the `git
+      cat-file` command.
+
+      Your program will be called like so:
+
+      ```
+      ./your_git.sh cat-file -p <blob_sha>
+      ```
 
     marketing_md: |
       In the previous stage, we learnt how to persist a blob. In this stage,
       we'll read a blob that already exists in storage by implementing the `git
       cat-file` command.
 
-
   - slug: "read_tree"
     name: "Read a tree object"
     description_md: |
-      WIP
+      In this stage, you'll implement the [`git
+      ls-tree`](https://git-scm.com/docs/git-ls-tree) command, which lets you
+      inspect a tree object.
+
+      The tester will execute your program like this:
+
+      ```
+      ./your_git.sh ls-tree --name-only <tree_sha>
+      ```
+
+      For a directory structure like this, 
+
+      ```
+      - file1
+      dir1/
+       - file_in_dir_1
+       - file_in_dir_2
+      dir2/
+       - file_in_dir_3
+      ```
+
+      The output expected is:
+
+      ```
+      dir1
+      dir2
+      file1
+      ```
+
+      (Note that the output is alphabetically sorted, just like the tree objects
+      are stored)
 
     marketing_md: |
       Now that we've learnt how to read/write blobs, let's move onto our next
@@ -70,7 +149,26 @@ stages:
   - slug: "write_tree"
     name: "Write a tree object"
     description_md: |
-      WIP
+      Now that you know how to read a tree object, let's put your new found
+      skills to test - can you _write_ a tree?
+
+      Here's how the tester will invoke your program:
+
+      ```
+      ./your_git.sh write-tree
+      ```
+
+      You're expected to write the entire working directory as a tree object,
+      and return the 40-char SHA.
+
+      Caveat: Unlike the official Git implementation, we aren't going to
+      implement a staging area (the place where things go when you run `git
+      add`). We'll just assume that all files in the working directory are
+      staged. If you're testing this against `git` locally, make sure to run
+      `git add .` before `git write-tree`. 
+
+      To verify your implementation, the tester will read the tree object from
+      the `.git` directory.
 
     marketing_md: |
       In this stage, you'll write a tree to git storage by implementing the [`git

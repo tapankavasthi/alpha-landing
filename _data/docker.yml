@@ -1,5 +1,5 @@
 slug: "docker"
-name: "Docker"
+name: "Build your own Docker"
 description_md: |
   In this challenge, you'll build a toy Docker implementation that can pull an
   image from [Docker Hub](https://hub.docker.com/) and execute commands in it.
@@ -10,7 +10,7 @@ description_md: |
 
 supported_languages: ["go", "nim"]
 starter_repos:
-  go: https://github.com/codecrafters-io/docker-starter-golang
+  go: https://github.com/codecrafters-io/docker-starter-go
   nim: https://github.com/codecrafters-io/docker-starter-nim
   
 marketing_intro_md: |
@@ -84,6 +84,10 @@ stages:
       If the program you're executing exits with exit code 1, your program
       should exit with exit code 1 too.
 
+      To test this behaviour locally, you could use the `echo` + `echo_stderr`
+      commands that `docker-explorer` exposes. Run `docker-explorer --help` to
+      view usage.
+
       Just like the previous stage, the tester will run your program like this: 
 
       ```
@@ -108,6 +112,13 @@ stages:
       the host machine. Create an empty temporary directory and `chroot` into it
       when executing the command. You'll need to copy the binary being executed
       too.
+
+      {{#lang_is_nim}}
+      Since Nim's [posix module](https://nim-lang.org/docs/posix.html) doesn't
+      have `chroot` defined, you'll need to implement this yourself! For
+      examples on how to do this, view the source for other syscalls like
+      [chdir](https://nim-lang.org/docs/posix.html#chdir%2Ccstring).
+      {{/lang_is_nim}}
 
       Just like the previous stage, the tester will run your program like this: 
 
@@ -171,8 +182,15 @@ stages:
       - Fetch the [image manifest](https://docs.docker.com/registry/spec/api/#pulling-an-image-manifest)
       - [Pull layers](https://docs.docker.com/registry/spec/api/#pulling-a-layer) of an image and extract them to the chroot directory
 
+      {{#lang_is_go}}
       Since Go doesn't have an archive extraction utility in its stdlib, you
       might want to shell out and use `tar`.
+      {{/lang_is_go}}
+
+      {{#lang_is_nim}}
+      Since Nim doesn't have an archive extraction utility in its stdlib, you
+      might want to shell out and use `tar`.
+      {{/lang_is_nim}}
 
     marketing_md: |
       In this stage, you'll fetch an image from Docker Hub and execute a command

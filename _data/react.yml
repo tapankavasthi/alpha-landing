@@ -1,5 +1,5 @@
 slug: "react"
-name: "React"
+name: "Build your own React"
 description_md: |
   In this challenge, you'll build a barebones React implementation that supports
   function components and hooks.

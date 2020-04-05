@@ -37,3 +37,15 @@ copy_course_files:
 		| jq -r .content \
 		| base64 -d \
 		> _data/docker.yml
+
+	hub api \
+		repos/rohitpaulk/codecrafters-server/contents/codecrafters/store/data/git.yml \
+		| jq -r .content \
+		| base64 -d \
+		> _data/git.yml
+
+	hub api \
+		repos/rohitpaulk/codecrafters-server/contents/codecrafters/store/data/react.yml \
+		| jq -r .content \
+		| base64 -d \
+		> _data/react.yml
