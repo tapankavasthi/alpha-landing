@@ -1,5 +1,5 @@
 slug: "redis"
-name: "Redis"
+name: "Build your own Redis"
 description_md: |
   In this challenge, you'll build a toy Redis clone
   that's capable of handling basic commands like PING, GET
