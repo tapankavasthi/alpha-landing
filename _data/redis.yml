@@ -1,17 +1,18 @@
 slug: "redis"
-name: "Build your own Redis"
+name: "Redis"
 description_md: |
   In this challenge, you'll build a toy Redis clone
   that's capable of handling basic commands like PING, GET
   and SET. Along the way, we'll learn about event loops, the Redis
   Protocol and more.
 
-supported_languages: ["python", "go", "php"]
+supported_languages: ["python", "go", "php", "c"]
 starter_repos:
-  python: https://github.com/codecrafters-io/redis-starter-py
+  python: https://github.com/codecrafters-io/redis-starter-python
   swift: https://github.com/codecrafters-io/redis-starter-swift
-  go: https://github.com/codecrafters-io/redis-starter-golang
+  go: https://github.com/codecrafters-io/redis-starter-go
   php: https://github.com/codecrafters-io/redis-starter-php
+  c: https://github.com/codecrafters-io/redis-starter-c
 
 marketing_intro_md: |
   In this challenge, you’ll build an application that can speak the Redis
@@ -75,7 +76,7 @@ stages:
       commands for now.
 
       To achieve this, you'll need to either use threads, or, if you're feeling
-      adventurous, an [Event Loop](https://en.wikipedia.org/wiki/Event_Loop) (like
+      adventurous, an [Event Loop](https://en.wikipedia.org/wiki/Event_loop) (like
       the official Redis implementation does).
     marketing_md: |
       In this stage, you'll add support for multiple concurrent clients to your
