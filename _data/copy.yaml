@@ -118,6 +118,63 @@ learn_git_internals_md: |
 
   Sounds like your jam? Checkout our [early access](/early-access) program!
 
+learn_react_internals_md: |
+  For many of us, how React works under the hood is a mystery.
+
+  - What algorithm does React use to minimize DOM updates?
+
+  - How are hooks implemented? 
+
+  - How does `React.createElement` handle both plain HTML elements & React
+    components?
+
+  If one really wanted to understand this topic better, these are some of the
+  resources they'd probably look at:
+
+  - [Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
+
+  - [Didact: A DIY Guide to build your own
+    React](https://pomb.us/build-your-own-react/) by Rodrigo Pombo
+
+  - [React
+    Internals](https://www.mattgreer.org/articles/react-internals-part-one-basic-rendering/)
+    by Matt Greer
+
+  I've read _all_ of these, and I know that they aren't the easiest to follow.
+  They're often theory-heavy with no code examples, or 2000 word+ series that
+  can get hard to keep up with.
+
+  Here's the part where I offer you a better solution. 
+
+  [Build your own React](/challenges/react) is a hands-on challenge where you'll
+  learn React internals by _building_ a small React implementation. The library
+  you'll build will support function components, hooks and efficient DOM
+  updates. To keep things simple, we'll leave a few details out, like React
+  Fiber and class components.
+
+  <img class="course-preview" src="/images/git_challenge_preview.png">
+
+  You'll proceed stage by stage, starting with simple stages like "Create a
+  simple HTML element" and eventually building up to a minimal-featured React
+  implementation that can handle function components and hooks. Along the way,
+  you'll learn about React's [API](https://reactjs.org/docs/react-api.html),
+  [DOM-diffing
+  algorithm](https://reactjs.org/docs/reconciliation.html#the-diffing-algorithm),
+  [hooks](https://reactjs.org/docs/hooks-intro.html) and more!
+
+  You'll be able to attempt this challenge in Javascript or Typescript. You'll
+  work from the comfort of your own editor, submitting code via a Git push once
+  ready. We'll stream helpful test results directly to your terminal.
+
+  TODO: Add test results example
+
+  You'll also get to chat & compete with like-minded folks in the process. (We
+  run 1-week long sessions, attempt at your own pace)
+
+  <img class="course-preview" src="/images/chat_preview.png" style="max-width: 450px;">
+
+  Sounds like your jam? Checkout our [early access](/early-access) program!
+
 early_access_md: |
   Hi there, I'm [Paul](https://rohitpaulk.com). 
   
