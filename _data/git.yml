@@ -1,5 +1,5 @@
 slug: "git"
-name: "Git"
+name: "Build your own Git"
 description_md: |
   In this challenge, you'll build a toy Git implementation that can clone a
   public repository, add commits and push them back to a git server. Along the

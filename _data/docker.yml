@@ -1,5 +1,5 @@
 slug: "docker"
-name: "Docker"
+name: "Build your own Docker"
 description_md: |
   In this challenge, you'll build a toy Docker implementation that can pull an
   image from [Docker Hub](https://hub.docker.com/) and execute commands in it.
