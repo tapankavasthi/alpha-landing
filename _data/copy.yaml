@@ -152,7 +152,7 @@ learn_react_internals_md: |
   updates. To keep things simple, we'll leave a few details out, like React
   Fiber and class components.
 
-  <img class="course-preview" src="/images/git_challenge_preview.png">
+  <img class="course-preview" src="/images/react_challenge_preview.png">
 
   You'll proceed stage by stage, starting with simple stages like "Create a
   simple HTML element" and eventually building up to a minimal-featured React
