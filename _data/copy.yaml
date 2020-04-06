@@ -166,7 +166,7 @@ learn_react_internals_md: |
   work from the comfort of your own editor, submitting code via a Git push once
   ready. We'll stream helpful test results directly to your terminal.
 
-  TODO: Add test results example
+  <img class="course-preview" src="/images/react_test_preview.png" style="max-width: 450px;">
 
   You'll also get to chat & compete with like-minded folks in the process. (We
   run 1-week long sessions, attempt at your own pace)
