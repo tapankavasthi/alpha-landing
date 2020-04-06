@@ -3,11 +3,32 @@
   "total_stages": 7,
   "users": [
     {
+      "username": "Greg15153",
+      "language": "php",
+      "stage_reached": 1,
+      "started_at": "2020-04-05T01:26:35.320969+00:00",
+      "ended_at": "2020-04-05T01:59:41.885079+00:00"
+    },
+    {
+      "username": "Greg15153",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-04-05T03:33:19.034580+00:00",
+      "ended_at": "2020-04-05T03:38:01.870277+00:00"
+    },
+    {
       "username": "Stannislav",
       "language": "python",
       "stage_reached": 7,
       "started_at": "2020-04-01T12:22:54.607566+00:00",
       "ended_at": "2020-04-02T23:32:35.493957+00:00"
+    },
+    {
+      "username": "avinassh",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-04-05T07:31:14.679760+00:00",
+      "ended_at": "2020-04-05T08:13:51.903443+00:00"
     },
     {
       "username": "terrybrashaw",
@@ -31,11 +52,18 @@
       "ended_at": "2020-04-03T02:35:53.183241+00:00"
     },
     {
-      "username": "thisisclosure",
-      "language": "python",
-      "stage_reached": 3,
-      "started_at": "2020-04-01T16:41:55.225280+00:00",
-      "ended_at": "2020-04-02T00:02:22.509073+00:00"
+      "username": "javamonk",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-04-04T22:11:15.155463+00:00",
+      "ended_at": "2020-04-06T01:05:54.194306+00:00"
+    },
+    {
+      "username": "sxl613",
+      "language": "c",
+      "stage_reached": 1,
+      "started_at": "2020-04-01T16:48:12.392442+00:00",
+      "ended_at": "2020-04-06T02:50:55.857458+00:00"
     },
     {
       "username": "javamonk",
@@ -73,13 +101,6 @@
       "ended_at": "2020-04-02T12:43:15.681200+00:00"
     },
     {
-      "username": "sxl613",
-      "language": "c",
-      "stage_reached": 1,
-      "started_at": "2020-04-01T16:48:12.392442+00:00",
-      "ended_at": "2020-04-02T15:43:50.912857+00:00"
-    },
-    {
       "username": "mgnandt",
       "language": "python",
       "stage_reached": 7,
@@ -92,6 +113,20 @@
       "stage_reached": 7,
       "started_at": "2020-04-01T23:38:16.754750+00:00",
       "ended_at": "2020-04-04T02:14:23.165429+00:00"
+    },
+    {
+      "username": "thisisclosure",
+      "language": "python",
+      "stage_reached": 3,
+      "started_at": "2020-04-01T16:41:55.225280+00:00",
+      "ended_at": "2020-04-04T19:22:54.920116+00:00"
+    },
+    {
+      "username": "GarrickHe",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-04-01T16:23:34.497439+00:00",
+      "ended_at": "2020-04-04T23:36:20.101558+00:00"
     }
   ]
 }

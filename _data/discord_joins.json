@@ -1440,5 +1440,26 @@
     "discriminator": "7104",
     "nick": null,
     "joined_at": "2020-04-03 18:12:14 +0000"
+  },
+  {
+    "id": "137949404404383744",
+    "username": "av",
+    "discriminator": "9649",
+    "nick": null,
+    "joined_at": "2020-04-05 07:26:24 +0000"
+  },
+  {
+    "id": "381412778402906122",
+    "username": "Andreas Gamborg",
+    "discriminator": "2219",
+    "nick": null,
+    "joined_at": "2020-04-05 10:03:31 +0000"
+  },
+  {
+    "id": "681513552057466883",
+    "username": "axeljov",
+    "discriminator": "4505",
+    "nick": null,
+    "joined_at": "2020-04-05 22:02:53 +0000"
   }
 ]
