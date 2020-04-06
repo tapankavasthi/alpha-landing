@@ -255,6 +255,12 @@ end
 usernames_to_consider = challenge_events_by_user.keys
 missing_usernames = usernames_to_consider - users_map.keys
 if missing_usernames.any?
+  open("_data/github_discord_mapping.yml", "a") { |f|
+    missing_usernames.each do |username| 
+      f.puts("- github_username: \"#{username}\"\n")
+      f.puts("  discord_username: \"---\"\n")
+    end
+  }
   raise RuntimeError.new("Missing user mappings: \n#{missing_usernames.join("\n")}")
 end
 users_to_consider = challenge_events_by_user.keys.map { |username| users_map.fetch(username) }
