@@ -2,8 +2,8 @@ serve: compile_profiles
 	bundle exec jekyll serve --trace --livereload
 
 refresh_ea_data:
-	bundle exec ruby scripts/import_ea_data.rb early-access-11 https://ea2-app.codecrafters.io
-	bundle exec ruby scripts/import_ea_data.rb early-access-12 https://ea1-app.codecrafters.io
+	bundle exec ruby scripts/import_ea_data.rb early-access-13 https://ea2-app.codecrafters.io
+	bundle exec ruby scripts/import_ea_data.rb early-access-14 https://ea1-app.codecrafters.io
 
 refresh_github_data:
 	bundle exec ruby scripts/import_github_data.rb
