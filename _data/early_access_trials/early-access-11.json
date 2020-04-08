@@ -24,13 +24,6 @@
       "ended_at": "2020-03-30T15:29:22.882417+00:00"
     },
     {
-      "username": "CoreBeacon",
-      "language": "nim",
-      "stage_reached": 3,
-      "started_at": "2020-04-05T00:17:44.448353+00:00",
-      "ended_at": "2020-04-05T23:41:29.576694+00:00"
-    },
-    {
       "username": "chipcary",
       "language": "go",
       "stage_reached": 3,
@@ -64,6 +57,13 @@
       "stage_reached": 3,
       "started_at": "2020-04-04T06:05:42.774805+00:00",
       "ended_at": "2020-04-06T04:51:33.864660+00:00"
+    },
+    {
+      "username": "CoreBeacon",
+      "language": "nim",
+      "stage_reached": 4,
+      "started_at": "2020-04-05T00:17:44.448353+00:00",
+      "ended_at": "2020-04-07T20:16:47.115353+00:00"
     },
     {
       "username": "genkobar",

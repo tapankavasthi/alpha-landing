@@ -31,6 +31,13 @@
       "ended_at": "2020-04-05T08:13:51.903443+00:00"
     },
     {
+      "username": "Jypotheren734x",
+      "language": "go",
+      "stage_reached": 7,
+      "started_at": "2020-04-01T15:04:35.510311+00:00",
+      "ended_at": "2020-04-07T23:23:36.812131+00:00"
+    },
+    {
       "username": "terrybrashaw",
       "language": "go",
       "stage_reached": 1,
@@ -52,25 +59,18 @@
       "ended_at": "2020-04-03T02:35:53.183241+00:00"
     },
     {
-      "username": "javamonk",
-      "language": "go",
-      "stage_reached": 4,
-      "started_at": "2020-04-04T22:11:15.155463+00:00",
-      "ended_at": "2020-04-06T01:05:54.194306+00:00"
-    },
-    {
       "username": "sxl613",
       "language": "c",
-      "stage_reached": 1,
+      "stage_reached": 4,
       "started_at": "2020-04-01T16:48:12.392442+00:00",
-      "ended_at": "2020-04-06T02:50:55.857458+00:00"
+      "ended_at": "2020-04-08T00:59:07.778254+00:00"
     },
     {
-      "username": "javamonk",
-      "language": "go",
-      "stage_reached": 4,
-      "started_at": "2020-04-02T18:23:00.206951+00:00",
-      "ended_at": "2020-04-03T03:42:12.072567+00:00"
+      "username": "danwilhelm",
+      "language": "c",
+      "stage_reached": 3,
+      "started_at": "2020-04-07T02:58:57.627113+00:00",
+      "ended_at": "2020-04-08T07:37:43.641828+00:00"
     },
     {
       "username": "pekevski",
@@ -78,6 +78,20 @@
       "stage_reached": 7,
       "started_at": "2020-04-01T22:01:13.746376+00:00",
       "ended_at": "2020-04-03T11:27:57.028368+00:00"
+    },
+    {
+      "username": "javamonk",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-04-02T18:23:00.206951+00:00",
+      "ended_at": "2020-04-07T00:59:08.018962+00:00"
+    },
+    {
+      "username": "javamonk",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-04-04T22:11:15.155463+00:00",
+      "ended_at": "2020-04-07T01:20:19.083084+00:00"
     },
     {
       "username": "nimah79",
@@ -119,7 +133,7 @@
       "language": "python",
       "stage_reached": 3,
       "started_at": "2020-04-01T16:41:55.225280+00:00",
-      "ended_at": "2020-04-04T19:22:54.920116+00:00"
+      "ended_at": "2020-04-07T18:26:26.761579+00:00"
     },
     {
       "username": "GarrickHe",
