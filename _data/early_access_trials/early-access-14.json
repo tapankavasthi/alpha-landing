@@ -1,0 +1,83 @@
+{
+  "challenge_slug": "redis",
+  "total_stages": 7,
+  "users": [
+    {
+      "username": "danwilhelm",
+      "language": "c",
+      "stage_reached": 5,
+      "started_at": "2020-04-08T17:48:32.205309+00:00",
+      "ended_at": "2020-04-09T01:12:42.471796+00:00"
+    },
+    {
+      "username": "avinassh",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-04-08T12:45:39.502525+00:00",
+      "ended_at": "2020-04-08T14:06:42.045209+00:00"
+    },
+    {
+      "username": "patrick-braun",
+      "language": "c",
+      "stage_reached": 1,
+      "started_at": "2020-04-10T12:36:33.086113+00:00",
+      "ended_at": "2020-04-10T16:41:07.055168+00:00"
+    },
+    {
+      "username": "patrick-braun",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-04-10T16:45:05.699097+00:00",
+      "ended_at": "2020-04-10T16:55:08.870694+00:00"
+    },
+    {
+      "username": "sxl613",
+      "language": "c",
+      "stage_reached": 6,
+      "started_at": "2020-04-08T15:23:41.792718+00:00",
+      "ended_at": "2020-04-11T01:25:26.340161+00:00"
+    },
+    {
+      "username": "Dawny33",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-04-09T07:52:17.042185+00:00",
+      "ended_at": "2020-04-09T11:17:48.222542+00:00"
+    },
+    {
+      "username": "ayyjohn",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-04-09T14:21:40.712022+00:00",
+      "ended_at": "2020-04-09T14:24:38.231311+00:00"
+    },
+    {
+      "username": "tapankavasthi",
+      "language": "go",
+      "stage_reached": 7,
+      "started_at": "2020-04-08T13:07:10.474718+00:00",
+      "ended_at": "2020-04-09T16:15:09.153511+00:00"
+    },
+    {
+      "username": "mgnandt",
+      "language": "c",
+      "stage_reached": 1,
+      "started_at": "2020-04-08T22:52:48.812114+00:00",
+      "ended_at": "2020-04-09T00:12:45.312030+00:00"
+    },
+    {
+      "username": "tridungpham",
+      "language": "go",
+      "stage_reached": 4,
+      "started_at": "2020-04-08T18:28:01.957445+00:00",
+      "ended_at": "2020-04-09T22:03:45.949758+00:00"
+    },
+    {
+      "username": "GarrickHe",
+      "language": "python",
+      "stage_reached": 3,
+      "started_at": "2020-04-09T23:59:01.609570+00:00",
+      "ended_at": "2020-04-10T03:32:12.349230+00:00"
+    }
+  ]
+}

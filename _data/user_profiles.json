@@ -114,6 +114,12 @@
         "challenge": "docker",
         "language": "go",
         "timestamp": "2020-03-30T02:17:56+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-04-09T14:21:40+00:00"
       }
     ],
     "challenge_status": [
@@ -198,6 +204,12 @@
         "challenge": "redis",
         "language": "python",
         "timestamp": "2020-03-27T00:49:11+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "c",
+        "timestamp": "2020-04-08T13:29:09+00:00"
       }
     ],
     "challenge_status": [
@@ -211,7 +223,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 0,
+        "percentage_completed": 66,
         "languages_used": [
 
         ],
@@ -289,6 +301,12 @@
         "challenge": "redis",
         "language": "python",
         "timestamp": "2020-03-26T06:36:11+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "c",
+        "timestamp": "2020-04-08T17:48:32+00:00"
       }
     ],
     "challenge_status": [
@@ -504,6 +522,12 @@
         "challenge": "docker",
         "language": "go",
         "timestamp": "2020-04-04T22:09:11+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "python",
+        "timestamp": "2020-04-09T23:59:01+00:00"
       }
     ],
     "challenge_status": [
@@ -517,7 +541,7 @@
       },
       {
         "slug": "redis",
-        "percentage_completed": 14,
+        "percentage_completed": 42,
         "languages_used": [
 
         ],
@@ -807,6 +831,12 @@
         "challenge": "redis",
         "language": "go",
         "timestamp": "2020-04-07T23:23:36+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "c",
+        "timestamp": "2020-04-08T21:01:42+00:00"
       }
     ],
     "challenge_status": [
@@ -820,7 +850,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 0,
+        "percentage_completed": 16,
         "languages_used": [
 
         ],
@@ -1020,6 +1050,12 @@
         "challenge": "redis",
         "language": "python",
         "timestamp": "2020-04-04T01:56:57+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "c",
+        "timestamp": "2020-04-08T22:52:48+00:00"
       }
     ],
     "challenge_status": [
@@ -1104,6 +1140,12 @@
         "challenge": "redis",
         "language": "python",
         "timestamp": "2020-04-04T02:14:23+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "c",
+        "timestamp": "2020-04-08T23:16:48+00:00"
       }
     ],
     "challenge_status": [
@@ -1117,7 +1159,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 0,
+        "percentage_completed": 83,
         "languages_used": [
 
         ],
@@ -1590,6 +1632,12 @@
         "challenge": "redis",
         "language": "python",
         "timestamp": "2020-04-02T23:32:35+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "c",
+        "timestamp": "2020-04-08T18:01:13+00:00"
       }
     ],
     "challenge_status": [
@@ -1600,6 +1648,45 @@
           "python"
         ],
         "last_completed_at": "2020-04-02 23:32:35 +0000"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 66,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
+    "username": "tapankavasthi",
+    "name": "Tapan Avasthi",
+    "joined_at": "2020-02-15 08:26:56 +0000",
+    "avatar_url": "https://github.com/tapankavasthi.png",
+    "languages_used": [
+      "go"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-02-15T08:26:56+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "go",
+        "timestamp": "2020-04-09T16:15:09+00:00"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "go"
+        ],
+        "last_completed_at": "2020-04-09 16:15:09 +0000"
       },
       {
         "slug": "docker",
