@@ -1494,14 +1494,28 @@
     "id": "186136817169334272",
     "username": "dungpham",
     "discriminator": "2104",
-    "nick": null,
+    "nick": "dzungpham",
     "joined_at": "2020-04-08 18:25:13 +0000"
   },
   {
-    "id": "110547989403033600",
-    "username": "GeniusViking",
-    "discriminator": "1268",
+    "id": "76558918565765120",
+    "username": "3605031",
+    "discriminator": "0498",
     "nick": null,
-    "joined_at": "2020-04-10 12:02:29 +0000"
+    "joined_at": "2020-04-11 20:26:38 +0000"
+  },
+  {
+    "id": "113209772211232768",
+    "username": "Terry",
+    "discriminator": "2237",
+    "nick": null,
+    "joined_at": "2020-04-11 20:41:36 +0000"
+  },
+  {
+    "id": "698821334360129566",
+    "username": "aos",
+    "discriminator": "3312",
+    "nick": null,
+    "joined_at": "2020-04-12 09:06:39 +0000"
   }
 ]

@@ -3,6 +3,34 @@
   "total_stages": 6,
   "users": [
     {
+      "username": "Stannislav",
+      "language": "c",
+      "stage_reached": 5,
+      "started_at": "2020-04-08T18:01:13.863097+00:00",
+      "ended_at": "2020-04-11T20:10:31.073783+00:00"
+    },
+    {
+      "username": "terrybrashaw",
+      "language": "nim",
+      "stage_reached": 1,
+      "started_at": "2020-04-11T20:42:54.406768+00:00",
+      "ended_at": "2020-04-11T21:02:14.566514+00:00"
+    },
+    {
+      "username": "tapankavasthi",
+      "language": "go",
+      "stage_reached": 3,
+      "started_at": "2020-04-11T21:41:26.346791+00:00",
+      "ended_at": "2020-04-11T22:13:26.291828+00:00"
+    },
+    {
+      "username": "sxl613",
+      "language": "c",
+      "stage_reached": 1,
+      "started_at": "2020-04-12T00:26:22.996277+00:00",
+      "ended_at": "2020-04-12T00:50:12.680395+00:00"
+    },
+    {
       "username": "CoreBeacon",
       "language": "nim",
       "stage_reached": 4,
@@ -24,18 +52,11 @@
       "ended_at": "2020-04-10T02:48:20.670615+00:00"
     },
     {
-      "username": "Stannislav",
-      "language": "c",
-      "stage_reached": 4,
-      "started_at": "2020-04-08T18:01:13.863097+00:00",
-      "ended_at": "2020-04-10T18:37:16.318858+00:00"
-    },
-    {
       "username": "na-null",
       "language": "c",
-      "stage_reached": 5,
+      "stage_reached": 6,
       "started_at": "2020-04-08T23:16:48.609791+00:00",
-      "ended_at": "2020-04-11T05:03:31.262615+00:00"
+      "ended_at": "2020-04-11T17:23:58.105999+00:00"
     }
   ]
 }

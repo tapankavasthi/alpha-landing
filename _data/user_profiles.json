@@ -283,7 +283,8 @@
     "joined_at": "2020-03-22 18:45:38 +0000",
     "avatar_url": "https://github.com/danwilhelm.png",
     "languages_used": [
-      "python"
+      "python",
+      "c"
     ],
     "events": [
       {
@@ -303,10 +304,10 @@
         "timestamp": "2020-03-26T06:36:11+00:00"
       },
       {
-        "type": "started-challenge",
+        "type": "completed-challenge",
         "challenge": "redis",
         "language": "c",
-        "timestamp": "2020-04-08T17:48:32+00:00"
+        "timestamp": "2020-04-12T08:03:53+00:00"
       }
     ],
     "challenge_status": [
@@ -314,9 +315,10 @@
         "slug": "redis",
         "percentage_completed": 100,
         "languages_used": [
-          "python"
+          "python",
+          "c"
         ],
-        "last_completed_at": "2020-03-26 06:36:11 +0000"
+        "last_completed_at": "2020-04-12 08:03:53 +0000"
       },
       {
         "slug": "docker",
@@ -541,7 +543,7 @@
       },
       {
         "slug": "redis",
-        "percentage_completed": 42,
+        "percentage_completed": 71,
         "languages_used": [
 
         ],
@@ -1128,7 +1130,8 @@
     "joined_at": "2020-03-28 14:38:49 +0000",
     "avatar_url": "https://github.com/na-null.png",
     "languages_used": [
-      "python"
+      "python",
+      "c"
     ],
     "events": [
       {
@@ -1142,10 +1145,10 @@
         "timestamp": "2020-04-04T02:14:23+00:00"
       },
       {
-        "type": "started-challenge",
+        "type": "completed-challenge",
         "challenge": "docker",
         "language": "c",
-        "timestamp": "2020-04-08T23:16:48+00:00"
+        "timestamp": "2020-04-11T17:23:58+00:00"
       }
     ],
     "challenge_status": [
@@ -1159,11 +1162,11 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 83,
+        "percentage_completed": 100,
         "languages_used": [
-
+          "c"
         ],
-        "last_completed_at": null
+        "last_completed_at": "2020-04-11 17:23:58 +0000"
       }
     ]
   },
@@ -1651,7 +1654,58 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 66,
+        "percentage_completed": 83,
+        "languages_used": [
+
+        ],
+        "last_completed_at": null
+      }
+    ]
+  },
+  {
+    "username": "sxl613",
+    "name": "sxl613",
+    "joined_at": "2020-04-01 15:01:32 +0000",
+    "avatar_url": "https://github.com/sxl613.png",
+    "languages_used": [
+      "c"
+    ],
+    "events": [
+      {
+        "type": "joined-early-access",
+        "timestamp": "2020-04-01T15:01:32+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "redis",
+        "language": "c",
+        "timestamp": "2020-04-01T16:48:12+00:00"
+      },
+      {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "c",
+        "timestamp": "2020-04-12T00:26:22+00:00"
+      },
+      {
+        "type": "completed-challenge",
+        "challenge": "redis",
+        "language": "c",
+        "timestamp": "2020-04-11T14:57:31+00:00"
+      }
+    ],
+    "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "c"
+        ],
+        "last_completed_at": "2020-04-11 14:57:31 +0000"
+      },
+      {
+        "slug": "docker",
+        "percentage_completed": 16,
         "languages_used": [
 
         ],
@@ -1673,6 +1727,12 @@
         "timestamp": "2020-02-15T08:26:56+00:00"
       },
       {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "go",
+        "timestamp": "2020-04-11T21:41:26+00:00"
+      },
+      {
         "type": "completed-challenge",
         "challenge": "redis",
         "language": "go",
@@ -1690,7 +1750,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 0,
+        "percentage_completed": 50,
         "languages_used": [
 
         ],

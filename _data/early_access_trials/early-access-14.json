@@ -3,13 +3,6 @@
   "total_stages": 7,
   "users": [
     {
-      "username": "danwilhelm",
-      "language": "c",
-      "stage_reached": 5,
-      "started_at": "2020-04-08T17:48:32.205309+00:00",
-      "ended_at": "2020-04-09T01:12:42.471796+00:00"
-    },
-    {
       "username": "avinassh",
       "language": "go",
       "stage_reached": 4,
@@ -33,9 +26,9 @@
     {
       "username": "sxl613",
       "language": "c",
-      "stage_reached": 6,
+      "stage_reached": 7,
       "started_at": "2020-04-08T15:23:41.792718+00:00",
-      "ended_at": "2020-04-11T01:25:26.340161+00:00"
+      "ended_at": "2020-04-11T14:57:31.258045+00:00"
     },
     {
       "username": "Dawny33",
@@ -52,6 +45,20 @@
       "ended_at": "2020-04-09T14:24:38.231311+00:00"
     },
     {
+      "username": "GarrickHe",
+      "language": "python",
+      "stage_reached": 5,
+      "started_at": "2020-04-09T23:59:01.609570+00:00",
+      "ended_at": "2020-04-11T23:36:18.886493+00:00"
+    },
+    {
+      "username": "danwilhelm",
+      "language": "c",
+      "stage_reached": 7,
+      "started_at": "2020-04-08T17:48:32.205309+00:00",
+      "ended_at": "2020-04-12T08:03:53.526309+00:00"
+    },
+    {
       "username": "tapankavasthi",
       "language": "go",
       "stage_reached": 7,
@@ -66,18 +73,18 @@
       "ended_at": "2020-04-09T00:12:45.312030+00:00"
     },
     {
+      "username": "lincolnfraley93",
+      "language": "python",
+      "stage_reached": 1,
+      "started_at": "2020-04-12T15:18:39.396389+00:00",
+      "ended_at": "2020-04-12T15:37:48.819052+00:00"
+    },
+    {
       "username": "tridungpham",
       "language": "go",
       "stage_reached": 4,
       "started_at": "2020-04-08T18:28:01.957445+00:00",
       "ended_at": "2020-04-09T22:03:45.949758+00:00"
-    },
-    {
-      "username": "GarrickHe",
-      "language": "python",
-      "stage_reached": 3,
-      "started_at": "2020-04-09T23:59:01.609570+00:00",
-      "ended_at": "2020-04-10T03:32:12.349230+00:00"
     }
   ]
 }
