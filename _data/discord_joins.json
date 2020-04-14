@@ -1517,5 +1517,12 @@
     "discriminator": "3312",
     "nick": null,
     "joined_at": "2020-04-12 09:06:39 +0000"
+  },
+  {
+    "id": "483976226608775169",
+    "username": "zoltax",
+    "discriminator": "0082",
+    "nick": null,
+    "joined_at": "2020-04-12 18:39:11 +0000"
   }
 ]

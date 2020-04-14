@@ -96,7 +96,8 @@
     "joined_at": "2020-03-23 04:45:57 +0000",
     "avatar_url": "https://github.com/ayyjohn.png",
     "languages_used": [
-      "go"
+      "go",
+      "python"
     ],
     "events": [
       {
@@ -116,13 +117,21 @@
         "timestamp": "2020-03-30T02:17:56+00:00"
       },
       {
-        "type": "started-challenge",
+        "type": "completed-challenge",
         "challenge": "redis",
         "language": "python",
-        "timestamp": "2020-04-09T14:21:40+00:00"
+        "timestamp": "2020-04-14T03:27:08+00:00"
       }
     ],
     "challenge_status": [
+      {
+        "slug": "redis",
+        "percentage_completed": 100,
+        "languages_used": [
+          "python"
+        ],
+        "last_completed_at": "2020-04-14 03:27:08 +0000"
+      },
       {
         "slug": "docker",
         "percentage_completed": 100,
@@ -130,14 +139,6 @@
           "go"
         ],
         "last_completed_at": "2020-03-30 02:17:56 +0000"
-      },
-      {
-        "slug": "redis",
-        "percentage_completed": 57,
-        "languages_used": [
-
-        ],
-        "last_completed_at": null
       }
     ]
   },
@@ -304,6 +305,12 @@
         "timestamp": "2020-03-26T06:36:11+00:00"
       },
       {
+        "type": "started-challenge",
+        "challenge": "docker",
+        "language": "c",
+        "timestamp": "2020-04-12T21:11:27+00:00"
+      },
+      {
         "type": "completed-challenge",
         "challenge": "redis",
         "language": "c",
@@ -322,7 +329,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 0,
+        "percentage_completed": 66,
         "languages_used": [
 
         ],
@@ -1705,7 +1712,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 16,
+        "percentage_completed": 50,
         "languages_used": [
 
         ],
@@ -1750,7 +1757,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 50,
+        "percentage_completed": 83,
         "languages_used": [
 
         ],
