@@ -266,8 +266,8 @@ faqs:
       address and T-shirt size preference. If this hasn’t happened, please [let
       us know](mailto:hello@codecrafters.io).
 
-  - slug: what-all-languages-can-i-use
-    question: What all languages can I use? 
+  - slug: what-languages-can-i-use
+    question: What languages can I use? 
     content_md: |
       As of now:
         
