@@ -38,6 +38,13 @@
       "ended_at": "2020-04-15T02:25:10.728638+00:00"
     },
     {
+      "username": "danwilhelm",
+      "language": "c",
+      "stage_reached": 5,
+      "started_at": "2020-04-12T21:11:27.173495+00:00",
+      "ended_at": "2020-04-15T06:59:36.056396+00:00"
+    },
+    {
       "username": "CoreBeacon",
       "language": "nim",
       "stage_reached": 4,
@@ -64,13 +71,6 @@
       "stage_reached": 6,
       "started_at": "2020-04-08T23:16:48.609791+00:00",
       "ended_at": "2020-04-11T17:23:58.105999+00:00"
-    },
-    {
-      "username": "danwilhelm",
-      "language": "c",
-      "stage_reached": 4,
-      "started_at": "2020-04-12T21:11:27.173495+00:00",
-      "ended_at": "2020-04-13T21:19:29.155219+00:00"
     }
   ]
 }
