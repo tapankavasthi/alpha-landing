@@ -8,8 +8,8 @@
     - /images/sample-avatar-2.png
     - /images/sample-avatar-3.png
   languages: ["python", "php", "go", "c"]
-  player_count: 16
-  completion_rate: 36
+  player_count: 44
+  completion_rate: 32
 
 - slug: "docker"
   name: "Build your own Docker"
@@ -21,8 +21,8 @@
     - /images/sample-avatar-2.png
     - /images/sample-avatar-3.png
   languages: ["go", "nim", "c"]
-  player_count: 4
-  completion_rate: 9
+  player_count: 32
+  completion_rate: 25
 
 - slug: "git"
   state: "coming-soon"
