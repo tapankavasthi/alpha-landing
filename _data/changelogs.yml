@@ -20,12 +20,12 @@
       prepended with `library/` when interacting with the registry API.
 
 - date: "8th April 2020"
-  title: "More language support"
-  type: "improvement"
+  title: "Support for C & Ruby"
+  type: "new"
   description_md: |
-    The Redis challenge now supports C & Ruby (in addition to Python, Go & PHP).
+    The Redis challenge now supports C & Ruby (in addition to Python, Go & PHP)
 
-    The Docker challenge now supports C (in addition to Nim & Go).
+    The Docker challenge now supports C (in addition to Nim & Go)
 
 - date: "23rd March 2020"
   title: "Profile pages are in!"
