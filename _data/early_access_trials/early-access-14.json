@@ -3,6 +3,13 @@
   "total_stages": 7,
   "users": [
     {
+      "username": "thgibbs",
+      "language": "go",
+      "stage_reached": 1,
+      "started_at": "2020-04-15T02:12:56.848413+00:00",
+      "ended_at": "2020-04-15T03:03:29.841396+00:00"
+    },
+    {
       "username": "avinassh",
       "language": "go",
       "stage_reached": 4,

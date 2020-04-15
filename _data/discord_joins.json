@@ -973,13 +973,6 @@
     "joined_at": "2020-03-22 18:17:22 +0000"
   },
   {
-    "id": "201407803355693056",
-    "username": "jabberwik",
-    "discriminator": "7687",
-    "nick": null,
-    "joined_at": "2020-03-22 18:41:41 +0000"
-  },
-  {
     "id": "691356455726612562",
     "username": "danwilhelm",
     "discriminator": "7807",
@@ -1253,13 +1246,6 @@
     "joined_at": "2020-03-27 20:40:39 +0000"
   },
   {
-    "id": "341198389951594497",
-    "username": "Luca",
-    "discriminator": "4545",
-    "nick": null,
-    "joined_at": "2020-03-27 21:27:23 +0000"
-  },
-  {
     "id": "168413918828560384",
     "username": "Falgorin",
     "discriminator": "1306",
@@ -1524,5 +1510,12 @@
     "discriminator": "0082",
     "nick": null,
     "joined_at": "2020-04-12 18:39:11 +0000"
+  },
+  {
+    "id": "349731974090588161",
+    "username": "memeboner",
+    "discriminator": "3078",
+    "nick": null,
+    "joined_at": "2020-04-14 13:18:14 +0000"
   }
 ]

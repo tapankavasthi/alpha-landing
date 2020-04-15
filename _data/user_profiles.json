@@ -1637,7 +1637,8 @@
     "joined_at": "2020-03-25 18:27:08 +0000",
     "avatar_url": "https://github.com/Stannislav.png",
     "languages_used": [
-      "python"
+      "python",
+      "c"
     ],
     "events": [
       {
@@ -1651,10 +1652,10 @@
         "timestamp": "2020-04-02T23:32:35+00:00"
       },
       {
-        "type": "started-challenge",
+        "type": "completed-challenge",
         "challenge": "docker",
         "language": "c",
-        "timestamp": "2020-04-08T18:01:13+00:00"
+        "timestamp": "2020-04-14T20:55:47+00:00"
       }
     ],
     "challenge_status": [
@@ -1668,11 +1669,11 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 83,
+        "percentage_completed": 100,
         "languages_used": [
-
+          "c"
         ],
-        "last_completed_at": null
+        "last_completed_at": "2020-04-14 20:55:47 +0000"
       }
     ]
   },
@@ -1719,7 +1720,7 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 50,
+        "percentage_completed": 83,
         "languages_used": [
 
         ],
@@ -1741,10 +1742,10 @@
         "timestamp": "2020-02-15T08:26:56+00:00"
       },
       {
-        "type": "started-challenge",
+        "type": "completed-challenge",
         "challenge": "docker",
         "language": "go",
-        "timestamp": "2020-04-11T21:41:26+00:00"
+        "timestamp": "2020-04-15T02:25:10+00:00"
       },
       {
         "type": "completed-challenge",
@@ -1764,11 +1765,11 @@
       },
       {
         "slug": "docker",
-        "percentage_completed": 83,
+        "percentage_completed": 100,
         "languages_used": [
-
+          "go"
         ],
-        "last_completed_at": null
+        "last_completed_at": "2020-04-15 02:25:10 +0000"
       }
     ]
   },

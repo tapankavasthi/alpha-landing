@@ -3,11 +3,39 @@
   "total_stages": 6,
   "users": [
     {
+      "username": "horyan",
+      "language": "nim",
+      "stage_reached": 1,
+      "started_at": "2020-04-14T16:45:27.077281+00:00",
+      "ended_at": "2020-04-14T17:34:32.521997+00:00"
+    },
+    {
       "username": "terrybrashaw",
       "language": "nim",
       "stage_reached": 1,
       "started_at": "2020-04-11T20:42:54.406768+00:00",
       "ended_at": "2020-04-11T21:02:14.566514+00:00"
+    },
+    {
+      "username": "sxl613",
+      "language": "c",
+      "stage_reached": 5,
+      "started_at": "2020-04-12T00:26:22.996277+00:00",
+      "ended_at": "2020-04-14T19:12:13.417260+00:00"
+    },
+    {
+      "username": "Stannislav",
+      "language": "c",
+      "stage_reached": 6,
+      "started_at": "2020-04-08T18:01:13.863097+00:00",
+      "ended_at": "2020-04-14T20:55:47.150519+00:00"
+    },
+    {
+      "username": "tapankavasthi",
+      "language": "go",
+      "stage_reached": 6,
+      "started_at": "2020-04-11T21:41:26.346791+00:00",
+      "ended_at": "2020-04-15T02:25:10.728638+00:00"
     },
     {
       "username": "CoreBeacon",
@@ -38,32 +66,11 @@
       "ended_at": "2020-04-11T17:23:58.105999+00:00"
     },
     {
-      "username": "tapankavasthi",
-      "language": "go",
-      "stage_reached": 5,
-      "started_at": "2020-04-11T21:41:26.346791+00:00",
-      "ended_at": "2020-04-13T17:08:13.174104+00:00"
-    },
-    {
-      "username": "Stannislav",
-      "language": "c",
-      "stage_reached": 5,
-      "started_at": "2020-04-08T18:01:13.863097+00:00",
-      "ended_at": "2020-04-13T18:54:13.494078+00:00"
-    },
-    {
       "username": "danwilhelm",
       "language": "c",
       "stage_reached": 4,
       "started_at": "2020-04-12T21:11:27.173495+00:00",
       "ended_at": "2020-04-13T21:19:29.155219+00:00"
-    },
-    {
-      "username": "sxl613",
-      "language": "c",
-      "stage_reached": 3,
-      "started_at": "2020-04-12T00:26:22.996277+00:00",
-      "ended_at": "2020-04-13T22:34:33.167855+00:00"
     }
   ]
 }
