@@ -19,6 +19,14 @@
       images](https://docs.docker.com/docker-hub/official_images/) need to be
       prepended with `library/` when interacting with the registry API.
 
+    Thanks to [na-null](https://codecrafters.io/users/na-null),
+    [GarrickHe](https://codecrafters.io/users/GarrickHe),
+    [codaitya](https://codecrafters.io/users/codaitya),
+    [ayyjohn](https://codecrafters.io/users/ayyjohn),
+    [JonasAgger](https://codecrafters.io/users/JonasAgger),
+    [jolheiser](https://codecrafters.io/users/jolheiser) and
+    [abhijat](https://codecrafters.io/users/abhijat) for their feedback on this!
+
 - date: "8th April 2020"
   title: "Support for C & Ruby"
   type: "new"
