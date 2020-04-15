@@ -1,3 +1,24 @@
+- date: "15th April 2020"
+  title: "Better hints for the Docker challenge"
+  type: "improvement"
+  description_md: |
+    Based on feedback from early access users, the hints for the Docker
+    challenge have been updated. 
+
+    - The base URL for [Docker Hub](https://hub.docker.com/)'s public [registry
+      API](https://docs.docker.com/registry/spec/api/) is surprisingly hard to
+      find, it isn't mentioned in any official documentation. This is now
+      included in the hints for the last stage.
+
+    - A hint to use
+      [`docker-explorer`](https://github.com/codecrafters-io/docker-explorer)'s
+      commands like `echo` & `echo_stderr` was placed in the "Exit Codes" stage
+      instead of "Wireup stdout & stderr". It is now back where it belongs.
+
+    - Added a note that [Official
+      images](https://docs.docker.com/docker-hub/official_images/) need to be
+      prepended with `library/` when interacting with the registry API.
+
 - date: "23rd March 2020"
   title: "Profile pages are in!"
   type: "new"
