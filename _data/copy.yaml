@@ -271,9 +271,9 @@ faqs:
     content_md: |
       As of now:
         
-      - [Redis challenge](/challenges/redis): Python, Go, PHP.
+      - [Redis challenge](/challenges/redis): Python, Go, PHP, C, Ruby.
 
-      - [Docker challenge](/challenges/docker): Go.
+      - [Docker challenge](/challenges/docker): Go, Nim, C.
 
       We're always looking to add support for more languages. If you're part of
       [Early Access](/early-access), let us know what language you'd like added
