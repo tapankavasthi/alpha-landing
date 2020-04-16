@@ -83,7 +83,7 @@ stages:
 
       You'll do this using the first of multiple ["plumbing"
       commands](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
-      we'll encounter in thie challenge: [`git
+      we'll encounter in this challenge: [`git
       hash-object`](https://git-scm.com/docs/git-hash-object).
 
 
